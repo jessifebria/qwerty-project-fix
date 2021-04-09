@@ -23,8 +23,12 @@ class RiwayatSemuaViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
-        print("hohoho")
-        
+        print(riwayatData)
+        let katakotor = KataKotorService().getAllKataKotor()
+        for i in katakotor {
+            print(i.kata)
+            print(i.total)
+        }
         
         // Do any additional setup after loading the view.
     }
