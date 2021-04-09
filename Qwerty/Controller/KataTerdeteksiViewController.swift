@@ -80,7 +80,7 @@ class KataTerdeteksiViewController: UIViewController, UITableViewDelegate, UITab
     func okHandler(alert : UIAlertAction!) {
         if addKata?.text != "" {
             for i in riwayatData{
-                if i.kata == addKata?.text{
+                if i.kata?.lowercased() == addKata?.text?.lowercased(){
                     let alertMessage = UIAlertController(title: "Tambahkan Kata", message: "Kata sudah ada didalam database", preferredStyle: .alert)
                     let cancelButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     

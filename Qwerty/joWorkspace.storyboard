@@ -198,7 +198,7 @@
         <!--Setting View Controller-->
         <scene sceneID="kjA-im-aDr">
             <objects>
-                <viewController id="8aI-IH-Vfx" customClass="SettingViewController" customModule="tempQwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8aI-IH-Vfx" customClass="SettingViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kCV-7c-eAP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,7 +356,7 @@
         <!--Kata Terdeteksi-->
         <scene sceneID="XjC-UX-9IM">
             <objects>
-                <viewController id="1aW-5D-SXX" customClass="KataTerdeteksiViewController" customModule="tempQwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1aW-5D-SXX" customClass="KataTerdeteksiViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d4x-kq-NmR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
