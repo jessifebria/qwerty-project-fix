@@ -28,6 +28,8 @@
 		5B7D6CFE261CA5510086F45E /* QwertyKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B7D6CF6261CA5510086F45E /* QwertyKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */; };
 		5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D6D2F261CA7450086F45E /* keyboard.storyboard */; };
+		B72982462620689800D8B395 /* djWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72982452620689800D8B395 /* djWorkspace.storyboard */; };
+		B729824C2620693C00D8B395 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B729824B2620693C00D8B395 /* HomepageViewController.swift */; };
 		BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7893261C567400F1FFCA /* AppDelegate.swift */; };
 		BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7895261C567400F1FFCA /* SceneDelegate.swift */; };
 		BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */; };
@@ -101,6 +103,8 @@
 		5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		5B7D6D1D261CA6AF0086F45E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B7D6D2F261CA7450086F45E /* keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = keyboard.storyboard; sourceTree = "<group>"; };
+		B72982452620689800D8B395 /* djWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = djWorkspace.storyboard; sourceTree = "<group>"; };
+		B729824B2620693C00D8B395 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		BF2C7890261C567400F1FFCA /* Qwerty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwerty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C7893261C567400F1FFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2C7895261C567400F1FFCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 		4E0C6DBE261D7FBD0054AE7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				27F2E4AE2620614100E385FD /* OnboardingViewController.swift */,
+				B729824B2620693C00D8B395 /* HomepageViewController.swift */,
 				BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */,
 				4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */,
 				4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */,
@@ -234,8 +240,8 @@
 				BF2C7893261C567400F1FFCA /* AppDelegate.swift */,
 				BF2C7895261C567400F1FFCA /* SceneDelegate.swift */,
 				BF2C7899261C567400F1FFCA /* Main.storyboard */,
+				B72982452620689800D8B395 /* djWorkspace.storyboard */,
 				27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */,
-				27F2E4AE2620614100E385FD /* OnboardingViewController.swift */,
 				4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */,
 				4E0C6DBE261D7FBD0054AE7D /* Controller */,
 				4E0C6DC3261D7FC60054AE7D /* Model */,
@@ -402,6 +408,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72982462620689800D8B395 /* djWorkspace.storyboard in Resources */,
 				BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */,
 				27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */,
 				4EDA3DFD261F370C00368B1B /* joWorkspace.storyboard in Resources */,
@@ -446,6 +453,7 @@
 				BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */,
 				5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */,
 				5B6ADFE7261FFB6800ED8594 /* KeyboardService.swift in Sources */,
+				B729824C2620693C00D8B395 /* HomepageViewController.swift in Sources */,
 				27F2E4AF2620614100E385FD /* OnboardingViewController.swift in Sources */,
 				4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */,
 				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
