@@ -23,6 +23,7 @@ class RiwayatSemuaViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
+        print("hohoho")
         
         
         // Do any additional setup after loading the view.
