@@ -10,6 +10,11 @@
 		27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */; };
 		27F2E4AF2620614100E385FD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2E4AE2620614100E385FD /* OnboardingViewController.swift */; };
 		4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */; };
+		4E43016826205A8200C288D4 /* HomepagetestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43016726205A8200C288D4 /* HomepagetestViewController.swift */; };
+		4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43016D26205A9300C288D4 /* SettingViewController.swift */; };
+		4E43017426205AA300C288D4 /* KataTerdeteksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */; };
+		4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */; };
+		4E4301A026209E6E00C288D4 /* DeleteAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */; };
 		4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */; };
 		4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */; };
 		4EDA3DFD261F370C00368B1B /* joWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */; };
@@ -85,6 +90,11 @@
 		27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinusWorkspace.storyboard; sourceTree = "<group>"; };
 		27F2E4AE2620614100E385FD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePassViewController.swift; sourceTree = "<group>"; };
+		4E43016726205A8200C288D4 /* HomepagetestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepagetestViewController.swift; sourceTree = "<group>"; };
+		4E43016D26205A9300C288D4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataTerdeteksiViewController.swift; sourceTree = "<group>"; };
+		4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorTableViewCell.swift; sourceTree = "<group>"; };
+		4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAllViewController.swift; sourceTree = "<group>"; };
 		4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifPassViewController.swift; sourceTree = "<group>"; };
 		4EDA3DF1261EDE5500368B1B /* Qwerty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Qwerty.entitlements; sourceTree = "<group>"; };
 		4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKalimatViewController.swift; sourceTree = "<group>"; };
@@ -162,9 +172,15 @@
 				27F2E4AE2620614100E385FD /* OnboardingViewController.swift */,
 				B729824B2620693C00D8B395 /* HomepageViewController.swift */,
 				BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */,
+				BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */,
 				4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */,
 				4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */,
 				4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */,
+				4E43016726205A8200C288D4 /* HomepagetestViewController.swift */,
+				4E43016D26205A9300C288D4 /* SettingViewController.swift */,
+				4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */,
+				4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */,
+				4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,7 +263,6 @@
 				4E0C6DC3261D7FC60054AE7D /* Model */,
 				5B6ADFCF261FFB2700ED8594 /* Service */,
 				5B6ADFF2261FFBA500ED8594 /* Extension */,
-				BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */,
 				BF2C78EF261CD75C00F1FFCA /* Converter.swift */,
 				BF2C789F261C567500F1FFCA /* Assets.xcassets */,
 				BF2C78A1261C567500F1FFCA /* LaunchScreen.storyboard */,
@@ -449,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E43016826205A8200C288D4 /* HomepagetestViewController.swift in Sources */,
 				5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */,
 				BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */,
 				5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */,
@@ -457,14 +473,18 @@
 				27F2E4AF2620614100E385FD /* OnboardingViewController.swift in Sources */,
 				4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */,
 				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
+				4E4301A026209E6E00C288D4 /* DeleteAllViewController.swift in Sources */,
 				5B3EB5B8261EBE330059D9CF /* KeyboardDataController.swift in Sources */,
+				4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */,
 				4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */,
 				BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */,
 				4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */,
 				5B6ADFDB261FFB4C00ED8594 /* KataKotorService.swift in Sources */,
 				BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */,
+				4E43017426205AA300C288D4 /* KataTerdeteksiViewController.swift in Sources */,
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
 				5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */,
+				4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */,
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
 				5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */,
 				BF2C789E261C567400F1FFCA /* Qwerty.xcdatamodeld in Sources */,
