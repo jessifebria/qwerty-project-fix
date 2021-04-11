@@ -10,6 +10,8 @@
 		27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */; };
 		27F2E4AF2620614100E385FD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2E4AE2620614100E385FD /* OnboardingViewController.swift */; };
 		4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */; };
+		4E32484A2622F0D50005BE85 /* gifLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3248492622F0D50005BE85 /* gifLoad.swift */; };
+		4E3248502622F42E0005BE85 /* tutorial.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4E32484F2622F42D0005BE85 /* tutorial.gif */; };
 		4E43016826205A8200C288D4 /* HomepagetestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43016726205A8200C288D4 /* HomepagetestViewController.swift */; };
 		4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43016D26205A9300C288D4 /* SettingViewController.swift */; };
 		4E43017426205AA300C288D4 /* KataTerdeteksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */; };
@@ -90,6 +92,8 @@
 		27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinusWorkspace.storyboard; sourceTree = "<group>"; };
 		27F2E4AE2620614100E385FD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePassViewController.swift; sourceTree = "<group>"; };
+		4E3248492622F0D50005BE85 /* gifLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoad.swift; sourceTree = "<group>"; };
+		4E32484F2622F42D0005BE85 /* tutorial.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = tutorial.gif; path = ../../../../Downloads/tutorial.gif; sourceTree = "<group>"; };
 		4E43016726205A8200C288D4 /* HomepagetestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepagetestViewController.swift; sourceTree = "<group>"; };
 		4E43016D26205A9300C288D4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataTerdeteksiViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 				5B6ADFE0261FFB5900ED8594 /* UserService.swift */,
 				5B6ADFE6261FFB6800ED8594 /* KeyboardService.swift */,
 				5B6ADFEC261FFB7800ED8594 /* ContextService.swift */,
+				4E3248492622F0D50005BE85 /* gifLoad.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 		BF2C7892261C567400F1FFCA /* Qwerty */ = {
 			isa = PBXGroup;
 			children = (
+				4E32484F2622F42D0005BE85 /* tutorial.gif */,
 				4EDA3DF1261EDE5500368B1B /* Qwerty.entitlements */,
 				BF2C7893261C567400F1FFCA /* AppDelegate.swift */,
 				BF2C7895261C567400F1FFCA /* SceneDelegate.swift */,
@@ -426,6 +432,7 @@
 				B72982462620689800D8B395 /* djWorkspace.storyboard in Resources */,
 				BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */,
 				27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */,
+				4E3248502622F42E0005BE85 /* tutorial.gif in Resources */,
 				4EDA3DFD261F370C00368B1B /* joWorkspace.storyboard in Resources */,
 				BF2C78A0261C567500F1FFCA /* Assets.xcassets in Resources */,
 				BF2C789B261C567400F1FFCA /* Main.storyboard in Resources */,
@@ -478,6 +485,7 @@
 				4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */,
 				4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */,
 				BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */,
+				4E32484A2622F0D50005BE85 /* gifLoad.swift in Sources */,
 				4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */,
 				5B6ADFDB261FFB4C00ED8594 /* KataKotorService.swift in Sources */,
 				BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */,
