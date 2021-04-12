@@ -11,10 +11,12 @@ class FilterViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var selesaiButton: UIButton!
- 
+    
+    var currentFilter = String()
+    
     let filters = ["Hari ini", "Minggu ini", "Bulan ini", "Tahun ini", "Semua"]
     let filtersParameter = ["Day", "Week", "Month", "Year", "All"]
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +34,7 @@ class FilterViewController: UIViewController {
 extension FilterViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        indexChosen = indexPath
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -39,7 +42,6 @@ extension FilterViewController: UITableViewDelegate {
             let vc = segue.destination as! RiwayatSemuaViewController
             vc.filterContentShown = filtersParameter[indexPath.row]
         }
-       
     }
     
 }
@@ -52,9 +54,14 @@ extension FilterViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "filterCell", for: indexPath) as! FilterTableViewCell
         cell.title = filters[indexPath.row]
-        if indexPath.row == 4 {
+        if filtersParameter[indexPath.row] == currentFilter{
             cell.accessoryType = .checkmark
+        }else{
+            cell.accessoryType = .none
         }
+//        if indexPath.row == 4 {
+//            cell.accessoryType = .checkmark
+//        }
         return cell
     }
     

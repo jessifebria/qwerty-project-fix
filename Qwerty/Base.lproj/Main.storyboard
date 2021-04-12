@@ -571,7 +571,7 @@
             </objects>
             <point key="canvasLocation" x="657" y="149"/>
         </scene>
-        <!--Riwayat Semua View Controller-->
+        <!--Riwayat-->
         <scene sceneID="y1d-4C-BYG">
             <objects>
                 <viewController storyboardIdentifier="RiwayatSemuaViewController" id="B7v-g8-F2p" customClass="RiwayatSemuaViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
@@ -715,8 +715,8 @@
                             <constraint firstItem="WQy-Mv-CQm" firstAttribute="leading" secondItem="ehi-Qt-bLi" secondAttribute="leading" id="w91-Kz-bhz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OGu-ml-IEl">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="Image" style="plain" id="X9c-KE-zfC">
+                    <navigationItem key="navigationItem" title="Riwayat" id="OGu-ml-IEl">
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="X9c-KE-zfC">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="RUF-kG-093" userLabel="FIlter">
                                 <rect key="frame" x="328" y="7" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -730,6 +730,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="navBar" destination="OGu-ml-IEl" id="dhl-Ks-csj"/>
                         <outlet property="segmentedControl" destination="YDR-6h-545" id="2Cy-kv-BaT"/>
                         <outlet property="tableView" destination="WQy-Mv-CQm" id="SXb-yc-nA8"/>
                         <segue destination="Tue-57-1Gc" kind="show" identifier="showDetailSegue" id="5oe-gq-RGB"/>
@@ -1035,7 +1036,6 @@
         <segue reference="5oe-gq-RGB"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Image" width="904" height="1279"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="clock.fill" catalog="system" width="128" height="121"/>

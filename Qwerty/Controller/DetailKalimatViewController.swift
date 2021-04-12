@@ -16,20 +16,23 @@ class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
     @IBOutlet weak var platformTerdeteksi: UILabel!
     @IBOutlet weak var hariTanggalTerdeteksi: UILabel!
     @IBOutlet weak var jamTerdeteksi: UILabel!
+    @IBOutlet weak var navBar: UINavigationItem!
     
     var riwayat: History?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Detail Riwayat"
         
-        let button: UIButton = UIButton(type: UIButton.ButtonType.custom)
-        button.setImage(UIImage(named: "filter"), for: .normal)
-        button.addTarget(self, action:#selector(deleteAction), for: UIControl.Event.touchUpInside)
-        button.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
-        let barButton = UIBarButtonItem(customView: button)
-        self.navigationItem.rightBarButtonItem = barButton
+//        let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+//        containerView.addTarget(self, action: #selector(deleteAction), for: .touchUpInside)
+//        let imageSearch = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+//        imageSearch.image = UIImage(named: "trash")
+//        containerView.addSubview(imageSearch)
+//        let searchBarButtonItem = UIBarButtonItem(customView: containerView)
+//        searchBarButtonItem.width = 20
+//        
+//        navBar.rightBarButtonItem = searchBarButtonItem
         
         detailKalimat?.sizeToFit()
         detailKalimat?.numberOfLines = 0
@@ -73,7 +76,6 @@ class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
                 HistoryService().deleteHistory(riwayat)
             }
             self.navigationController?.popViewController(animated: true)
-            
             NotificationCenter.default.post(name: .reload, object: nil)
         }
         actionSheetControllerIOS8.addAction(deleteActionButton)
