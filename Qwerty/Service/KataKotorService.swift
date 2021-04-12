@@ -69,6 +69,32 @@ class KataKotorService {
     }
     
     
+    func loadKataKotor(){
+        let csvPath = Bundle.main.path(forResource: "KataKotor", ofType: "csv")
+
+        if csvPath == nil {
+            return
+        }
+       
+        var csvData: String? = nil
+       
+        do {
+            csvData = try String(contentsOfFile: csvPath!, encoding: String.Encoding.utf8)
+            let csv = csvData?.components(separatedBy: "\n")
+            for row in csv!{
+                print(row)
+                let newKataKotor = KataKotor(context: contextService.context)
+                newKataKotor.kata = row.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
+                contextService.saveChanges()
+            }
+       
+        } catch{
+            print(error)
+        }
+        
+     }
+     
+    
     func minusTotalKataKotor(_ kalimat : String) {
         
         let kataArray = kalimat.components(separatedBy: " ")

@@ -41,6 +41,15 @@ class ContextService {
         return []
     }
     
+    func loadKeyboardSetting(_ request : NSFetchRequest<Keyboard>) -> [Keyboard]{
+        do {
+            return try context.fetch(request)
+        } catch  {
+            print("fail load item")
+        }
+        return []
+    }
+    
     func saveChanges(){
         if context.hasChanges {
             do {
