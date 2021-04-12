@@ -11,7 +11,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="b21-fv-fCy">
             <objects>
-                <viewController id="wJr-z5-yUW" customClass="OnboardingViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" id="wJr-z5-yUW" customClass="OnboardingViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vss-Rg-2TD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,11 +35,22 @@
                     <connections>
                         <outlet property="OnboardingNavigation" destination="VXE-88-z47" id="Ae7-iU-EKb"/>
                         <outlet property="Onboardingstuffs" destination="maa-RJ-g09" id="qEE-We-heH"/>
+                        <segue destination="nyE-ce-Wbp" kind="show" identifier="goToSetPassword" id="WZS-Vg-esh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3K-6G-FFL" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </scene>
+        <!--CreatePassViewController-->
+        <scene sceneID="kiw-hv-hyo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="CreatePassViewController" id="nyE-ce-Wbp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XtP-sM-jRH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41P-QR-8tJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="35"/>
         </scene>
     </scenes>
     <resources>

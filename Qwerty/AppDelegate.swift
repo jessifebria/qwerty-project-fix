@@ -15,11 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // app location 
+        // user default location
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+        
         print("ini app baru lagii mangatststst clone clone clone")
-        // check if kata kotor already loaded
+        
         let defaults = UserDefaults.standard
+        
+        // check if kata kotor already loaded
         let isPreloaded = defaults.bool(forKey: "kataKotorLoaded")
         if !isPreloaded {
             print("loading kata kotor")

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B7v-g8-F2p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P3t-z2-MHU">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,7 +11,7 @@
         <!--Create Pass View Controller-->
         <scene sceneID="boz-WK-3Uv">
             <objects>
-                <viewController id="P3t-z2-MHU" customClass="CreatePassViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePassViewController" modalPresentationStyle="fullScreen" id="P3t-z2-MHU" customClass="CreatePassViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMU-3T-iOy">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1035,7 +1035,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5oe-gq-RGB"/>
+        <segue reference="ncj-hR-gdd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="904" height="1279"/>
