@@ -13,7 +13,6 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
     @IBOutlet weak var Onboardingstuffs: UIScrollView!
     @IBOutlet weak var OnboardingNavigation: UIPageControl!
     
-    
     var scrollWidth: CGFloat! = 0.0
         var scrollHeight: CGFloat! = 0.0
 
@@ -30,7 +29,6 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
-        
         //to call viewDidLayoutSubviews() and get dynamic width and height of scrollview
         
         Onboardingstuffs.delegate = self
