@@ -26,15 +26,28 @@ class Converter {
         return dateFormatter.string(from: date)
     }
     
+    static func convertDateToLocaleDate(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "id")
+        dateFormatter.dateFormat = "EEEEEE, d MMM yyyy"
+
+        return dateFormatter.string(from: date)
+    }
     
-    static func convertArrayToString(array: [String]) -> String {
-        var merged = ""
-        let arrayLen = array.count
-        
-        if (arrayLen != 1) {
-            merged = array.joined(separator: ", ")
-            return merged
+    static func replaceCommaToArray(kataKotor: String) -> [String] {
+        var array = kataKotor.components(separatedBy: ",")
+        var newArray = [String]()
+        array.remove(at: 0)
+        array.remove(at: array.count - 1)
+        for i in 0...array.count - 1 {
+            newArray.append(array[i].replacingOccurrences(of: " ", with: ""))
         }
-        return array[0]
+        return newArray
+    }
+    
+    static func addCommaFromArrayToString(kataKotor: [String]) -> String {
+        return kataKotor.joined(separator: ", ")
+        
     }
 }
+

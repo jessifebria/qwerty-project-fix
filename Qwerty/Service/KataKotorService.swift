@@ -69,6 +69,32 @@ class KataKotorService {
     }
     
     
+    func loadKataKotor(){
+        let csvPath = Bundle.main.path(forResource: "KataKotor", ofType: "csv")
+
+        if csvPath == nil {
+            return
+        }
+       
+        var csvData: String? = nil
+       
+        do {
+            csvData = try String(contentsOfFile: csvPath!, encoding: String.Encoding.utf8)
+            let csv = csvData?.components(separatedBy: "\n")
+            for row in csv!{
+                print(row)
+                let newKataKotor = KataKotor(context: contextService.context)
+                newKataKotor.kata = row.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
+                contextService.saveChanges()
+            }
+       
+        } catch{
+            print(error)
+        }
+        
+     }
+     
+    
     func minusTotalKataKotor(_ kalimat : String) {
         
         let kataArray = kalimat.components(separatedBy: " ")
@@ -87,6 +113,35 @@ class KataKotorService {
             contextService.saveChanges()
         }
     }
-    
+    func getTopFour(filter : String) -> ( listKataKotor : [KataKotorRiwayat], countTotal : Int ){
+            let getAll = getUniqueKataKotor(filter: "All")
+            let listKataKotor = getAll.listKataKotor
+            var resultListKataKotor = [KataKotorRiwayat]()
+            let count = getAll.countTotal
+            var countCollection = [Int]()
+
+
+            var topFour = [Int]()
+
+            for kata in listKataKotor {
+                countCollection.append(kata.total)
+            }
+
+            var tempCountCollection = countCollection
+
+            for _ in 1...4{
+                let maxValue = tempCountCollection.max()
+                if let index = tempCountCollection.firstIndex(of: maxValue!) {
+                    tempCountCollection.remove(at: index)
+                    topFour.append(countCollection.firstIndex(of: maxValue!)!)
+                }
+            }
+
+            for index in topFour{
+                resultListKataKotor.append(listKataKotor[index])
+            }
+
+            return (resultListKataKotor, count)
+        }
     
 }

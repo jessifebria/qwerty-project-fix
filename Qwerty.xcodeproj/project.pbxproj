@@ -10,10 +10,19 @@
 		27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */; };
 		27F2E4AF2620614100E385FD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2E4AE2620614100E385FD /* OnboardingViewController.swift */; };
 		4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */; };
+		4E1C62572623FDC000D0CC55 /* tutorial.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C62562623FDBF00D0CC55 /* tutorial.gif */; };
+		4E32484A2622F0D50005BE85 /* gifLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3248492622F0D50005BE85 /* gifLoad.swift */; };
+		4E43016826205A8200C288D4 /* HomepagetestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43016726205A8200C288D4 /* HomepagetestViewController.swift */; };
+		4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43016D26205A9300C288D4 /* SettingViewController.swift */; };
+		4E43017426205AA300C288D4 /* KataTerdeteksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */; };
+		4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */; };
+		4E4301A026209E6E00C288D4 /* DeleteAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */; };
 		4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */; };
 		4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */; };
 		4EDA3DFD261F370C00368B1B /* joWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */; };
-		5B3EB5B8261EBE330059D9CF /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
+		5B3899D326242A5C0067926C /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */; };
+		5B3899E726242D470067926C /* KataKotor.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899D926242AC40067926C /* KataKotor.csv */; };
+		5B3899F026242E030067926C /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
 		5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFD0261FFB3D00ED8594 /* HistoryService.swift */; };
 		5B6ADFDB261FFB4C00ED8594 /* KataKotorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFDA261FFB4C00ED8594 /* KataKotorService.swift */; };
 		5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFE0261FFB5900ED8594 /* UserService.swift */; };
@@ -31,6 +40,7 @@
 		B72982462620689800D8B395 /* djWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72982452620689800D8B395 /* djWorkspace.storyboard */; };
 		B729824C2620693C00D8B395 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B729824B2620693C00D8B395 /* HomepageViewController.swift */; };
 		B760EE4D26242E81004176A7 /* boxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760EE4C26242E81004176A7 /* boxCollectionViewCell.swift */; };
+		B760EE572624850C004176A7 /* ProgressKataUnikViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760EE562624850C004176A7 /* ProgressKataUnikViewCell.swift */; };
 		BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7893261C567400F1FFCA /* AppDelegate.swift */; };
 		BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7895261C567400F1FFCA /* SceneDelegate.swift */; };
 		BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */; };
@@ -40,8 +50,11 @@
 		BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2C78A1261C567500F1FFCA /* LaunchScreen.storyboard */; };
 		BF2C78AE261C567500F1FFCA /* QwertyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78AD261C567500F1FFCA /* QwertyTests.swift */; };
 		BF2C78B9261C567500F1FFCA /* QwertyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78B8261C567500F1FFCA /* QwertyUITests.swift */; };
-		BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */; };
 		BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78EF261CD75C00F1FFCA /* Converter.swift */; };
+		BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */; };
+		BF8E45A92622DBC60052351B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45A82622DBC60052351B /* FilterViewController.swift */; };
+		BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */; };
+		BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,10 +99,19 @@
 		27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinusWorkspace.storyboard; sourceTree = "<group>"; };
 		27F2E4AE2620614100E385FD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePassViewController.swift; sourceTree = "<group>"; };
+		4E1C62562623FDBF00D0CC55 /* tutorial.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial.gif; sourceTree = "<group>"; };
+		4E3248492622F0D50005BE85 /* gifLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gifLoad.swift; sourceTree = "<group>"; };
+		4E43016726205A8200C288D4 /* HomepagetestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepagetestViewController.swift; sourceTree = "<group>"; };
+		4E43016D26205A9300C288D4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataTerdeteksiViewController.swift; sourceTree = "<group>"; };
+		4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorTableViewCell.swift; sourceTree = "<group>"; };
+		4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAllViewController.swift; sourceTree = "<group>"; };
 		4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifPassViewController.swift; sourceTree = "<group>"; };
 		4EDA3DF1261EDE5500368B1B /* Qwerty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Qwerty.entitlements; sourceTree = "<group>"; };
 		4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKalimatViewController.swift; sourceTree = "<group>"; };
 		4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = joWorkspace.storyboard; sourceTree = "<group>"; };
+		5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
+		5B3899D926242AC40067926C /* KataKotor.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KataKotor.csv; sourceTree = "<group>"; };
 		5B6ADFC6261FFAD600ED8594 /* QwertyKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QwertyKeyboard.entitlements; sourceTree = "<group>"; };
 		5B6ADFD0261FFB3D00ED8594 /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
 		5B6ADFDA261FFB4C00ED8594 /* KataKotorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorService.swift; sourceTree = "<group>"; };
@@ -107,6 +129,7 @@
 		B72982452620689800D8B395 /* djWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = djWorkspace.storyboard; sourceTree = "<group>"; };
 		B729824B2620693C00D8B395 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		B760EE4C26242E81004176A7 /* boxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxCollectionViewCell.swift; sourceTree = "<group>"; };
+		B760EE562624850C004176A7 /* ProgressKataUnikViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressKataUnikViewCell.swift; sourceTree = "<group>"; };
 		BF2C7890261C567400F1FFCA /* Qwerty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwerty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C7893261C567400F1FFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2C7895261C567400F1FFCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,8 +145,11 @@
 		BF2C78B4261C567500F1FFCA /* QwertyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QwertyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C78B8261C567500F1FFCA /* QwertyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QwertyUITests.swift; sourceTree = "<group>"; };
 		BF2C78BA261C567500F1FFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
 		BF2C78EF261CD75C00F1FFCA /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorViewController.swift; sourceTree = "<group>"; };
+		BF8E45A82622DBC60052351B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,9 +191,16 @@
 				B729824B2620693C00D8B395 /* HomepageViewController.swift */,
 				B760EE4C26242E81004176A7 /* boxCollectionViewCell.swift */,
 				BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */,
+				BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */,
 				4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */,
+				BF8E45A82622DBC60052351B /* FilterViewController.swift */,
 				4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */,
 				4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */,
+				4E43016726205A8200C288D4 /* HomepagetestViewController.swift */,
+				4E43016D26205A9300C288D4 /* SettingViewController.swift */,
+				4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */,
+				4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */,
+				4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +214,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5B3899D826242A680067926C /* Cell Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */,
+				BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */,
+				5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */,
+			);
+			name = "Cell Controller";
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		5B6ADFCF261FFB2700ED8594 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +233,7 @@
 				5B6ADFE0261FFB5900ED8594 /* UserService.swift */,
 				5B6ADFE6261FFB6800ED8594 /* KeyboardService.swift */,
 				5B6ADFEC261FFB7800ED8594 /* ContextService.swift */,
+				4E3248492622F0D50005BE85 /* gifLoad.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -217,6 +262,7 @@
 		BF2C7887261C567400F1FFCA = {
 			isa = PBXGroup;
 			children = (
+				B760EE562624850C004176A7 /* ProgressKataUnikViewCell.swift */,
 				BF2C7892261C567400F1FFCA /* Qwerty */,
 				BF2C78AC261C567500F1FFCA /* QwertyTests */,
 				BF2C78B7261C567500F1FFCA /* QwertyUITests */,
@@ -239,6 +285,8 @@
 		BF2C7892261C567400F1FFCA /* Qwerty */ = {
 			isa = PBXGroup;
 			children = (
+				5B3899D926242AC40067926C /* KataKotor.csv */,
+				4E1C62562623FDBF00D0CC55 /* tutorial.gif */,
 				4EDA3DF1261EDE5500368B1B /* Qwerty.entitlements */,
 				BF2C7893261C567400F1FFCA /* AppDelegate.swift */,
 				BF2C7895261C567400F1FFCA /* SceneDelegate.swift */,
@@ -247,10 +295,10 @@
 				27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */,
 				4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */,
 				4E0C6DBE261D7FBD0054AE7D /* Controller */,
+				5B3899D826242A680067926C /* Cell Controller */,
 				4E0C6DC3261D7FC60054AE7D /* Model */,
 				5B6ADFCF261FFB2700ED8594 /* Service */,
 				5B6ADFF2261FFBA500ED8594 /* Extension */,
-				BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */,
 				BF2C78EF261CD75C00F1FFCA /* Converter.swift */,
 				BF2C789F261C567500F1FFCA /* Assets.xcassets */,
 				BF2C78A1261C567500F1FFCA /* LaunchScreen.storyboard */,
@@ -414,9 +462,11 @@
 				B72982462620689800D8B395 /* djWorkspace.storyboard in Resources */,
 				BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */,
 				27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */,
+				4E1C62572623FDC000D0CC55 /* tutorial.gif in Resources */,
 				4EDA3DFD261F370C00368B1B /* joWorkspace.storyboard in Resources */,
 				BF2C78A0261C567500F1FFCA /* Assets.xcassets in Resources */,
 				BF2C789B261C567400F1FFCA /* Main.storyboard in Resources */,
+				5B3899E726242D470067926C /* KataKotor.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,25 +502,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E43016826205A8200C288D4 /* HomepagetestViewController.swift in Sources */,
 				5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */,
-				BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */,
+				BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */,
 				5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */,
 				5B6ADFE7261FFB6800ED8594 /* KeyboardService.swift in Sources */,
+				5B3899D326242A5C0067926C /* RiwayatSemuaTableViewCell.swift in Sources */,
 				B729824C2620693C00D8B395 /* HomepageViewController.swift in Sources */,
 				27F2E4AF2620614100E385FD /* OnboardingViewController.swift in Sources */,
+				BF8E45A92622DBC60052351B /* FilterViewController.swift in Sources */,
 				4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */,
+				BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */,
 				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
-				5B3EB5B8261EBE330059D9CF /* KeyboardDataController.swift in Sources */,
+				4E4301A026209E6E00C288D4 /* DeleteAllViewController.swift in Sources */,
+				4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */,
 				4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */,
 				BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */,
+				4E32484A2622F0D50005BE85 /* gifLoad.swift in Sources */,
 				4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */,
 				B760EE4D26242E81004176A7 /* boxCollectionViewCell.swift in Sources */,
 				5B6ADFDB261FFB4C00ED8594 /* KataKotorService.swift in Sources */,
 				BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */,
+				5B3899F026242E030067926C /* KeyboardDataController.swift in Sources */,
+				4E43017426205AA300C288D4 /* KataTerdeteksiViewController.swift in Sources */,
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
 				5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */,
+				B760EE572624850C004176A7 /* ProgressKataUnikViewCell.swift in Sources */,
+				4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */,
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
 				5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */,
+				BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */,
 				BF2C789E261C567400F1FFCA /* Qwerty.xcdatamodeld in Sources */,
 				5B76A464261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */,
 			);

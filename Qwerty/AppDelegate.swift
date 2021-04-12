@@ -22,9 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let defaults = UserDefaults.standard
         let isPreloaded = defaults.bool(forKey: "kataKotorLoaded")
         if !isPreloaded {
-            KeyboardDataController().loadKataKotor()
+            print("loading kata kotor")
+            KataKotorService().loadKataKotor()
             defaults.set(true, forKey: "kataKotorLoaded")
         }
+        
         
         // Override point for customization after application launch.
         return true
