@@ -773,11 +773,13 @@
             </objects>
             <point key="canvasLocation" x="-2902" y="1201"/>
         </scene>
-        <!--Item-->
+        <!--Riwayat-->
         <scene sceneID="mao-BB-r5M">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IQM-QP-WAu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="06M-GY-a6g"/>
+                    <tabBarItem key="tabBarItem" title="Riwayat" selectedImage="clock.fill" catalog="system" id="06M-GY-a6g">
+                        <color key="badgeColor" red="0.15001505609999999" green="0.37100973729999998" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jAN-kJ-Idy">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -1042,6 +1044,7 @@
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

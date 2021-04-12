@@ -13,6 +13,7 @@ class RiwayatSemuaViewController: UIViewController {
     @IBOutlet var segmentedControl: UISegmentedControl!
     var filterContentShown: String! = "All"
     var currentTableView: Int! = 0
+    let blueColor: UIColor! = #colorLiteral(red: 0, green: 0.3776819408, blue: 0.6683544517, alpha: 1)
 
 
     private var riwayatData = HistoryService().getHistory(filter: "All")
@@ -29,24 +30,18 @@ class RiwayatSemuaViewController: UIViewController {
         tableView.dataSource = self
         
         let colorNotSelected = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        let colorSelected = [NSAttributedString.Key.foregroundColor: UIColor.blue ]
+        let colorSelected = [NSAttributedString.Key.foregroundColor: blueColor]
         segmentedControl.layer.borderWidth = 0.4
         segmentedControl.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        
         segmentedControl.setTitleTextAttributes(colorNotSelected, for: .normal)
         segmentedControl.setTitleTextAttributes(colorSelected, for: .selected)
         
         let button: UIButton = UIButton(type: UIButton.ButtonType.custom)
-                //set image for button
         button.setImage(UIImage(named: "filter"), for: .normal)
-                //add function for button
         button.addTarget(self, action:#selector(filterAction), for: UIControl.Event.touchUpInside)
-                //set frame
         button.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
-
-                let barButton = UIBarButtonItem(customView: button)
-                //assign button to navigationbar
-                self.navigationItem.rightBarButtonItem = barButton
+        let barButton = UIBarButtonItem(customView: button)
+        self.navigationItem.rightBarButtonItem = barButton
     }
     
     @IBAction func switchViewAction (_ sender: UISegmentedControl) {
@@ -56,6 +51,10 @@ class RiwayatSemuaViewController: UIViewController {
     
     @IBAction func filterAction (_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "filterSemuaRiwayatSegue", sender: nil)
+    }
+    
+    @IBAction func unwindToRiwayat(_ sender: UIStoryboardSegue) {
+        print("masuk")
     }
 }
 

@@ -25,11 +25,7 @@ class FilterViewController: UIViewController {
     @IBAction func selesaiButton(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func unwindToRiwayat(_ sender: UIStoryboardSegue) {
-        print("masuk")
-    }
-    
+        
 }
 
 extension FilterViewController: UITableViewDelegate {
