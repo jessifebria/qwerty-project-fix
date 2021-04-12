@@ -51,6 +51,7 @@ class HistoryService {
         } else if filter == "Year" {
             startDate = Date().startOfYear
         } else {
+            request.predicate = NSPredicate(format: "kataKotor CONTAINS[cd] %@", kataKotor)
             return contextService.loadHistory(request)
         }
         

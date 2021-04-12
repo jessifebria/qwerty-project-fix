@@ -6,8 +6,17 @@
 //
 
 import Foundation
+import CoreData
 
 class KeyboardService {
+    
+    let contextService = ContextService()
+    
+    func getLastSeen() -> Date{
+        let request : NSFetchRequest<Keyboard> = Keyboard.fetchRequest()
+        return contextService.loadKeyboardSetting(request)[0].lastSeen!
+    }
+    
     func isKeyboardExtensionEnabled() -> Bool {
 
         let keyboards = UserDefaults.standard.dictionaryRepresentation()["AppleKeyboards"] as? [String]
@@ -19,5 +28,7 @@ class KeyboardService {
         
         return false
     }
+   
+    
     
 }

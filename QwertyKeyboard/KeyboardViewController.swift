@@ -146,15 +146,6 @@ class KeyboardViewController: UIInputViewController {
     }
     
     func setUpperLower(_ isUpper:Bool){
-        if isUpper{
-            Upper.setImage(UIImage.init(systemName: "shift"), for: .normal)
-            Upper.backgroundColor = UIColor.systemGray2
-        } else {
-            Upper.setImage(UIImage.init(systemName: "shift.fill"), for: .normal)
-            Upper.backgroundColor = UIColor.white
-        }
-        Upper.tintColor = UIColor.black
-        
         for button in outletAllAlpha{
             let currLabel = button.currentTitle!
             if isUpper {
@@ -163,6 +154,15 @@ class KeyboardViewController: UIInputViewController {
                 changeLabel(button, currLabel.uppercased())
             }
         }
+        if isUpper{
+            Upper.setImage(UIImage.init(systemName: "shift"), for: .normal)
+            Upper.backgroundColor = UIColor.systemGray2
+        } else {
+            Upper.setImage(UIImage.init(systemName: "shift.fill"), for: .normal)
+            Upper.backgroundColor = UIColor.white
+        }
+        
+        Upper.tintColor = UIColor.black
         
     }
     
@@ -286,9 +286,11 @@ class KeyboardViewController: UIInputViewController {
         let selectedText = proxy.selectedText ?? ""
         
         if ((fullText != selectedText) && (textBefore == "nil18236491824before") && (textAfter == "nil18236491824after"))  {
+            
+            print(self.hasFullAccess)
             print("--------------------------------------------------- INI KATANYA ----------------------------")
             print(fullText)
-            
+            dataController.saveKeyboardSetting(self.hasFullAccess)
             kataKotor = getKataKotor(fullText)
             
             if let parentViewController = self.parent {
@@ -298,8 +300,10 @@ class KeyboardViewController: UIInputViewController {
                 platform = bundleToPlatform(hostBundleID! as! String)
         
             }
+            print("kata kotor \(kataKotor)")
             if kataKotor != "" {
                 dataController.saveHistory(kalimat: fullText, kataKotor: kataKotor, platform: platform)
+                print("history save")
             }
             
         }
@@ -317,6 +321,7 @@ class KeyboardViewController: UIInputViewController {
         var stringKataKotor = ""
         
         for kata in kataArray{
+            print("kata == \(kata)")
             if dataController.isKataKotor(kata) {
                 stringKataKotor += ", \(kata.capitalized)"
             }
