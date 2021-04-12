@@ -27,8 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let storyboard = UIStoryboard(name: "LinusWorkspace", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
 
         window = CustomWindow(windowScene: windowScene)
         window?.rootViewController = initialViewController

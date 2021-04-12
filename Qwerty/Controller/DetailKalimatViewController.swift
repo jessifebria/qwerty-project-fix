@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailKalimatViewController: UIViewController {
+class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
 
   
     @IBOutlet weak var detailKalimat: UILabel!
@@ -24,10 +24,10 @@ class DetailKalimatViewController: UIViewController {
         
         self.navigationItem.title = "Detail Riwayat"
         
-        let button = UIButton(type: UIButton.ButtonType.custom)
-        button.setImage(UIImage(named: "trash.fill"), for: .normal)
-        button.addTarget(self, action:#selector(deleteAction), for: .touchDragInside)
-        button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        let button: UIButton = UIButton(type: UIButton.ButtonType.custom)
+        button.setImage(UIImage(named: "filter"), for: .normal)
+        button.addTarget(self, action:#selector(deleteAction), for: UIControl.Event.touchUpInside)
+        button.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
         let barButton = UIBarButtonItem(customView: button)
         self.navigationItem.rightBarButtonItem = barButton
         
@@ -62,6 +62,27 @@ class DetailKalimatViewController: UIViewController {
 
     @IBAction func deleteAction (_ sender: UIButton) {
         print("tapped")
-    }
+        let actionSheetControllerIOS8: UIAlertController = UIAlertController(title: nil, message: "Hapus jika tidak mengandung kata kotor", preferredStyle: .actionSheet)
 
+        let cancelActionButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+        }
+        actionSheetControllerIOS8.addAction(cancelActionButton)
+           
+        let deleteActionButton = UIAlertAction(title: "Hapus", style: .destructive) { _ in
+            if let riwayat = self.riwayat {
+                HistoryService().deleteHistory(riwayat)
+            }
+            self.navigationController?.popViewController(animated: true)
+            
+            NotificationCenter.default.post(name: .reload, object: nil)
+        }
+        actionSheetControllerIOS8.addAction(deleteActionButton)
+        self.present(actionSheetControllerIOS8, animated: true, completion: nil)
+    }
 }
+
+extension Notification.Name {
+    static let reload = Notification.Name("reload")
+}
+
+

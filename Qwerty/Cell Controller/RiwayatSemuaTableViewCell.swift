@@ -13,6 +13,7 @@ class RiwayatSemuaTableViewCell: UITableViewCell {
     @IBOutlet var kalimatLabel: UILabel!
     @IBOutlet var timestampLabel: UILabel!
     @IBOutlet var view: UIView!
+    @IBOutlet var horizontalStackView: UIStackView!
     
     var riwayat: History? {
         didSet {

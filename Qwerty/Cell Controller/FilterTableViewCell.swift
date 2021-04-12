@@ -11,7 +11,6 @@ class FilterTableViewCell: UITableViewCell {
     
     var title: String?
     @IBOutlet weak var filterLabel: UILabel!
-    @IBOutlet weak var checkmarkImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +20,6 @@ class FilterTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         filterLabel.text = title
-
         // Configure the view for the selected state
     }
 
