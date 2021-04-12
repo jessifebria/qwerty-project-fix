@@ -25,7 +25,7 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
         scrollWidth = Onboardingstuffs.frame.size.width
         scrollHeight = Onboardingstuffs.frame.size.height
     }
-
+//    let gifView = UIImageView.init()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
@@ -55,11 +55,11 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
             slide.addSubview(imageView)
             Onboardingstuffs.addSubview(slide)
             if index == 5{
-                let gifView = UIImageView.init()
-                gifView.loadGif(name: "tutorial")
-                gifView.frame = CGRect(x:42,y:170,width:330,height:230)
-                gifView.center = CGPoint(x:scrollWidth/2,y: 290)
-                slide.addSubview(gifView)
+                
+//                gifView.loadGif(name: "tutorial")
+//                gifView.frame = CGRect(x:42,y:170,width:330,height:230)
+//                gifView.center = CGPoint(x:scrollWidth/2,y: 290)
+//                slide.addSubview(gifView)
                 let settingButton = UIButton(frame: CGRect(x: 20, y: 20, width: 300, height: 40))
                 settingButton.center = CGPoint(x:scrollWidth/2,y: 680)
                 settingButton.setTitle("Go to Setting", for: .normal)
@@ -97,6 +97,11 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
         
     }
     
+//    override func viewWillDisappear(_ animated: Bool) {
+//        gifView.image = nil
+//        gifView.removeFromSuperview()
+//    }
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
         let page = Int(round(scrollView.contentOffset.x/width))
@@ -107,7 +112,7 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
     }
     @objc func passButton(sender : UIButton) {
-       
+        performSegue(withIdentifier: "goToSetPassword", sender: sender)
     }
     
     

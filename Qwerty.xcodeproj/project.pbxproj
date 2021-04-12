@@ -23,6 +23,9 @@
 		5B3899D326242A5C0067926C /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */; };
 		5B3899E726242D470067926C /* KataKotor.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899D926242AC40067926C /* KataKotor.csv */; };
 		5B3899F026242E030067926C /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
+		5B3899F6262436560067926C /* jessiWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899F5262436560067926C /* jessiWorkspace.storyboard */; };
+		5B3899FC262436820067926C /* KeyboardWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3899FB262436820067926C /* KeyboardWarningViewController.swift */; };
+		5B389A0226243A3F0067926C /* MasukkanPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B389A0126243A3F0067926C /* MasukkanPassViewController.swift */; };
 		5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFD0261FFB3D00ED8594 /* HistoryService.swift */; };
 		5B6ADFDB261FFB4C00ED8594 /* KataKotorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFDA261FFB4C00ED8594 /* KataKotorService.swift */; };
 		5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFE0261FFB5900ED8594 /* UserService.swift */; };
@@ -110,6 +113,9 @@
 		4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = joWorkspace.storyboard; sourceTree = "<group>"; };
 		5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
 		5B3899D926242AC40067926C /* KataKotor.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KataKotor.csv; sourceTree = "<group>"; };
+		5B3899F5262436560067926C /* jessiWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jessiWorkspace.storyboard; sourceTree = "<group>"; };
+		5B3899FB262436820067926C /* KeyboardWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardWarningViewController.swift; sourceTree = "<group>"; };
+		5B389A0126243A3F0067926C /* MasukkanPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasukkanPassViewController.swift; sourceTree = "<group>"; };
 		5B6ADFC6261FFAD600ED8594 /* QwertyKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QwertyKeyboard.entitlements; sourceTree = "<group>"; };
 		5B6ADFD0261FFB3D00ED8594 /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
 		5B6ADFDA261FFB4C00ED8594 /* KataKotorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorService.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 		4E0C6DBE261D7FBD0054AE7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5B389A0126243A3F0067926C /* MasukkanPassViewController.swift */,
 				27F2E4AE2620614100E385FD /* OnboardingViewController.swift */,
 				B729824B2620693C00D8B395 /* HomepageViewController.swift */,
 				BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */,
@@ -196,6 +203,7 @@
 				4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */,
 				4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */,
 				4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */,
+				5B3899FB262436820067926C /* KeyboardWarningViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,15 +217,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5B3899D826242A680067926C /* Cell Controller */ = {
+		5B389A1326244A750067926C /* Cell Controller */ = {
 			isa = PBXGroup;
 			children = (
 				BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */,
 				BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */,
 				5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */,
 			);
-			name = "Cell Controller";
-			path = Extension;
+			path = "Cell Controller";
 			sourceTree = "<group>";
 		};
 		5B6ADFCF261FFB2700ED8594 /* Service */ = {
@@ -285,11 +292,12 @@
 				BF2C7893261C567400F1FFCA /* AppDelegate.swift */,
 				BF2C7895261C567400F1FFCA /* SceneDelegate.swift */,
 				BF2C7899261C567400F1FFCA /* Main.storyboard */,
+				5B3899F5262436560067926C /* jessiWorkspace.storyboard */,
 				B72982452620689800D8B395 /* djWorkspace.storyboard */,
 				27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */,
 				4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */,
 				4E0C6DBE261D7FBD0054AE7D /* Controller */,
-				5B3899D826242A680067926C /* Cell Controller */,
+				5B389A1326244A750067926C /* Cell Controller */,
 				4E0C6DC3261D7FC60054AE7D /* Model */,
 				5B6ADFCF261FFB2700ED8594 /* Service */,
 				5B6ADFF2261FFBA500ED8594 /* Extension */,
@@ -458,6 +466,7 @@
 				27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */,
 				4E1C62572623FDC000D0CC55 /* tutorial.gif in Resources */,
 				4EDA3DFD261F370C00368B1B /* joWorkspace.storyboard in Resources */,
+				5B3899F6262436560067926C /* jessiWorkspace.storyboard in Resources */,
 				BF2C78A0261C567500F1FFCA /* Assets.xcassets in Resources */,
 				BF2C789B261C567400F1FFCA /* Main.storyboard in Resources */,
 				5B3899E726242D470067926C /* KataKotor.csv in Resources */,
@@ -508,6 +517,7 @@
 				4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */,
 				BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */,
 				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
+				5B3899FC262436820067926C /* KeyboardWarningViewController.swift in Sources */,
 				4E4301A026209E6E00C288D4 /* DeleteAllViewController.swift in Sources */,
 				4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */,
 				4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */,
@@ -519,6 +529,7 @@
 				5B3899F026242E030067926C /* KeyboardDataController.swift in Sources */,
 				4E43017426205AA300C288D4 /* KataTerdeteksiViewController.swift in Sources */,
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
+				5B389A0226243A3F0067926C /* MasukkanPassViewController.swift in Sources */,
 				5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */,
 				4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */,
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
@@ -751,6 +762,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = Qwerty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -772,6 +784,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = Qwerty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
