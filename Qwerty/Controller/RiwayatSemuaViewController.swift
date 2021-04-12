@@ -23,9 +23,8 @@ class RiwayatSemuaViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Riwayat"
         print(filterContentShown)
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData), name: .reload, object: nil)
         
-        riwayatData = HistoryService().getHistory(filter: filterContentShown)
-        kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -54,7 +53,15 @@ class RiwayatSemuaViewController: UIViewController {
     }
     
     @IBAction func unwindToRiwayat(_ sender: UIStoryboardSegue) {
-        print("masuk")
+        print(filterContentShown)
+        riwayatData = HistoryService().getHistory(filter: filterContentShown)
+        kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
+        tableView.reloadData()
+    }
+    
+    @objc func reloadTableData(_ notification: Notification) {
+        print("masuk notif")
+        tableView.reloadData()
     }
 }
 
@@ -99,6 +106,7 @@ extension RiwayatSemuaViewController: UITableViewDelegate {
             break
         }
     }
+    
 }
 
 extension RiwayatSemuaViewController: UITableViewDataSource {
@@ -120,8 +128,10 @@ extension RiwayatSemuaViewController: UITableViewDataSource {
             cell.kalimatLabel.isHidden = true
             cell.kataKotorLabel.text = kataUnikData.0[indexPath.row].kata.capitalized
             cell.timestampLabel.text = String(kataUnikData.0[indexPath.row].total)
+            cell.timestampLabel.font = cell.timestampLabel.font.withSize(16)
         default:
             cell.riwayat = riwayatData[indexPath.row]
+            cell.timestampLabel.font = cell.timestampLabel.font.withSize(12)
             cell.kalimatLabel.isHidden = false
         }
         return cell
