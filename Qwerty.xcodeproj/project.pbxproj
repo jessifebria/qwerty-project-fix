@@ -48,6 +48,10 @@
 		BF2C78B9261C567500F1FFCA /* QwertyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78B8261C567500F1FFCA /* QwertyUITests.swift */; };
 		BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */; };
 		BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78EF261CD75C00F1FFCA /* Converter.swift */; };
+		BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */; };
+		BF8E45A92622DBC60052351B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45A82622DBC60052351B /* FilterViewController.swift */; };
+		BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */; };
+		BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +140,10 @@
 		BF2C78BA261C567500F1FFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
 		BF2C78EF261CD75C00F1FFCA /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorViewController.swift; sourceTree = "<group>"; };
+		BF8E45A82622DBC60052351B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +184,9 @@
 				27F2E4AE2620614100E385FD /* OnboardingViewController.swift */,
 				B729824B2620693C00D8B395 /* HomepageViewController.swift */,
 				BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */,
-				BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */,
+				BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */,
 				4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */,
+				BF8E45A82622DBC60052351B /* FilterViewController.swift */,
 				4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */,
 				4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */,
 				4E43016726205A8200C288D4 /* HomepagetestViewController.swift */,
@@ -269,6 +278,9 @@
 				4E0C6DC3261D7FC60054AE7D /* Model */,
 				5B6ADFCF261FFB2700ED8594 /* Service */,
 				5B6ADFF2261FFBA500ED8594 /* Extension */,
+				BF2C78DD261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift */,
+				BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */,
+				BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */,
 				BF2C78EF261CD75C00F1FFCA /* Converter.swift */,
 				BF2C789F261C567500F1FFCA /* Assets.xcassets */,
 				BF2C78A1261C567500F1FFCA /* LaunchScreen.storyboard */,
@@ -474,11 +486,14 @@
 				4E43016826205A8200C288D4 /* HomepagetestViewController.swift in Sources */,
 				5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */,
 				BF2C78DE261CC22E00F1FFCA /* RiwayatSemuaTableViewCell.swift in Sources */,
+				BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */,
 				5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */,
 				5B6ADFE7261FFB6800ED8594 /* KeyboardService.swift in Sources */,
 				B729824C2620693C00D8B395 /* HomepageViewController.swift in Sources */,
 				27F2E4AF2620614100E385FD /* OnboardingViewController.swift in Sources */,
+				BF8E45A92622DBC60052351B /* FilterViewController.swift in Sources */,
 				4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */,
+				BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */,
 				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
 				4E4301A026209E6E00C288D4 /* DeleteAllViewController.swift in Sources */,
 				5B3EB5B8261EBE330059D9CF /* KeyboardDataController.swift in Sources */,
@@ -495,6 +510,7 @@
 				4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */,
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
 				5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */,
+				BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */,
 				BF2C789E261C567400F1FFCA /* Qwerty.xcdatamodeld in Sources */,
 				5B76A464261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */,
 			);
