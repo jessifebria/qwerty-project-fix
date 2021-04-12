@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B7v-g8-F2p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IW0-w4-jy6">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,7 +11,7 @@
         <!--Create Pass View Controller-->
         <scene sceneID="boz-WK-3Uv">
             <objects>
-                <viewController id="P3t-z2-MHU" customClass="CreatePassViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePassViewController" modalPresentationStyle="fullScreen" id="P3t-z2-MHU" customClass="CreatePassViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMU-3T-iOy">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -574,7 +574,7 @@
         <!--Riwayat Semua View Controller-->
         <scene sceneID="y1d-4C-BYG">
             <objects>
-                <viewController id="B7v-g8-F2p" customClass="RiwayatSemuaViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RiwayatSemuaViewController" id="B7v-g8-F2p" customClass="RiwayatSemuaViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y3G-ye-D2f">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -680,10 +680,12 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="horizontalStackView" destination="PLa-gn-WCM" id="lBe-Ew-9Hr"/>
                                             <outlet property="kalimatLabel" destination="0Ay-8i-8Jc" id="tGr-AO-nbI"/>
                                             <outlet property="kataKotorLabel" destination="aZK-Ah-gd8" id="GyB-I9-bAx"/>
                                             <outlet property="timestampLabel" destination="gie-TI-uEW" id="ZPG-ww-nFI"/>
                                             <outlet property="view" destination="BQV-z7-8md" id="q06-ki-gfR"/>
+                                            <segue destination="qqc-ge-Euy" kind="unwind" unwindAction="goBack:" id="lsL-Wk-8TP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -735,6 +737,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0e-WW-UhZ" sceneMemberID="firstResponder"/>
+                <exit id="qqc-ge-Euy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-992" y="834"/>
         </scene>
@@ -751,7 +754,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="uen-eF-QQt">
             <objects>
-                <tabBarController id="IW0-w4-jy6" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="IW0-w4-jy6" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zDG-Al-gCF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -773,11 +776,13 @@
             </objects>
             <point key="canvasLocation" x="-2902" y="1201"/>
         </scene>
-        <!--Item-->
+        <!--Riwayat-->
         <scene sceneID="mao-BB-r5M">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IQM-QP-WAu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="06M-GY-a6g"/>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="IQM-QP-WAu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Riwayat" selectedImage="clock.fill" catalog="system" id="06M-GY-a6g">
+                        <color key="badgeColor" red="0.15001505609999999" green="0.37100973729999998" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jAN-kJ-Idy">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -801,7 +806,7 @@
         <!--Riwayat Kata Kotor View Controller-->
         <scene sceneID="8cH-uk-2pZ">
             <objects>
-                <viewController id="kTt-Eu-IZg" customClass="RiwayatKataKotorViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RiwayatKataKotorViewController" id="kTt-Eu-IZg" customClass="RiwayatKataKotorViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qbE-Jl-G1G">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -938,7 +943,7 @@
         <!--Filter View Controller-->
         <scene sceneID="i2M-No-VtG">
             <objects>
-                <viewController id="hEc-qH-5el" customClass="FilterViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FilterViewController" id="hEc-qH-5el" customClass="FilterViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YId-Z3-4bj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -980,7 +985,7 @@
                                                     <rect key="frame" x="20" y="12.000000000000002" width="350" height="20.666666666666671"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZI6-gl-95l">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="20.666666666666668"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="20.666666666666668"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="300" id="wZY-8u-onx"/>
                                                             </constraints>
@@ -988,14 +993,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kwy-xy-iVx">
-                                                            <rect key="frame" x="300" y="2.3333333333333321" width="50" height="16.666666666666671"/>
-                                                        </imageView>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="kwy-xy-iVx" secondAttribute="bottom" id="fpp-uq-LJg"/>
-                                                        <constraint firstItem="kwy-xy-iVx" firstAttribute="top" secondItem="4vB-AK-cDG" secondAttribute="top" id="mDB-wE-eIy"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -1006,7 +1004,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="checkmarkImage" destination="kwy-xy-iVx" id="YfJ-jE-Ed1"/>
                                             <outlet property="filterLabel" destination="ZI6-gl-95l" id="QJt-wi-j9b"/>
                                             <segue destination="KXx-17-i50" kind="unwind" unwindAction="unwindToRiwayat:" id="5vf-gL-5pt"/>
                                         </connections>
@@ -1039,9 +1036,9 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="904" height="1279"/>
-        <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

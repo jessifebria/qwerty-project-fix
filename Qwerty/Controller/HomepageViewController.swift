@@ -16,6 +16,7 @@ class HomepageViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var periodOfDate: UILabel!
     @IBOutlet weak var settingIcon: UIImageView!
     @IBOutlet weak var dailyCount: UILabel!
+    @IBOutlet weak var riwayatButton: UIButton!
     
     var riwayatData = HistoryService().getHistory(filter: "Day")
     var kataUnikData = KataKotorService().getTopFour(filter: "All")
@@ -30,7 +31,7 @@ class HomepageViewController: UIViewController, UICollectionViewDelegate {
         riwayatView.dataSource = self
         totalCount.text = String(kataUnikData.1)
         periodOfDate.text = "11 Jan 2020 - 22 Mar 2021"
-        
+        riwayatButton.layer.zPosition = .greatestFiniteMagnitude
         
 
         // Do any additional setup after loading the view.

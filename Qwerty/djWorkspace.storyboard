@@ -11,7 +11,7 @@
         <!--Homepage View Controller-->
         <scene sceneID="ppE-bs-nUd">
             <objects>
-                <viewController id="5pK-hp-VTK" customClass="HomepageViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomepageViewController" id="5pK-hp-VTK" customClass="HomepageViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vfe-40-d8I" userLabel="Main View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,6 +174,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obr-4k-0Pl">
                                         <rect key="frame" x="10" y="25" width="361" height="299"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="jx6-bL-ARv" kind="showDetail" id="bna-sF-4Le"/>
+                                        </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ox1-Yp-6VL">
                                         <rect key="frame" x="10" y="11" width="358.5" height="245"/>
@@ -292,6 +295,7 @@
                         <outlet property="collectionView" destination="Zzf-Dv-0VF" id="Y7y-kS-nIu"/>
                         <outlet property="dailyCount" destination="Sb0-An-WQ7" id="DNo-cG-Dxk"/>
                         <outlet property="periodOfDate" destination="x9L-n1-aSO" id="gvR-FO-5iC"/>
+                        <outlet property="riwayatButton" destination="Obr-4k-0Pl" id="Tsh-bY-VKV"/>
                         <outlet property="riwayatView" destination="ox1-Yp-6VL" id="hnK-Vz-Isf"/>
                         <outlet property="settingIcon" destination="6I1-HU-ry4" id="VtV-d6-bU1"/>
                         <outlet property="topView" destination="lUh-Tf-6O2" id="Fl1-dg-S60"/>
@@ -301,6 +305,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wfq-xu-Fz0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="17.39130434782609" y="93.080357142857139"/>
+        </scene>
+        <!--RiwayatSemuaViewController-->
+        <scene sceneID="9nI-ek-FGo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="RiwayatSemuaViewController" id="jx6-bL-ARv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Awj-PJ-ELD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J9w-X0-FN7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="45"/>
         </scene>
     </scenes>
     <resources>

@@ -7,15 +7,57 @@
 
 import UIKit
 
+class CustomWindow : UIWindow {
+    
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        
+        let defaults = UserDefaults.standard
+        
+        // check if kata kotor already loaded
+        let isPasswordSetUp = defaults.string(forKey: "password")
+        
+        // tambahin code buat ngerun
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+
+        let storyboard = UIStoryboard(name: "djWorkspace", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "HomepageViewController")
+
+        window = CustomWindow(windowScene: windowScene)
+        window?.rootViewController = initialViewController
+        window!.makeKeyAndVisible()
+        
+//        if (isPasswordSetUp == nil) {
+//
+//            guard let windowScene = (scene as? UIWindowScene) else { return }
+//
+//            let storyboard = UIStoryboard(name: "LinusWorkspace", bundle: nil)
+//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
+//
+//            window = CustomWindow(windowScene: windowScene)
+//            window?.rootViewController = initialViewController
+//            window!.makeKeyAndVisible()
+//
+//
+//        } else {
+//            guard let windowScene = (scene as? UIWindowScene) else { return }
+//
+//            let storyboard = UIStoryboard(name: "jessiWorkspace", bundle: nil)
+//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MasukkanPassViewController")
+//
+//            window = CustomWindow(windowScene: windowScene)
+//            window?.rootViewController = initialViewController
+//            window!.makeKeyAndVisible()
+//
+//        }
+        
         guard let _ = (scene as? UIWindowScene) else { return }
 
     }

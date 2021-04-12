@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xb2-On-7jo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Keyboard Warning View Controller-->
+        <scene sceneID="3xu-c5-HrP">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="JoF-1Z-yvY" customClass="KeyboardWarningViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2bt-dF-aaM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="REVISIIIII ONBOARDING FINAL-9" translatesAutoresizingMaskIntoConstraints="NO" id="AF5-eg-gp1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gQI-IW-rkW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AF5-eg-gp1" firstAttribute="trailing" secondItem="gQI-IW-rkW" secondAttribute="trailing" id="O26-rf-J5a"/>
+                            <constraint firstAttribute="bottom" secondItem="AF5-eg-gp1" secondAttribute="bottom" id="RWw-Ss-QLx"/>
+                            <constraint firstItem="AF5-eg-gp1" firstAttribute="top" secondItem="2bt-dF-aaM" secondAttribute="top" id="aDV-dF-dc8"/>
+                            <constraint firstItem="AF5-eg-gp1" firstAttribute="leading" secondItem="gQI-IW-rkW" secondAttribute="leading" id="dif-yB-SHT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UOl-pW-90V"/>
+                    <connections>
+                        <outlet property="mainView" destination="2bt-dF-aaM" id="pK4-3J-zY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3EX-Ph-j9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="86"/>
+        </scene>
+        <!--Masukkan Pass View Controller-->
+        <scene sceneID="ErL-ES-GtO">
+            <objects>
+                <viewController storyboardIdentifier="MasukkanPassViewController" modalPresentationStyle="fullScreen" id="xb2-On-7jo" customClass="MasukkanPassViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="48u-TT-GzW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verifikasi Password Anda" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOi-Vp-KOk">
+                                <rect key="frame" x="112" y="194" width="190" height="20.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="mFK-Rt-dqp">
+                                <rect key="frame" x="60" y="381.5" width="294" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52R-GU-SGy">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="1"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="Mti-OK-DbJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TY-o2-Sz5">
+                                        <rect key="frame" x="119.5" y="0.0" width="55" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="TPO-c0-gRI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B8-rq-wvb">
+                                        <rect key="frame" x="238.5" y="0.0" width="55.5" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="3"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="19h-02-XGH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="PW3-T3-OEC">
+                                <rect key="frame" x="60" y="485.5" width="294" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICP-Ns-dhT">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="4"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="2pN-Zd-XmO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ym-Re-rpS">
+                                        <rect key="frame" x="119.5" y="0.0" width="55" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="ZqY-EW-SkN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXU-nD-YBQ">
+                                        <rect key="frame" x="238.5" y="0.0" width="55.5" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="6"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="SAT-Rz-VqC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-PG-2LV">
+                                <rect key="frame" x="60" y="589.5" width="294" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9T-Oo-Gt7">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="7"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="pm5-um-fqQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-96-h02">
+                                        <rect key="frame" x="119.5" y="0.0" width="55" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="8"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="mhF-Z4-cFe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-9P-UoF">
+                                        <rect key="frame" x="238.5" y="0.0" width="55.5" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="9"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="Tb6-DF-F7i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="6Op-Gh-BCj">
+                                <rect key="frame" x="60" y="693.5" width="294" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6e-LK-TOC">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBo-ZE-ynd">
+                                        <rect key="frame" x="119.5" y="0.0" width="55" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <state key="normal" title="0"/>
+                                        <connections>
+                                            <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="SuO-XQ-Lu5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo6-rB-7xl">
+                                        <rect key="frame" x="238.5" y="0.0" width="55.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <state key="normal" image="delete.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="passDelete:" destination="xb2-On-7jo" eventType="touchUpInside" id="A6l-ZS-bYx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1tT-je-QpZ">
+                                <rect key="frame" x="60" y="296.5" width="294" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OCg-cB-EDU">
+                                        <rect key="frame" x="0.0" y="0.5" width="24" height="19"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ywi-zu-RFS">
+                                        <rect key="frame" x="54" y="0.5" width="24" height="19"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7vf-aU-jCy">
+                                        <rect key="frame" x="108" y="0.5" width="24" height="19"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zxd-Xn-Kjt">
+                                        <rect key="frame" x="162" y="0.5" width="24" height="19"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QHS-RR-56I">
+                                        <rect key="frame" x="216" y="0.5" width="24" height="19"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="v5W-Jd-Vn7">
+                                        <rect key="frame" x="270" y="0.5" width="24" height="19"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password tidak sesuai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuz-3S-6lD">
+                                <rect key="frame" x="123" y="244.5" width="168" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="YTX-IL-qOf">
+                                <rect key="frame" x="12" y="2" width="390" height="844"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masukkan Password Anda" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cY2-7k-HWg">
+                                        <rect key="frame" x="95.5" y="192" width="199" height="20.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="Oes-NA-VmK">
+                                        <rect key="frame" x="60" y="379.5" width="270" height="53"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4H-sD-bsG">
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="lnt-dw-Kgd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBI-Nb-ABE">
+                                                <rect key="frame" x="111.5" y="0.0" width="47" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="o01-uz-OoZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTr-te-qGh">
+                                                <rect key="frame" x="222.5" y="0.0" width="47.5" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="kT7-A1-D2F"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="rNN-IL-ONQ">
+                                        <rect key="frame" x="60" y="483.5" width="270" height="53"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlC-wY-Pmr">
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="7TC-tZ-Jj4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07A-Cx-qXc">
+                                                <rect key="frame" x="111.5" y="0.0" width="47" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="w8m-9C-XQu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpl-vA-6MK">
+                                                <rect key="frame" x="222.5" y="0.0" width="47.5" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="6wM-8B-zRF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="Oe6-mJ-euN">
+                                        <rect key="frame" x="60" y="587.5" width="270" height="53"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okO-Lu-iia">
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="Gd1-nP-Q8m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yh-ZU-maE">
+                                                <rect key="frame" x="111.5" y="0.0" width="47" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="qXD-7t-gig"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJa-7p-Zbl">
+                                                <rect key="frame" x="222.5" y="0.0" width="47.5" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="KVm-ip-2O5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="jab-OJ-akY">
+                                        <rect key="frame" x="60" y="691.5" width="270" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYz-IC-0Ze">
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkV-vo-6X4">
+                                                <rect key="frame" x="111.5" y="0.0" width="47" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                                <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="passButton:" destination="xb2-On-7jo" eventType="touchUpInside" id="pgZ-tE-T8p"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4I-ex-wos">
+                                                <rect key="frame" x="222.5" y="0.0" width="47.5" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                <state key="normal" image="delete.left" catalog="system"/>
+                                                <connections>
+                                                    <action selector="passDelete:" destination="xb2-On-7jo" eventType="touchUpInside" id="u4l-u7-QnA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xie-GO-ffz">
+                                        <rect key="frame" x="60" y="294.5" width="270" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g3j-uZ-K4u">
+                                                <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DA1-A6-kSC">
+                                                <rect key="frame" x="50" y="0.5" width="20" height="19"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cyQ-ZO-Hcd">
+                                                <rect key="frame" x="100" y="0.5" width="20" height="19"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="oFA-xv-MTm">
+                                                <rect key="frame" x="150" y="0.5" width="20" height="19"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zhs-fG-7v2">
+                                                <rect key="frame" x="200" y="0.5" width="20" height="19"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7Jg-IT-dEi">
+                                                <rect key="frame" x="250" y="0.5" width="20" height="19"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password tidak sesuai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGG-TS-415">
+                                        <rect key="frame" x="111" y="242.5" width="168" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="4at-NZ-GE0"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xie-GO-ffz" firstAttribute="top" secondItem="cY2-7k-HWg" secondAttribute="bottom" constant="82" id="2bh-VX-xkp"/>
+                                    <constraint firstItem="cY2-7k-HWg" firstAttribute="top" secondItem="4at-NZ-GE0" secondAttribute="top" constant="150" id="2tG-Pl-M3A"/>
+                                    <constraint firstItem="xie-GO-ffz" firstAttribute="leading" secondItem="4at-NZ-GE0" secondAttribute="leading" constant="60" id="4vh-uj-fx2"/>
+                                    <constraint firstItem="xie-GO-ffz" firstAttribute="centerX" secondItem="YTX-IL-qOf" secondAttribute="centerX" id="5a4-gS-yqq"/>
+                                    <constraint firstItem="Oes-NA-VmK" firstAttribute="top" secondItem="xie-GO-ffz" secondAttribute="bottom" constant="65" id="5bv-OC-Nj6"/>
+                                    <constraint firstItem="jab-OJ-akY" firstAttribute="top" secondItem="Oe6-mJ-euN" secondAttribute="bottom" constant="51" id="72z-I4-ZoW"/>
+                                    <constraint firstItem="4at-NZ-GE0" firstAttribute="trailing" secondItem="Oes-NA-VmK" secondAttribute="trailing" constant="60" id="7D0-tn-VtU"/>
+                                    <constraint firstItem="Oes-NA-VmK" firstAttribute="leading" secondItem="4at-NZ-GE0" secondAttribute="leading" constant="60" id="Btx-CK-YRb"/>
+                                    <constraint firstItem="jab-OJ-akY" firstAttribute="leading" secondItem="4at-NZ-GE0" secondAttribute="leading" constant="60" id="BwQ-xh-0Bt"/>
+                                    <constraint firstItem="Oe6-mJ-euN" firstAttribute="leading" secondItem="4at-NZ-GE0" secondAttribute="leading" constant="60" id="F22-P3-aeH"/>
+                                    <constraint firstItem="4at-NZ-GE0" firstAttribute="trailing" secondItem="rNN-IL-ONQ" secondAttribute="trailing" constant="60" id="FEF-mN-swa"/>
+                                    <constraint firstItem="xGG-TS-415" firstAttribute="top" secondItem="cY2-7k-HWg" secondAttribute="bottom" constant="30" id="LCq-0c-g0L"/>
+                                    <constraint firstItem="4at-NZ-GE0" firstAttribute="trailing" secondItem="xie-GO-ffz" secondAttribute="trailing" constant="60" id="Mxh-ge-NeV"/>
+                                    <constraint firstItem="xGG-TS-415" firstAttribute="centerX" secondItem="YTX-IL-qOf" secondAttribute="centerX" id="QJa-zQ-YZ8"/>
+                                    <constraint firstItem="cY2-7k-HWg" firstAttribute="centerX" secondItem="YTX-IL-qOf" secondAttribute="centerX" id="RVO-Ny-NRm"/>
+                                    <constraint firstItem="rNN-IL-ONQ" firstAttribute="leading" secondItem="4at-NZ-GE0" secondAttribute="leading" constant="60" id="ReJ-Ze-gAy"/>
+                                    <constraint firstItem="rNN-IL-ONQ" firstAttribute="top" secondItem="Oes-NA-VmK" secondAttribute="bottom" constant="51" id="SUC-G5-ktI"/>
+                                    <constraint firstItem="Oe6-mJ-euN" firstAttribute="top" secondItem="rNN-IL-ONQ" secondAttribute="bottom" constant="51" id="fKm-CT-vxb"/>
+                                    <constraint firstItem="4at-NZ-GE0" firstAttribute="trailing" secondItem="Oe6-mJ-euN" secondAttribute="trailing" constant="60" id="iZh-gP-9Dg"/>
+                                    <constraint firstItem="4at-NZ-GE0" firstAttribute="trailing" secondItem="jab-OJ-akY" secondAttribute="trailing" constant="60" id="wvG-2b-bP2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FxD-Ty-Ik3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4W6-PG-2LV" firstAttribute="leading" secondItem="FxD-Ty-Ik3" secondAttribute="leading" constant="60" id="73c-0K-3ai"/>
+                            <constraint firstItem="vuz-3S-6lD" firstAttribute="centerX" secondItem="48u-TT-GzW" secondAttribute="centerX" id="87P-pB-vtl"/>
+                            <constraint firstItem="1tT-je-QpZ" firstAttribute="centerX" secondItem="48u-TT-GzW" secondAttribute="centerX" id="BWf-hl-4aG"/>
+                            <constraint firstItem="1tT-je-QpZ" firstAttribute="leading" secondItem="FxD-Ty-Ik3" secondAttribute="leading" constant="60" id="DPy-2d-KMt"/>
+                            <constraint firstItem="jOi-Vp-KOk" firstAttribute="centerX" secondItem="48u-TT-GzW" secondAttribute="centerX" id="De7-0J-nk3"/>
+                            <constraint firstItem="FxD-Ty-Ik3" firstAttribute="trailing" secondItem="mFK-Rt-dqp" secondAttribute="trailing" constant="60" id="LP9-f8-LXB"/>
+                            <constraint firstItem="mFK-Rt-dqp" firstAttribute="leading" secondItem="FxD-Ty-Ik3" secondAttribute="leading" constant="60" id="QIr-zV-p2Q"/>
+                            <constraint firstItem="1tT-je-QpZ" firstAttribute="top" secondItem="jOi-Vp-KOk" secondAttribute="bottom" constant="82" id="RLQ-ca-Qtn"/>
+                            <constraint firstItem="mFK-Rt-dqp" firstAttribute="top" secondItem="1tT-je-QpZ" secondAttribute="bottom" constant="65" id="SlD-cv-Iqa"/>
+                            <constraint firstItem="FxD-Ty-Ik3" firstAttribute="trailing" secondItem="6Op-Gh-BCj" secondAttribute="trailing" constant="60" id="V4a-mZ-D2P"/>
+                            <constraint firstItem="jOi-Vp-KOk" firstAttribute="top" secondItem="FxD-Ty-Ik3" secondAttribute="top" constant="150" id="ZzW-mB-KA3"/>
+                            <constraint firstItem="PW3-T3-OEC" firstAttribute="leading" secondItem="FxD-Ty-Ik3" secondAttribute="leading" constant="60" id="biP-9V-rt5"/>
+                            <constraint firstItem="vuz-3S-6lD" firstAttribute="top" secondItem="jOi-Vp-KOk" secondAttribute="bottom" constant="30" id="fsf-hV-nOt"/>
+                            <constraint firstItem="FxD-Ty-Ik3" firstAttribute="trailing" secondItem="PW3-T3-OEC" secondAttribute="trailing" constant="60" id="hz5-Cm-vHt"/>
+                            <constraint firstItem="FxD-Ty-Ik3" firstAttribute="trailing" secondItem="1tT-je-QpZ" secondAttribute="trailing" constant="60" id="j4A-dr-uOU"/>
+                            <constraint firstItem="PW3-T3-OEC" firstAttribute="top" secondItem="mFK-Rt-dqp" secondAttribute="bottom" constant="51" id="mUM-nS-JqM"/>
+                            <constraint firstItem="6Op-Gh-BCj" firstAttribute="top" secondItem="4W6-PG-2LV" secondAttribute="bottom" constant="51" id="n68-TA-jDK"/>
+                            <constraint firstItem="6Op-Gh-BCj" firstAttribute="leading" secondItem="FxD-Ty-Ik3" secondAttribute="leading" constant="60" id="q8H-lZ-LcZ"/>
+                            <constraint firstItem="4W6-PG-2LV" firstAttribute="top" secondItem="PW3-T3-OEC" secondAttribute="bottom" constant="51" id="si3-JY-dso"/>
+                            <constraint firstItem="FxD-Ty-Ik3" firstAttribute="trailing" secondItem="4W6-PG-2LV" secondAttribute="trailing" constant="60" id="sv9-Qz-Ofs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="90P-WX-gvi"/>
+                    <connections>
+                        <outlet property="circle1" destination="g3j-uZ-K4u" id="JCx-kn-DoN"/>
+                        <outlet property="circle2" destination="DA1-A6-kSC" id="si6-fC-vvw"/>
+                        <outlet property="circle3" destination="cyQ-ZO-Hcd" id="ykq-1V-4qx"/>
+                        <outlet property="circle4" destination="oFA-xv-MTm" id="B2U-6t-wo7"/>
+                        <outlet property="circle5" destination="zhs-fG-7v2" id="AvM-bm-aWJ"/>
+                        <outlet property="circle6" destination="7Jg-IT-dEi" id="cNG-lw-UTJ"/>
+                        <outlet property="warningPass" destination="xGG-TS-415" id="LOR-BR-4Uu"/>
+                        <segue destination="JoF-1Z-yvY" kind="show" identifier="WarningKeyboad" id="6hJ-mv-Bpq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huX-TA-ytH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="REVISIIIII ONBOARDING FINAL-9" width="2345" height="5076"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
