@@ -1,14 +1,14 @@
 //
-//  RiwayatSemuaTableViewCell.swift
+//  RiwayatKataKotorTableViewCell.swift
 //  Qwerty
 //
-//  Created by Yafonia Hutabarat on 06/04/21.
+//  Created by Yafonia Hutabarat on 11/04/21.
 //
 
 import UIKit
 
-class RiwayatSemuaTableViewCell: UITableViewCell {
-    
+class RiwayatKataKotorTableViewCell: UITableViewCell {
+
     @IBOutlet var kataKotorLabel: UILabel!
     @IBOutlet var kalimatLabel: UILabel!
     @IBOutlet var timestampLabel: UILabel!
@@ -36,11 +36,10 @@ class RiwayatSemuaTableViewCell: UITableViewCell {
         view.layer.cornerRadius = 14
         let maskLayer = CALayer()
         let verticalPadding: CGFloat = 13
-        maskLayer.cornerRadius = 10
+        maskLayer.cornerRadius = 10    //if you want round edges
         maskLayer.backgroundColor = UIColor.black.cgColor
         maskLayer.frame = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.width, height: self.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
-        self.layer.mask = maskLayer
-
+        self.layer.mask = maskLayer    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
