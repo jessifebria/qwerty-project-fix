@@ -13,6 +13,7 @@ class RiwayatKataKotorViewController: UIViewController {
     var filter: String!
    
     var riwayatKataUnikData = [History?]()
+    var kataKotor: String?
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,20 @@ class RiwayatKataKotorViewController: UIViewController {
         tableView.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let kata = kataKotor {
+            riwayatKataUnikData = HistoryService().getHistoryByKataKotor(kataKotor: kataKotor!, filter: filter)
+            tableView.reloadData()
+        }
+    }
 }
 
 extension RiwayatKataKotorViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? RiwayatKataKotorTableViewCell {
+            
+            cell.view.backgroundColor = .lightGray
+        }
         let data = riwayatKataUnikData[indexPath.row]
         performSegue(withIdentifier: "showDetailSegueFromKataKotor", sender: data)
         tableView.deselectRow(at: indexPath, animated: true)
@@ -44,6 +55,7 @@ extension RiwayatKataKotorViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "riwayatKataKotorCell", for: indexPath) as! RiwayatKataKotorTableViewCell
         cell.riwayat = riwayatKataUnikData[indexPath.row]
+        cell.view.backgroundColor = .white
         return cell
     }
 

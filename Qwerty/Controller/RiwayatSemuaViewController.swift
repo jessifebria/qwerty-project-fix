@@ -25,7 +25,7 @@ class RiwayatSemuaViewController: UIViewController {
         super.viewDidLoad()
         tableView.reloadData()
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData), name: UIApplication.willEnterForegroundNotification, object: nil )
-        
+        var jumlah = kataUnikData.countTotal
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -36,7 +36,6 @@ class RiwayatSemuaViewController: UIViewController {
         segmentedControl.setTitleTextAttributes(colorNotSelected, for: .normal)
         segmentedControl.setTitleTextAttributes(colorSelected, for: .selected)
 
-        
         let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
         containerView.addTarget(self, action: #selector(filterAction), for: .touchUpInside)
         let imageSearch = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
@@ -46,6 +45,7 @@ class RiwayatSemuaViewController: UIViewController {
         searchBarButtonItem.width = 20
         self.navigationItem.rightBarButtonItem = searchBarButtonItem
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         riwayatData = HistoryService().getHistory(filter: filterContentShown)
         kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
@@ -74,16 +74,16 @@ class RiwayatSemuaViewController: UIViewController {
         kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
         tableView.reloadData()
     }
-    
-    
-    
 }
 
 extension RiwayatSemuaViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        var selectedCell: UITableViewCell = tableView.cellForRow(at: indexPath) as! RiwayatSemuaTableViewCell
 //        selectedCell.contentView.backgroundColor = .clear
-        
+        if let cell = tableView.cellForRow(at: indexPath) as? RiwayatSemuaTableViewCell {
+
+            cell.view.backgroundColor = .lightGray
+        }
         switch currentTableView {
         case 0:
             let data = riwayatData[indexPath.row]
@@ -113,10 +113,13 @@ extension RiwayatSemuaViewController: UITableViewDelegate {
         case 1:
             if let vc = segue.destination as? RiwayatKataKotorViewController, let data = sender as? [History] {
                 vc.riwayatKataUnikData = data
+                vc.filter = filterContentShown
                 for i in 0...data.count - 1 {
                     let title = Converter.replaceCommaToArray(kataKotor: data[i].kataKotor!)
                     if title.count == 1 {
-                        vc.navigationItem.title = Converter.addCommaFromArrayToString(kataKotor: title)
+                        let kata = Converter.addCommaFromArrayToString(kataKotor: title)
+                        vc.navigationItem.title = kata
+                        vc.kataKotor = kata
                         break
                     }
                 }
@@ -129,9 +132,34 @@ extension RiwayatSemuaViewController: UITableViewDelegate {
 }
 
 extension RiwayatSemuaViewController: UITableViewDataSource {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        switch currentTableView {
+            case 0:
+//                let dictionary = Dictionary(grouping: riwayatData, by: { (element: History) in
+//                    return Converter.convertDateToLocaleDate(date: element.waktu!)
+//                })
+//                return dictionary.count
+                return riwayatData.count
+            case 1:
+                return kataUnikData.0.count
+            default:
+                return 0
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch currentTableView {
         case 0:
+//            let dictionary = Dictionary(grouping: riwayatData, by: { (element: History) in
+//                return Converter.convertDateToLocaleDate(date: element.waktu!)
+//            })
+//            for i in 0...numberOfSectionsInTableView(tableView: tableView) {
+//                if section == i {
+//                    var index = i
+//
+//                }
+//            }
+//            return dictionary[Array(dictionary)[index].key]!.count
             return riwayatData.count
         case 1:
             return kataUnikData.0.count
@@ -148,10 +176,12 @@ extension RiwayatSemuaViewController: UITableViewDataSource {
             cell.kataKotorLabel.text = kataUnikData.0[indexPath.row].kata.capitalized
             cell.timestampLabel.text = String(kataUnikData.0[indexPath.row].total)
             cell.timestampLabel.font = cell.timestampLabel.font.withSize(16)
+            cell.view.backgroundColor = .white
         default:
             cell.riwayat = riwayatData[indexPath.row]
             cell.timestampLabel.font = cell.timestampLabel.font.withSize(12)
             cell.kalimatLabel.isHidden = false
+            cell.view.backgroundColor = .white
         }
         return cell
     }
