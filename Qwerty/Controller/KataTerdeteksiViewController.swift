@@ -89,7 +89,7 @@ class KataTerdeteksiViewController: UIViewController, UITableViewDelegate, UITab
                     return
                 }
             }
-            KataKotorService().addKataKotor(addKata?.text ?? "")
+            KataKotorService().addKataKotor(addKata?.text?.capitalized ?? "")
             riwayatData = KataKotorService().getAllKataKotor()
             tableView.reloadData()
         }

@@ -408,11 +408,22 @@
                         <outlet property="circle6" destination="7Jg-IT-dEi" id="cNG-lw-UTJ"/>
                         <outlet property="warningPass" destination="xGG-TS-415" id="LOR-BR-4Uu"/>
                         <segue destination="JoF-1Z-yvY" kind="show" identifier="WarningKeyboad" id="6hJ-mv-Bpq"/>
+                        <segue destination="ALp-RW-uan" kind="show" identifier="seguePasswordToHomepage" id="cz5-x7-7ln"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="huX-TA-ytH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="98"/>
+            <point key="canvasLocation" x="814" y="86"/>
+        </scene>
+        <!--TabBarControllerHomepage-->
+        <scene sceneID="GI6-th-7VF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="djWorkspace" referencedIdentifier="TabBarControllerHomepage" id="ALp-RW-uan" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yGr-ix-U7P"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWj-aH-zC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="577"/>
         </scene>
     </scenes>
     <resources>

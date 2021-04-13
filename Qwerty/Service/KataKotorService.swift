@@ -65,7 +65,7 @@ class KataKotorService {
         if count == 0 {
             return getAll
         }
-        let resultListKataKotor = Array(listKataKotor[0...maxLength])
+        let resultListKataKotor = Array(listKataKotor[0...maxLength-1])
         
         return (resultListKataKotor, getAll.countTotal)
     }

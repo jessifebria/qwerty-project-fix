@@ -28,8 +28,17 @@ class boxCollectionViewCell: UICollectionViewCell {
             }
 
             entryLabel.text = riwayatHariIni.kalimat
-            profaniteLabel.text = riwayatHariIni.kataKotor
-            //colorView.backgroundColor = course.color
+            
+            let kataKotor = riwayatHariIni.kataKotor
+            
+            let start = kataKotor!.index(kataKotor!.startIndex, offsetBy: 2)
+            let end = kataKotor!.index(kataKotor!.endIndex, offsetBy: -1)
+            let range = start..<end
+
+            let mySubstring = kataKotor![range]
+            
+            profaniteLabel.text = String(mySubstring)
+          
         } else {
             return
             //colorView.backgroundColor = nil

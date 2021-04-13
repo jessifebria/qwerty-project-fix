@@ -14,9 +14,16 @@ class KeyboardService {
     
     func getLastSeen() -> Date{
         let request : NSFetchRequest<Keyboard> = Keyboard.fetchRequest()
-        return contextService.loadKeyboardSetting(request)[0].lastSeen!
+        let result = contextService.loadKeyboardSetting(request)
+        if result.count != 0 {
+            let date = result[0].lastSeen!
+            return date
+        }
+        else {
+            return Converter.convertStringToDate()
+        }
     }
-    
+       
     func isKeyboardExtensionEnabled() -> Bool {
 
         let keyboards = UserDefaults.standard.dictionaryRepresentation()["AppleKeyboards"] as? [String]

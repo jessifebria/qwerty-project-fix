@@ -96,6 +96,7 @@ class MasukkanPassViewController: UIViewController {
             circle6.image = UIImage.init(systemName: "circle.fill")
             if tempPass == UserService().getUserPassword() {
                 if KeyboardService().isKeyboardExtensionEnabled() {
+                    performSegue(withIdentifier: "seguePasswordToHomepage", sender: nil)
                     // keyboard sudah terpasang -- go to homepage
                 } else {
                     // keyboard belum terpasang

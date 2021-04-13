@@ -25,9 +25,10 @@ class RiwayatSemuaViewController: UIViewController {
         super.viewDidLoad()
         tableView.reloadData()
         title = "Riwayat"
-       
+        
         tabBarController?.title = "Riwayat"
-        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData), name: UIApplication.willEnterForegroundNotification, object: nil )
+        tabBarController?.tabBarItem.selectedImage = UIImage(named: "clock.fill")
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData), name: UIApplication.willEnterForegroundNotification, object: nil)
         var jumlah = kataUnikData.countTotal
         tableView.delegate = self
         tableView.dataSource = self

@@ -97,6 +97,7 @@ class VerifPassViewController: UIViewController {
             if tempPass == newPass {
                 UserService().saveUserPassword(newPass)
                 UserService().saveUserStartDate()
+                performSegue(withIdentifier: "segueVerifPasswordToHomepage", sender: nil)
             }else{
                 view.shake()
                 tempPass = ""

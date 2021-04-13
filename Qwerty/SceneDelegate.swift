@@ -25,38 +25,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // tambahin code buat ngerun
         
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-
-        let storyboard = UIStoryboard(name: "djWorkspace", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "NavigationControllerHomepage")
-
-        window = CustomWindow(windowScene: windowScene)
-        window?.rootViewController = initialViewController
-        window!.makeKeyAndVisible()
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//
+//        let storyboard = UIStoryboard(name: "djWorkspace", bundle: nil)
+//        let initialViewController = storyboard.instantiateViewController(withIdentifier: "NavigationControllerHomepage")
+//
+//        window = CustomWindow(windowScene: windowScene)
+//        window?.rootViewController = initialViewController
+//        window!.makeKeyAndVisible()
         
-//        if (isPasswordSetUp == nil) {
-//
-//            guard let windowScene = (scene as? UIWindowScene) else { return }
-//
-//            let storyboard = UIStoryboard(name: "LinusWorkspace", bundle: nil)
-//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
-//
-//            window = CustomWindow(windowScene: windowScene)
-//            window?.rootViewController = initialViewController
-//            window!.makeKeyAndVisible()
-//
-//
-//        } else {
-//            guard let windowScene = (scene as? UIWindowScene) else { return }
-//
-//            let storyboard = UIStoryboard(name: "jessiWorkspace", bundle: nil)
-//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MasukkanPassViewController")
-//
-//            window = CustomWindow(windowScene: windowScene)
-//            window?.rootViewController = initialViewController
-//            window!.makeKeyAndVisible()
-//
-//        }
+        if (isPasswordSetUp == nil) {
+
+            guard let windowScene = (scene as? UIWindowScene) else { return }
+
+            let storyboard = UIStoryboard(name: "LinusWorkspace", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
+
+            window = CustomWindow(windowScene: windowScene)
+            window?.rootViewController = initialViewController
+            window!.makeKeyAndVisible()
+
+
+        } else {
+            guard let windowScene = (scene as? UIWindowScene) else { return }
+
+            let storyboard = UIStoryboard(name: "jessiWorkspace", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MasukkanPassViewController")
+
+            window = CustomWindow(windowScene: windowScene)
+            window?.rootViewController = initialViewController
+            window!.makeKeyAndVisible()
+
+        }
 //        
         guard let _ = (scene as? UIWindowScene) else { return }
 
