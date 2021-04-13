@@ -41,6 +41,7 @@ class RiwayatSemuaTableViewCell: UITableViewCell {
         maskLayer.backgroundColor = UIColor.black.cgColor
         maskLayer.frame = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.width, height: self.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
         self.layer.mask = maskLayer
+        self.selectedBackgroundView = .none
 
     }
 

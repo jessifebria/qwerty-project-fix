@@ -775,7 +775,7 @@
                 <viewControllerPlaceholder storyboardName="djWorkspace" id="jGD-Qx-Sxe" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPc-mP-mSY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2902" y="1201"/>
+            <point key="canvasLocation" x="-2902" y="1228"/>
         </scene>
         <!--Riwayat-->
         <scene sceneID="mao-BB-r5M">

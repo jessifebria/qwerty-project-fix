@@ -39,7 +39,7 @@ class RiwayatKataKotorTableViewCell: UITableViewCell {
         maskLayer.cornerRadius = 10    //if you want round edges
         maskLayer.backgroundColor = UIColor.black.cgColor
         maskLayer.frame = CGRect(x: self.bounds.origin.x, y: self.bounds.origin.y, width: self.bounds.width, height: self.bounds.height).insetBy(dx: 0, dy: verticalPadding/2)
-        self.layer.mask = maskLayer    
+        self.layer.mask = maskLayer
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
