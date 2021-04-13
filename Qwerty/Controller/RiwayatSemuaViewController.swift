@@ -32,7 +32,7 @@ class RiwayatSemuaViewController: UIViewController {
         var jumlah = kataUnikData.countTotal
         tableView.delegate = self
         tableView.dataSource = self
-        print(Converter.convertDateToStringDateHourMinute(date: UserService().getUserStartDate()))
+        print(Converter.convertDateToStringYearDateHourMinute(date: UserService().getUserStartDate()))
         
         let colorNotSelected = [NSAttributedString.Key.foregroundColor: UIColor.white]
         let colorSelected = [NSAttributedString.Key.foregroundColor: blueColor]
@@ -184,7 +184,7 @@ extension RiwayatSemuaViewController: UITableViewDataSource {
         case 1:
             cell.kalimatLabel.isHidden = true
             cell.kataKotorLabel.text = kataUnikData.0[indexPath.row].kata.capitalized
-            cell.timestampLabel.text = String(kataUnikData.0[indexPath.row].total)
+            cell.timestampLabel.text = "               " + String(kataUnikData.0[indexPath.row].total)
             cell.timestampLabel.font = cell.timestampLabel.font.withSize(16)
             cell.view.backgroundColor = .white
         default:

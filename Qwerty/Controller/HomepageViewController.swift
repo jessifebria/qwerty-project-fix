@@ -59,7 +59,7 @@ class HomepageViewController: UIViewController {
             lastSeenKeyboard.text = "Keyboard Qwerty belum dipakai"
         }
         else {
-            lastSeenKeyboard.text = "Keyboard terakhir digunakan " + Converter.convertDateToStringDateHourMinute(date: lastSeen)
+            lastSeenKeyboard.text = "Keyboard terakhir digunakan " + Converter.convertDateToStringYearDateHourMinute(date: lastSeen)
         }
     
         totalCount.text = String(kataUnikData.1)

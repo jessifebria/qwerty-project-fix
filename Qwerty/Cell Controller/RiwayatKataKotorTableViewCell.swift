@@ -26,7 +26,7 @@ class RiwayatKataKotorTableViewCell: UITableViewCell {
                 kalimatLabel.text = kalimat
             }
             if let timestamp = riwayatItem.waktu {
-                timestampLabel.text = Converter.convertDateToStringHourMinute(date: timestamp)
+                timestampLabel.text = Converter.convertDateToStringDateHourMinute(date: timestamp)
             }
         }
     }

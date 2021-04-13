@@ -97,7 +97,16 @@ class VerifPassViewController: UIViewController {
             if tempPass == newPass {
                 UserService().saveUserPassword(newPass)
                 UserService().saveUserStartDate()
-                performSegue(withIdentifier: "segueVerifPasswordToHomepage", sender: nil)
+               
+                
+                    if KeyboardService().isKeyboardExtensionEnabled() {
+                        performSegue(withIdentifier: "segueVerifPasswordToHomepage", sender: nil)
+                        // keyboard sudah terpasang -- go to homepage
+                    } else {
+                        // keyboard belum terpasang
+                        performSegue(withIdentifier: "segueVerifPassToWarning", sender: nil)
+                        print("keyboard belum terpasang")
+                    }
             }else{
                 view.shake()
                 tempPass = ""

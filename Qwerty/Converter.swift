@@ -9,10 +9,18 @@ import Foundation
 
 class Converter {
     
-    static func convertDateToStringDateHourMinute(date: Date) -> String {
+    static func convertDateToStringYearDateHourMinute(date: Date) -> String {
         let dateFormatter = DateFormatter()
 
         dateFormatter.dateFormat = "d MMM yyyy, HH:mm"
+
+        return dateFormatter.string(from: date)
+    }
+    
+    static func convertDateToStringDateHourMinute(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+
+        dateFormatter.dateFormat = "d MMM, HH:mm"
 
         return dateFormatter.string(from: date)
     }
