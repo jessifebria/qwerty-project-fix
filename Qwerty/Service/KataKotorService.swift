@@ -41,9 +41,10 @@ class KataKotorService {
             if histories.count > 0 {
                 for history in histories {
                     let historyKataKotor = history.kataKotor!
-                    let countKataKotor = historyKataKotor.components(separatedBy: kata.kata!).count - 1
+                    let countKataKotor = historyKataKotor.components(separatedBy: kata.kata!.capitalized).count - 1
                     resultCount += countKataKotor
                 }
+                print("\(kata.kata!)  \(resultCount)")
                 let newKata = KataKotorRiwayat(kata: kata.kata!, total: resultCount)
                 result.append(newKata)
                 count += resultCount
@@ -52,6 +53,39 @@ class KataKotorService {
         
         return (result, count)
     }
+    
+    func getTopFive(filter : String) -> ( listKataKotor : [KataKotorRiwayat], countTotal : Int ){
+        let getAll = getUniqueKataKotor(filter: "All")
+        let listKataKotor = getAll.listKataKotor
+        var resultListKataKotor = [KataKotorRiwayat]()
+        let count = getAll.countTotal
+        var countCollection = [Int]()
+        
+        
+        var topFive = [Int]()
+        
+        for kata in listKataKotor {
+            countCollection.append(kata.total)
+        }
+        
+        var tempCountCollection = countCollection
+        
+        for _ in 1...5{
+            let maxValue = tempCountCollection.max()
+            if let index = tempCountCollection.firstIndex(of: maxValue!) {
+                tempCountCollection.remove(at: index)
+                topFive.append(countCollection.firstIndex(of: maxValue!)!)
+            }
+        }
+        
+        for index in topFive{
+            resultListKataKotor.append(listKataKotor[index])
+        }
+        
+        return (resultListKataKotor, count)
+    }
+    
+    
     
     func deleteKataKotor(_ kataKotor : KataKotor){
         historyService.updateHistoryByKataKotor(kataKotor.kata!)

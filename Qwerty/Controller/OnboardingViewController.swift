@@ -112,6 +112,7 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
     }
     @objc func passButton(sender : UIButton) {
+        KataKotorService().getUniqueKataKotor(filter: "Day")
         performSegue(withIdentifier: "goToSetPassword", sender: sender)
     }
     
