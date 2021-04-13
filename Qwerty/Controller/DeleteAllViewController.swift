@@ -12,7 +12,7 @@ class DeleteAllViewController: UIViewController {
     var currentPass = UserService().getUserPassword()
     var tempPass = ""
     
-    private var riwayatData = KataKotorService().getAllKataKotor()
+    private var riwayatData = HistoryService().getHistory(filter: "All")
     @IBOutlet weak var circle1: UIImageView!
     @IBOutlet weak var circle2: UIImageView!
     @IBOutlet weak var circle3: UIImageView!
@@ -96,9 +96,10 @@ class DeleteAllViewController: UIViewController {
             circle5.image = UIImage.init(systemName: "circle.fill")
             circle6.image = UIImage.init(systemName: "circle.fill")
             if tempPass == currentPass {
-                for i in riwayatData{
-                    KataKotorService().deleteKataKotor(i)
+                for riwayat in riwayatData{
+                    HistoryService().deleteHistory(riwayat)
                 }
+                UserService().saveUserStartDate()
                 performSegue(withIdentifier: "deleteSuccessSegue", sender: nil)
             }else{
                 view.shake()

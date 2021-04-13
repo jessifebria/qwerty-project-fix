@@ -27,8 +27,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+        let storyboard = UIStoryboard(name: "djWorkspace", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "HomepageViewController")
 
         window = CustomWindow(windowScene: windowScene)
         window?.rootViewController = initialViewController
@@ -57,7 +57,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            window!.makeKeyAndVisible()
 //
 //        }
-        
+//        
         guard let _ = (scene as? UIWindowScene) else { return }
 
     }

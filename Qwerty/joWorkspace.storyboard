@@ -212,7 +212,7 @@
         <!--Setting View Controller-->
         <scene sceneID="kjA-im-aDr">
             <objects>
-                <viewController id="8aI-IH-Vfx" customClass="SettingViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" id="8aI-IH-Vfx" customClass="SettingViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kCV-7c-eAP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -460,7 +460,7 @@
         <!--Navigation Controller-->
         <scene sceneID="bMY-K5-6BM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0yj-3C-aFI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationControllerSetting" automaticallyAdjustsScrollViewInsets="NO" id="0yj-3C-aFI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ZaX-jw-bzh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z84-b8-3pW">

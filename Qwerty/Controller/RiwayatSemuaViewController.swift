@@ -17,7 +17,7 @@ class RiwayatSemuaViewController: UIViewController {
     var currentTableView: Int! = 0
     let blueColor: UIColor! = #colorLiteral(red: 0, green: 0.3776819408, blue: 0.6683544517, alpha: 1)
 
-
+    
     private var riwayatData = HistoryService().getHistory(filter: "All")
     private var kataUnikData = KataKotorService().getUniqueKataKotor(filter: "All")
     
@@ -28,7 +28,7 @@ class RiwayatSemuaViewController: UIViewController {
         var jumlah = kataUnikData.countTotal
         tableView.delegate = self
         tableView.dataSource = self
-        
+        print(Converter.convertDateToStringDateHourMinute(date: UserService().getUserStartDate()))
         let colorNotSelected = [NSAttributedString.Key.foregroundColor: UIColor.white]
         let colorSelected = [NSAttributedString.Key.foregroundColor: blueColor]
         segmentedControl.layer.borderWidth = 0.4
@@ -90,7 +90,7 @@ extension RiwayatSemuaViewController: UITableViewDelegate {
             performSegue(withIdentifier: "showDetailSegue", sender: data)
         case 1:
             let kata = kataUnikData.0[indexPath.row].kata
-            let data = HistoryService().getHistoryByKataKotor(kataKotor: kata, filter: "Month")
+            let data = HistoryService().getHistoryByKataKotor(kataKotor: kata, filter: filterContentShown)
             performSegue(withIdentifier: "showRiwayatKataUnik", sender: data)
         default:
             break
