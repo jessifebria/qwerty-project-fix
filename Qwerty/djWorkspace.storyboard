@@ -223,6 +223,9 @@
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(prof.word1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edc-Ax-VZJ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="91" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="91" id="0jq-3I-uYX"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -232,24 +235,17 @@
                                                                 </progressView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(count)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVu-4B-ewp">
                                                                     <rect key="frame" x="303" y="0.0" width="55.5" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="55.5" id="Mc4-Gd-Jm8"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="bottom" secondItem="edc-Ax-VZJ" secondAttribute="bottom" id="0ds-lm-mcX"/>
-                                                                <constraint firstAttribute="trailing" secondItem="YVu-4B-ewp" secondAttribute="trailing" id="0qq-Jm-vMm"/>
-                                                                <constraint firstItem="edc-Ax-VZJ" firstAttribute="top" secondItem="xC5-pr-8R6" secondAttribute="top" id="88f-VO-VUE"/>
-                                                                <constraint firstItem="YVu-4B-ewp" firstAttribute="leading" secondItem="E9B-H5-g8J" secondAttribute="trailing" id="9c0-IJ-6oR"/>
-                                                                <constraint firstAttribute="bottom" secondItem="E9B-H5-g8J" secondAttribute="bottom" id="Mo1-5K-Odt"/>
-                                                                <constraint firstItem="E9B-H5-g8J" firstAttribute="top" secondItem="xC5-pr-8R6" secondAttribute="top" id="Vpl-3d-5Qb"/>
-                                                                <constraint firstItem="E9B-H5-g8J" firstAttribute="leading" secondItem="edc-Ax-VZJ" secondAttribute="trailing" id="av2-2b-RuO"/>
-                                                                <constraint firstItem="YVu-4B-ewp" firstAttribute="leading" secondItem="E9B-H5-g8J" secondAttribute="trailing" id="cIK-Kj-FK6"/>
-                                                                <constraint firstItem="YVu-4B-ewp" firstAttribute="top" secondItem="xC5-pr-8R6" secondAttribute="top" id="eOu-Wz-xQk"/>
-                                                                <constraint firstAttribute="bottom" secondItem="YVu-4B-ewp" secondAttribute="bottom" id="rrF-Ec-G3x"/>
-                                                                <constraint firstItem="edc-Ax-VZJ" firstAttribute="leading" secondItem="xC5-pr-8R6" secondAttribute="leading" id="wA9-zS-25H"/>
-                                                                <constraint firstItem="E9B-H5-g8J" firstAttribute="leading" secondItem="edc-Ax-VZJ" secondAttribute="trailing" id="xst-MD-mN5"/>
+                                                                <constraint firstItem="E9B-H5-g8J" firstAttribute="leading" secondItem="edc-Ax-VZJ" secondAttribute="trailing" id="GL5-HR-lC1"/>
+                                                                <constraint firstItem="YVu-4B-ewp" firstAttribute="leading" secondItem="E9B-H5-g8J" secondAttribute="trailing" id="f89-5R-Xe3"/>
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>

@@ -27,6 +27,18 @@ class UserService {
         return UIDevice.current.name
     }
     
+    func saveUserStartDate(){
+        defaults.set(Date(), forKey: "startDate")
+    }
+    
+    func getUserStartDate() -> Date {
+        if let startDate = defaults.object(forKey: "startDate") {
+            return startDate as! Date
+        } else {
+            return Date()
+        }
+    }
+    
 //    func getUsername() -> String {
 //
 //
