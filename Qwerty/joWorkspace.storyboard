@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Detail Kalimat View Controller-->
+        <!--Detail Riwayat-->
         <scene sceneID="68Y-7X-zxG">
             <objects>
                 <viewController storyboardIdentifier="detailViewController" id="vW2-Q4-7oZ" customClass="DetailKalimatViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F8r-dI-7Rr">
-                                <rect key="frame" x="20" y="74" width="374" height="13.5"/>
+                                <rect key="frame" x="20" y="118" width="374" height="13.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KALIMAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-R8-sc7">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="13.5"/>
@@ -28,7 +28,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xkx-WY-8Z7">
-                                <rect key="frame" x="20" y="95.5" width="374" height="205"/>
+                                <rect key="frame" x="20" y="139.5" width="374" height="205"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="G8E-xe-8hw">
                                         <rect key="frame" x="18" y="18" width="338" height="43"/>
@@ -91,7 +91,7 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tb9-oT-KM9">
-                                <rect key="frame" x="20" y="330.5" width="374" height="13.5"/>
+                                <rect key="frame" x="20" y="374.5" width="374" height="13.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAKTU DAN TEMPAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oa-vf-6Yy">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="13.5"/>
@@ -102,7 +102,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-gG-ktz">
-                                <rect key="frame" x="20" y="352" width="374" height="205"/>
+                                <rect key="frame" x="20" y="396" width="374" height="205"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-Se-D82">
                                         <rect key="frame" x="18" y="18" width="338" height="43"/>
@@ -182,23 +182,37 @@
                             <constraint firstItem="Xkx-WY-8Z7" firstAttribute="leading" secondItem="bCb-sg-H9b" secondAttribute="leading" constant="20" id="sY2-OO-VQd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Detail Riwayat" id="dRx-Qn-31o">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="A9K-Y7-qSU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eHN-YR-B7d">
+                                <rect key="frame" x="320" y="11" width="74" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="trash" catalog="system"/>
+                                <connections>
+                                    <action selector="deleteAction:" destination="vW2-Q4-7oZ" eventType="touchUpInside" id="DEA-Sp-GZS"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailKalimat" destination="HCF-9F-1U9" id="bT4-wT-C9f"/>
                         <outlet property="hariTanggalTerdeteksi" destination="MBa-fP-hBA" id="5KS-cj-D6e"/>
                         <outlet property="jamTerdeteksi" destination="AEZ-NO-svV" id="pbn-fK-B6H"/>
                         <outlet property="jumlahKataTerdeteksi" destination="MTf-JJ-O7T" id="FbD-zo-M6c"/>
                         <outlet property="kataTerdeteksi" destination="l92-bg-2dy" id="ef2-RB-kvR"/>
+                        <outlet property="navBar" destination="dRx-Qn-31o" id="FDR-c9-cxA"/>
                         <outlet property="platformTerdeteksi" destination="Aim-ZV-DcK" id="RE5-hH-FJb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVn-Kp-SjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-652" y="-584"/>
+            <point key="canvasLocation" x="257.97101449275362" y="-584.59821428571422"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="kjA-im-aDr">
             <objects>
-                <viewController id="8aI-IH-Vfx" customClass="SettingViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" id="8aI-IH-Vfx" customClass="SettingViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kCV-7c-eAP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,7 +460,7 @@
         <!--Navigation Controller-->
         <scene sceneID="bMY-K5-6BM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0yj-3C-aFI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationControllerSetting" automaticallyAdjustsScrollViewInsets="NO" id="0yj-3C-aFI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="ZaX-jw-bzh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z84-b8-3pW">
@@ -805,12 +819,35 @@
             </objects>
             <point key="canvasLocation" x="997" y="812"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OGr-k6-GvP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AhK-XW-9Uq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Os4-hz-fAS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.034228377040000001" green="0.36882382629999999" blue="0.66669803859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vW2-Q4-7oZ" kind="relationship" relationship="rootViewController" id="eRv-jD-37n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHy-2G-4Ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-652.17391304347836" y="-584.59821428571422"/>
+        </scene>
     </scenes>
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

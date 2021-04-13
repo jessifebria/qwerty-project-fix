@@ -41,7 +41,7 @@ class KataKotorService {
             if histories.count > 0 {
                 for history in histories {
                     let historyKataKotor = history.kataKotor!
-                    let countKataKotor = historyKataKotor.components(separatedBy: kata.kata!).count - 1
+                    let countKataKotor = historyKataKotor.components(separatedBy: kata.kata!.capitalized).count - 1
                     resultCount += countKataKotor
                 }
                 let newKata = KataKotorRiwayat(kata: kata.kata!, total: resultCount)

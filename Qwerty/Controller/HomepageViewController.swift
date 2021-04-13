@@ -14,7 +14,7 @@ class HomepageViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var riwayatView: UITableView!
     @IBOutlet weak var totalCount: UILabel!
     @IBOutlet weak var periodOfDate: UILabel!
-    @IBOutlet weak var settingIcon: UIImageView!
+
     @IBOutlet weak var dailyCount: UILabel!
     @IBOutlet weak var riwayatButton: UIButton!
     

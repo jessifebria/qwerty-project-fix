@@ -8,6 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--detailViewController-->
+        <scene sceneID="gJf-Rq-NYh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="joWorkspace" referencedIdentifier="detailViewController" id="Cj6-XF-azV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fXX-22-bQ4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEc-TK-OPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-578" y="500"/>
+        </scene>
         <!--Homepage View Controller-->
         <scene sceneID="ppE-bs-nUd">
             <objects>
@@ -37,11 +47,6 @@
                                         <color key="textColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="highlightedColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="gearshape.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6I1-HU-ry4">
-                                        <rect key="frame" x="343" y="52.333333333333485" width="27" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.71799951790000005" green="0.7791480422" blue="0.86275857690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hari ini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9b-AZ-o7B">
                                         <rect key="frame" x="29" y="154" width="100" height="41"/>
                                         <color key="tintColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -56,6 +61,18 @@
                                         <color key="textColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="highlightedColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdC-mn-WPj">
+                                        <rect key="frame" x="343" y="52" width="52" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.71799951790000005" green="0.7791480422" blue="0.86275857690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" image="gearshape.fill" catalog="system">
+                                            <color key="titleColor" red="0.99999064209999999" green="0.9999936223" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleShadowColor" red="0.99999064209999999" green="0.9999936223" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Dbr-fV-WgW" kind="show" id="fUI-Xz-Nhe"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20591840149999999" green="0.37193161250000001" blue="0.60787218809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.14117647059999999" green="0.37647058820000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -145,6 +162,7 @@
                                             <outlet property="entryLabel" destination="yd3-r2-RIb" id="5NB-6S-vWf"/>
                                             <outlet property="platformLabel" destination="UhP-Qt-N2L" id="f55-4g-86d"/>
                                             <outlet property="profaniteLabel" destination="jTF-F9-2PH" id="Mch-7d-S39"/>
+                                            <segue destination="Cj6-XF-azV" kind="show" id="eFX-Aj-40g"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -219,6 +237,20 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="edc-Ax-VZJ" secondAttribute="bottom" id="0ds-lm-mcX"/>
+                                                                <constraint firstAttribute="trailing" secondItem="YVu-4B-ewp" secondAttribute="trailing" id="0qq-Jm-vMm"/>
+                                                                <constraint firstItem="edc-Ax-VZJ" firstAttribute="top" secondItem="xC5-pr-8R6" secondAttribute="top" id="88f-VO-VUE"/>
+                                                                <constraint firstItem="YVu-4B-ewp" firstAttribute="leading" secondItem="E9B-H5-g8J" secondAttribute="trailing" id="9c0-IJ-6oR"/>
+                                                                <constraint firstAttribute="bottom" secondItem="E9B-H5-g8J" secondAttribute="bottom" id="Mo1-5K-Odt"/>
+                                                                <constraint firstItem="E9B-H5-g8J" firstAttribute="top" secondItem="xC5-pr-8R6" secondAttribute="top" id="Vpl-3d-5Qb"/>
+                                                                <constraint firstItem="E9B-H5-g8J" firstAttribute="leading" secondItem="edc-Ax-VZJ" secondAttribute="trailing" id="av2-2b-RuO"/>
+                                                                <constraint firstItem="YVu-4B-ewp" firstAttribute="leading" secondItem="E9B-H5-g8J" secondAttribute="trailing" id="cIK-Kj-FK6"/>
+                                                                <constraint firstItem="YVu-4B-ewp" firstAttribute="top" secondItem="xC5-pr-8R6" secondAttribute="top" id="eOu-Wz-xQk"/>
+                                                                <constraint firstAttribute="bottom" secondItem="YVu-4B-ewp" secondAttribute="bottom" id="rrF-Ec-G3x"/>
+                                                                <constraint firstItem="edc-Ax-VZJ" firstAttribute="leading" secondItem="xC5-pr-8R6" secondAttribute="leading" id="wA9-zS-25H"/>
+                                                                <constraint firstItem="E9B-H5-g8J" firstAttribute="leading" secondItem="edc-Ax-VZJ" secondAttribute="trailing" id="xst-MD-mN5"/>
+                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
@@ -297,7 +329,6 @@
                         <outlet property="periodOfDate" destination="x9L-n1-aSO" id="gvR-FO-5iC"/>
                         <outlet property="riwayatButton" destination="Obr-4k-0Pl" id="Tsh-bY-VKV"/>
                         <outlet property="riwayatView" destination="ox1-Yp-6VL" id="hnK-Vz-Isf"/>
-                        <outlet property="settingIcon" destination="6I1-HU-ry4" id="VtV-d6-bU1"/>
                         <outlet property="topView" destination="lUh-Tf-6O2" id="Fl1-dg-S60"/>
                         <outlet property="totalCount" destination="osi-aj-6dw" id="VlL-nI-jcm"/>
                     </connections>
@@ -306,10 +337,20 @@
             </objects>
             <point key="canvasLocation" x="17.39130434782609" y="93.080357142857139"/>
         </scene>
-        <!--RiwayatSemuaViewController-->
+        <!--NavigationControllerSetting-->
+        <scene sceneID="a6J-bC-IAb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="joWorkspace" referencedIdentifier="NavigationControllerSetting" id="Dbr-fV-WgW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0ah-Qu-Gfw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8Q-HL-HtV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="-119"/>
+        </scene>
+        <!--TabBarController-->
         <scene sceneID="9nI-ek-FGo">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="RiwayatSemuaViewController" id="jx6-bL-ARv" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarController" id="jx6-bL-ARv" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Awj-PJ-ELD"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9w-X0-FN7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
