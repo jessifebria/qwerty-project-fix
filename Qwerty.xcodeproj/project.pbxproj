@@ -43,7 +43,6 @@
 		B72982462620689800D8B395 /* djWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72982452620689800D8B395 /* djWorkspace.storyboard */; };
 		B729824C2620693C00D8B395 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B729824B2620693C00D8B395 /* HomepageViewController.swift */; };
 		B760EE4D26242E81004176A7 /* boxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760EE4C26242E81004176A7 /* boxCollectionViewCell.swift */; };
-		B760EE572624850C004176A7 /* ProgressKataUnikViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760EE562624850C004176A7 /* ProgressKataUnikViewCell.swift */; };
 		BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7893261C567400F1FFCA /* AppDelegate.swift */; };
 		BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7895261C567400F1FFCA /* SceneDelegate.swift */; };
 		BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C7897261C567400F1FFCA /* RiwayatSemuaViewController.swift */; };
@@ -135,7 +134,6 @@
 		B72982452620689800D8B395 /* djWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = djWorkspace.storyboard; sourceTree = "<group>"; };
 		B729824B2620693C00D8B395 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		B760EE4C26242E81004176A7 /* boxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxCollectionViewCell.swift; sourceTree = "<group>"; };
-		B760EE562624850C004176A7 /* ProgressKataUnikViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressKataUnikViewCell.swift; sourceTree = "<group>"; };
 		BF2C7890261C567400F1FFCA /* Qwerty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qwerty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2C7893261C567400F1FFCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2C7895261C567400F1FFCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -269,7 +267,6 @@
 		BF2C7887261C567400F1FFCA = {
 			isa = PBXGroup;
 			children = (
-				B760EE562624850C004176A7 /* ProgressKataUnikViewCell.swift */,
 				BF2C7892261C567400F1FFCA /* Qwerty */,
 				BF2C78AC261C567500F1FFCA /* QwertyTests */,
 				BF2C78B7261C567500F1FFCA /* QwertyUITests */,
@@ -538,7 +535,6 @@
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
 				5B389A0226243A3F0067926C /* MasukkanPassViewController.swift in Sources */,
 				5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */,
-				B760EE572624850C004176A7 /* ProgressKataUnikViewCell.swift in Sources */,
 				4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */,
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
 				5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */,

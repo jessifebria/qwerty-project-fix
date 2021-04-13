@@ -37,6 +37,10 @@ class boxCollectionViewCell: UICollectionViewCell {
        
     }
     
+    override class func awakeFromNib() {
+        
+    }
+    
 }
 
 

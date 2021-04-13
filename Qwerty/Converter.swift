@@ -12,7 +12,7 @@ class Converter {
     static func convertDateToStringDateHourMinute(date: Date) -> String {
         let dateFormatter = DateFormatter()
 
-        dateFormatter.dateFormat = "MMM d, HH:mm"
+        dateFormatter.dateFormat = "d MMM yyyy, HH:mm"
 
         return dateFormatter.string(from: date)
     }
@@ -21,7 +21,7 @@ class Converter {
     static func convertDateToStringHourMinute(date: Date) -> String {
         let dateFormatter = DateFormatter()
 
-        dateFormatter.dateFormat = "hh:mm"
+        dateFormatter.dateFormat = "HH:mm"
 
         return dateFormatter.string(from: date)
     }
@@ -48,6 +48,13 @@ class Converter {
     static func addCommaFromArrayToString(kataKotor: [String]) -> String {
         return kataKotor.joined(separator: ", ")
         
+    }
+    
+    static func convertDateToString(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d MMM yyyy"
+        
+        return dateFormatter.string(from: date)
     }
 }
 

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F8r-dI-7Rr">
-                                <rect key="frame" x="20" y="118" width="374" height="13.5"/>
+                                <rect key="frame" x="20" y="74" width="374" height="13.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KALIMAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-R8-sc7">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="13.5"/>
@@ -28,7 +28,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xkx-WY-8Z7">
-                                <rect key="frame" x="20" y="139.5" width="374" height="205"/>
+                                <rect key="frame" x="20" y="95.5" width="374" height="205"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="G8E-xe-8hw">
                                         <rect key="frame" x="18" y="18" width="338" height="43"/>
@@ -91,7 +91,7 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Tb9-oT-KM9">
-                                <rect key="frame" x="20" y="374.5" width="374" height="13.5"/>
+                                <rect key="frame" x="20" y="330.5" width="374" height="13.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAKTU DAN TEMPAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oa-vf-6Yy">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="13.5"/>
@@ -102,7 +102,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-gG-ktz">
-                                <rect key="frame" x="20" y="396" width="374" height="205"/>
+                                <rect key="frame" x="20" y="352" width="374" height="205"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-Se-D82">
                                         <rect key="frame" x="18" y="18" width="338" height="43"/>
@@ -818,28 +818,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB0-ki-vmy" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997" y="812"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="OGr-k6-GvP">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AhK-XW-9Uq" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Os4-hz-fAS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.034228377040000001" green="0.36882382629999999" blue="0.66669803859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vW2-Q4-7oZ" kind="relationship" relationship="rootViewController" id="eRv-jD-37n"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lHy-2G-4Ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-652.17391304347836" y="-584.59821428571422"/>
         </scene>
     </scenes>
     <resources>

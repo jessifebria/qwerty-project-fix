@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IW0-w4-jy6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -574,13 +574,13 @@
         <!--Riwayat-->
         <scene sceneID="y1d-4C-BYG">
             <objects>
-                <viewController storyboardIdentifier="RiwayatSemuaViewController" id="B7v-g8-F2p" customClass="RiwayatSemuaViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RiwayatSemuaViewController" modalPresentationStyle="fullScreen" id="B7v-g8-F2p" customClass="RiwayatSemuaViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y3G-ye-D2f">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WQy-Mv-CQm">
-                                <rect key="frame" x="0.0" y="61" width="390" height="612"/>
+                                <rect key="frame" x="0.0" y="105" width="390" height="705"/>
                                 <color key="backgroundColor" red="0.9452458024" green="0.96064811939999994" blue="0.96862941979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.99979725779999995" blue="0.99228465050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
@@ -691,7 +691,7 @@
                                 </prototypes>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YDR-6h-545">
-                                <rect key="frame" x="30" y="8" width="330" height="32"/>
+                                <rect key="frame" x="30" y="52" width="330" height="32"/>
                                 <segments>
                                     <segment title="Semua Kata"/>
                                     <segment title="Kata Unik"/>
@@ -715,6 +715,7 @@
                             <constraint firstItem="WQy-Mv-CQm" firstAttribute="leading" secondItem="ehi-Qt-bLi" secondAttribute="leading" id="w91-Kz-bhz"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="lCk-5G-Sci"/>
                     <navigationItem key="navigationItem" title="Riwayat" id="OGu-ml-IEl">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="X9c-KE-zfC">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="RUF-kG-093" userLabel="FIlter">
@@ -740,7 +741,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b0e-WW-UhZ" sceneMemberID="firstResponder"/>
                 <exit id="qqc-ge-Euy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-992" y="834"/>
+            <point key="canvasLocation" x="866.15384615384608" y="833.88625592417054"/>
         </scene>
         <!--detailViewController-->
         <scene sceneID="7Wg-Ah-Pcr">
@@ -750,70 +751,18 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ee6-85-b2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="168" y="1114"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="uen-eF-QQt">
-            <objects>
-                <tabBarController storyboardIdentifier="TabBarController" id="IW0-w4-jy6" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="zDG-Al-gCF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="IQM-QP-WAu" kind="relationship" relationship="viewControllers" id="S89-Zg-9UO"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fhd-kh-5g6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2903" y="834"/>
-        </scene>
-        <!--djWorkspace-->
-        <scene sceneID="dMF-PH-qls">
-            <objects>
-                <viewControllerPlaceholder storyboardName="djWorkspace" id="jGD-Qx-Sxe" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fPc-mP-mSY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2902" y="1228"/>
-        </scene>
-        <!--Riwayat-->
-        <scene sceneID="mao-BB-r5M">
-            <objects>
-                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="IQM-QP-WAu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Riwayat" selectedImage="clock.fill" catalog="system" id="06M-GY-a6g">
-                        <color key="badgeColor" red="0.15001505609999999" green="0.37100973729999998" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jAN-kJ-Idy">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.02865528874" green="0.37042298909999999" blue="0.64708781240000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="B7v-g8-F2p" kind="relationship" relationship="rootViewController" id="vWR-eW-tAK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zgN-Om-Dm9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1700" y="834"/>
+            <point key="canvasLocation" x="2025.3846153846152" y="1113.9810426540284"/>
         </scene>
         <!--Riwayat Kata Kotor View Controller-->
         <scene sceneID="8cH-uk-2pZ">
             <objects>
                 <viewController storyboardIdentifier="RiwayatKataKotorViewController" id="kTt-Eu-IZg" customClass="RiwayatKataKotorViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qbE-Jl-G1G">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35T-aD-mKo">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                                 <color key="backgroundColor" red="0.9452458024" green="0.96064811939999994" blue="0.96862941979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.99979725779999995" blue="0.99228465050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
@@ -939,7 +888,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="93S-Oo-8l5" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-992" y="1536"/>
+            <point key="canvasLocation" x="200" y="1580"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="i2M-No-VtG">
@@ -1029,16 +978,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gty-aN-5L9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="KXx-17-i50" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="657" y="816"/>
+            <point key="canvasLocation" x="2515.3846153846152" y="815.40284360189571"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5oe-gq-RGB"/>
+        <segue reference="ncj-hR-gdd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="circle" catalog="system" width="128" height="121"/>
-        <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         let storyboard = UIStoryboard(name: "djWorkspace", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "HomepageViewController")
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "NavigationControllerHomepage")
 
         window = CustomWindow(windowScene: windowScene)
         window?.rootViewController = initialViewController

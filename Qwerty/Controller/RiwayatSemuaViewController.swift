@@ -24,17 +24,28 @@ class RiwayatSemuaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+        title = "Riwayat"
+       
+        tabBarController?.title = "Riwayat"
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData), name: UIApplication.willEnterForegroundNotification, object: nil )
         var jumlah = kataUnikData.countTotal
         tableView.delegate = self
         tableView.dataSource = self
         print(Converter.convertDateToStringDateHourMinute(date: UserService().getUserStartDate()))
+        
         let colorNotSelected = [NSAttributedString.Key.foregroundColor: UIColor.white]
         let colorSelected = [NSAttributedString.Key.foregroundColor: blueColor]
         segmentedControl.layer.borderWidth = 0.4
         segmentedControl.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         segmentedControl.setTitleTextAttributes(colorNotSelected, for: .normal)
         segmentedControl.setTitleTextAttributes(colorSelected, for: .selected)
+        
+        if currentTableView == 0 {
+            segmentedControl.selectedSegmentIndex = 0
+        }
+        else {
+            segmentedControl.selectedSegmentIndex = 1
+        }
 
         let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
         containerView.addTarget(self, action: #selector(filterAction), for: .touchUpInside)
@@ -62,14 +73,12 @@ class RiwayatSemuaViewController: UIViewController {
     }
     
     @IBAction func unwindToRiwayat(_ sender: UIStoryboardSegue) {
-        print(filterContentShown)
         riwayatData = HistoryService().getHistory(filter: filterContentShown)
         kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
         tableView.reloadData()
     }
     
     @objc func reloadTableData(_ notification: Notification) {
-        print("masuk notif")
         riwayatData = HistoryService().getHistory(filter: filterContentShown)
         kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
         tableView.reloadData()
