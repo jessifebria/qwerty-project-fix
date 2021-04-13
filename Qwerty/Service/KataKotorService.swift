@@ -21,6 +21,7 @@ class KataKotorService {
     func getUniqueKataKotor(filter : String) -> ( listKataKotor : [KataKotorRiwayat], countTotal : Int ){
         let request : NSFetchRequest<KataKotor> = KataKotor.fetchRequest()
         request.predicate = NSPredicate(format: "total > 0")
+        request.sortDescriptors = [NSSortDescriptor(key: "total", ascending: false)]
         let kataKotorArray : [KataKotor] = contextService.loadKataKotor(request)
         
         var result : [KataKotorRiwayat] = [KataKotorRiwayat]()
@@ -44,14 +45,58 @@ class KataKotorService {
                     let countKataKotor = historyKataKotor.components(separatedBy: kata.kata!.capitalized).count - 1
                     resultCount += countKataKotor
                 }
+                print("\(kata.kata!)  \(resultCount)")
                 let newKata = KataKotorRiwayat(kata: kata.kata!, total: resultCount)
                 result.append(newKata)
                 count += resultCount
             }
         }
         
+        result = sortKataKotor(listKataKotor: result)
+        
         return (result, count)
     }
+    
+    func getTopFour() -> ( listKataKotor : [KataKotorRiwayat], countTotal : Int ){
+        let getAll = getUniqueKataKotor(filter: "All")
+        let listKataKotor = getAll.listKataKotor
+        let count = listKataKotor.count
+        let maxLength = count > 4 ? 4 : count
+        if count == 0 {
+            return getAll
+        }
+        let resultListKataKotor = Array(listKataKotor[0...maxLength])
+        
+        return (resultListKataKotor, getAll.countTotal)
+    }
+    
+    func sortKataKotor(listKataKotor : [KataKotorRiwayat]) -> [KataKotorRiwayat] {
+        var listKataKotor = listKataKotor
+        var resultListKataKotor = [KataKotorRiwayat]()
+        var countCollection = [Int]()
+        
+        for kata in listKataKotor {
+            countCollection.append(kata.total)
+        }
+        
+        var tempCountCollection = countCollection
+        let maxNumber = listKataKotor.count
+        
+        for _ in 1...maxNumber{
+            let maxValue = tempCountCollection.max()
+            if let index = tempCountCollection.firstIndex(of: maxValue!) {
+                tempCountCollection.remove(at: index)
+                print("\(listKataKotor[index].kata)  \(listKataKotor[index].total)")
+                resultListKataKotor.append(listKataKotor[index])
+                listKataKotor.remove(at: index)
+            }
+        }
+        
+        return resultListKataKotor
+        
+    }
+    
+    
     
     func deleteKataKotor(_ kataKotor : KataKotor){
         historyService.updateHistoryByKataKotor(kataKotor.kata!)
@@ -84,7 +129,7 @@ class KataKotorService {
             for row in csv!{
                 print(row)
                 let newKataKotor = KataKotor(context: contextService.context)
-                newKataKotor.kata = row.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression)
+                newKataKotor.kata = row.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression).capitalized
                 contextService.saveChanges()
             }
        
