@@ -11,8 +11,11 @@ class RiwayatSemuaViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var navBar: UINavigationItem!
+    
     var filterContentShown: String! = "All"
     var currentTableView: Int! = 0
+    let blueColor: UIColor! = #colorLiteral(red: 0, green: 0.3776819408, blue: 0.6683544517, alpha: 1)
 
 
     private var riwayatData = HistoryService().getHistory(filter: "All")
@@ -20,33 +23,33 @@ class RiwayatSemuaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Riwayat"
-        print(filterContentShown)
+        tableView.reloadData()
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData), name: UIApplication.willEnterForegroundNotification, object: nil )
         
-        riwayatData = HistoryService().getHistory(filter: filterContentShown)
-        kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
         tableView.delegate = self
         tableView.dataSource = self
         
         let colorNotSelected = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        let colorSelected = [NSAttributedString.Key.foregroundColor: UIColor.blue ]
+        let colorSelected = [NSAttributedString.Key.foregroundColor: blueColor]
         segmentedControl.layer.borderWidth = 0.4
         segmentedControl.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        
         segmentedControl.setTitleTextAttributes(colorNotSelected, for: .normal)
         segmentedControl.setTitleTextAttributes(colorSelected, for: .selected)
-        
-        let button: UIButton = UIButton(type: UIButton.ButtonType.custom)
-                //set image for button
-        button.setImage(UIImage(named: "filter"), for: .normal)
-                //add function for button
-        button.addTarget(self, action:#selector(filterAction), for: UIControl.Event.touchUpInside)
-                //set frame
-        button.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
 
-                let barButton = UIBarButtonItem(customView: button)
-                //assign button to navigationbar
-                self.navigationItem.rightBarButtonItem = barButton
+        
+        let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+        containerView.addTarget(self, action: #selector(filterAction), for: .touchUpInside)
+        let imageSearch = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+        imageSearch.image = UIImage(named: "filter")
+        containerView.addSubview(imageSearch)
+        let searchBarButtonItem = UIBarButtonItem(customView: containerView)
+        searchBarButtonItem.width = 20
+        self.navigationItem.rightBarButtonItem = searchBarButtonItem
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        riwayatData = HistoryService().getHistory(filter: filterContentShown)
+        kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
+        tableView.reloadData()
     }
     
     @IBAction func switchViewAction (_ sender: UISegmentedControl) {
@@ -57,6 +60,23 @@ class RiwayatSemuaViewController: UIViewController {
     @IBAction func filterAction (_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "filterSemuaRiwayatSegue", sender: nil)
     }
+    
+    @IBAction func unwindToRiwayat(_ sender: UIStoryboardSegue) {
+        print(filterContentShown)
+        riwayatData = HistoryService().getHistory(filter: filterContentShown)
+        kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
+        tableView.reloadData()
+    }
+    
+    @objc func reloadTableData(_ notification: Notification) {
+        print("masuk notif")
+        riwayatData = HistoryService().getHistory(filter: filterContentShown)
+        kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
+        tableView.reloadData()
+    }
+    
+    
+    
 }
 
 extension RiwayatSemuaViewController: UITableViewDelegate {
@@ -80,6 +100,11 @@ extension RiwayatSemuaViewController: UITableViewDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "filterSemuaRiwayatSegue" {
+            if let viewController = segue.destination as? FilterViewController {
+                viewController.currentFilter = filterContentShown
+            }
+        }
         switch currentTableView {
         case 0:
             if let vc = segue.destination as? DetailKalimatViewController, let detailToSend = sender as? History {
@@ -100,6 +125,7 @@ extension RiwayatSemuaViewController: UITableViewDelegate {
             break
         }
     }
+    
 }
 
 extension RiwayatSemuaViewController: UITableViewDataSource {
@@ -121,8 +147,10 @@ extension RiwayatSemuaViewController: UITableViewDataSource {
             cell.kalimatLabel.isHidden = true
             cell.kataKotorLabel.text = kataUnikData.0[indexPath.row].kata.capitalized
             cell.timestampLabel.text = String(kataUnikData.0[indexPath.row].total)
+            cell.timestampLabel.font = cell.timestampLabel.font.withSize(16)
         default:
             cell.riwayat = riwayatData[indexPath.row]
+            cell.timestampLabel.font = cell.timestampLabel.font.withSize(12)
             cell.kalimatLabel.isHidden = false
         }
         return cell

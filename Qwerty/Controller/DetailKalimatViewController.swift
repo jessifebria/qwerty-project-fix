@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailKalimatViewController: UIViewController {
+class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
 
   
     @IBOutlet weak var detailKalimat: UILabel!
@@ -16,20 +16,23 @@ class DetailKalimatViewController: UIViewController {
     @IBOutlet weak var platformTerdeteksi: UILabel!
     @IBOutlet weak var hariTanggalTerdeteksi: UILabel!
     @IBOutlet weak var jamTerdeteksi: UILabel!
+    @IBOutlet weak var navBar: UINavigationItem!
     
     var riwayat: History?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Detail Riwayat"
         
-        let button = UIButton(type: UIButton.ButtonType.custom)
-        button.setImage(UIImage(named: "trash.fill"), for: .normal)
-        button.addTarget(self, action:#selector(deleteAction), for: .touchDragInside)
-        button.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        let barButton = UIBarButtonItem(customView: button)
-        self.navigationItem.rightBarButtonItem = barButton
+//        let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+//        containerView.addTarget(self, action: #selector(deleteAction), for: .touchUpInside)
+//        let imageSearch = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+//        imageSearch.image = UIImage(named: "trash")
+//        containerView.addSubview(imageSearch)
+//        let searchBarButtonItem = UIBarButtonItem(customView: containerView)
+//        searchBarButtonItem.width = 20
+//        
+//        navBar.rightBarButtonItem = searchBarButtonItem
         
         detailKalimat?.sizeToFit()
         detailKalimat?.numberOfLines = 0
@@ -62,6 +65,26 @@ class DetailKalimatViewController: UIViewController {
 
     @IBAction func deleteAction (_ sender: UIButton) {
         print("tapped")
-    }
+        let actionSheetControllerIOS8: UIAlertController = UIAlertController(title: nil, message: "Hapus jika tidak mengandung kata kotor", preferredStyle: .actionSheet)
 
+        let cancelActionButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+        }
+        actionSheetControllerIOS8.addAction(cancelActionButton)
+           
+        let deleteActionButton = UIAlertAction(title: "Hapus", style: .destructive) { _ in
+            if let riwayat = self.riwayat {
+                HistoryService().deleteHistory(riwayat)
+            }
+            self.navigationController?.popViewController(animated: true)
+            NotificationCenter.default.post(name: .reload, object: nil)
+        }
+        actionSheetControllerIOS8.addAction(deleteActionButton)
+        self.present(actionSheetControllerIOS8, animated: true, completion: nil)
+    }
 }
+
+extension Notification.Name {
+    static let reload = Notification.Name("reload")
+}
+
+

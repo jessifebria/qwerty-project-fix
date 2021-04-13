@@ -11,40 +11,37 @@ class FilterViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var selesaiButton: UIButton!
-    var filterToPass: String!
- 
+    
+    var currentFilter = String()
+    
     let filters = ["Hari ini", "Minggu ini", "Bulan ini", "Tahun ini", "Semua"]
     let filtersParameter = ["Day", "Week", "Month", "Year", "All"]
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.delegate = self
         tableView.dataSource = self
+
     }
     
     @IBAction func selesaiButton(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
-    @IBAction func unwindToRiwayat(_ sender: UIStoryboardSegue) {
-        print("masuk")
-    }
-    
+        
 }
 
 extension FilterViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let filter = filtersParameter[indexPath.row]
-        filterToPass = filter
+//        indexChosen = indexPath
         
-        dismiss(animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! RiwayatSemuaViewController
-        vc.filterContentShown = filterToPass
-        print("ini udah dari vc")
-        print(vc.filterContentShown)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let vc = segue.destination as! RiwayatSemuaViewController
+            vc.filterContentShown = filtersParameter[indexPath.row]
+        }
     }
     
 }
@@ -57,8 +54,15 @@ extension FilterViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "filterCell", for: indexPath) as! FilterTableViewCell
         cell.title = filters[indexPath.row]
-        cell.checkmarkImage.isHidden = true
+        if filtersParameter[indexPath.row] == currentFilter{
+            cell.accessoryType = .checkmark
+        }else{
+            cell.accessoryType = .none
+        }
+//        if indexPath.row == 4 {
+//            cell.accessoryType = .checkmark
+//        }
         return cell
     }
-
+    
 }
