@@ -82,16 +82,17 @@ class KataKotorService {
         var tempCountCollection = countCollection
         let maxNumber = listKataKotor.count
         
-        for _ in 1...maxNumber{
-            let maxValue = tempCountCollection.max()
-            if let index = tempCountCollection.firstIndex(of: maxValue!) {
-                tempCountCollection.remove(at: index)
-                print("\(listKataKotor[index].kata)  \(listKataKotor[index].total)")
-                resultListKataKotor.append(listKataKotor[index])
-                listKataKotor.remove(at: index)
+        if maxNumber > 0 {
+            for _ in 1...maxNumber{
+                let maxValue = tempCountCollection.max()
+                if let index = tempCountCollection.firstIndex(of: maxValue!) {
+                    tempCountCollection.remove(at: index)
+                    print("\(listKataKotor[index].kata)  \(listKataKotor[index].total)")
+                    resultListKataKotor.append(listKataKotor[index])
+                    listKataKotor.remove(at: index)
+                }
             }
         }
-        
         return resultListKataKotor
         
     }

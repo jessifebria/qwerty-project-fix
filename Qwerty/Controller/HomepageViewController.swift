@@ -50,17 +50,13 @@ class HomepageViewController: UIViewController {
         progressBar = [firstProgressBar, secondProgressBar, thirdProgressBar, fourthProgressBar]
         labelCount = [firstCount, secondCount, thirdCount, fourthCount]
         setProgressKataUnik()
+        setLastSeen()
         
         dailyCount.text = "\(riwayatData.count)"
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        if lastSeen == Converter.convertStringToDate() {
-            lastSeenKeyboard.text = "Keyboard Qwerty belum dipakai"
-        }
-        else {
-            lastSeenKeyboard.text = "Keyboard terakhir digunakan " + Converter.convertDateToStringYearDateHourMinute(date: lastSeen)
-        }
+        
     
         totalCount.text = String(kataUnikData.1)
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapViewKataUnik(_:)))
@@ -76,6 +72,15 @@ class HomepageViewController: UIViewController {
         performSegue(withIdentifier: "segueHomepageToKataUnik", sender: nil)
     }
     
+    func setLastSeen(){
+        if lastSeen == Converter.convertStringToDate() {
+            lastSeenKeyboard.text = "Keyboard Qwerty belum dipakai"
+        }
+        else {
+            lastSeenKeyboard.text = "Keyboard terakhir digunakan " + Converter.convertDateToStringYearDateHourMinute(date: lastSeen)
+        }
+    }
+    
     func setProgressKataUnik () {
         let top = kataUnikData.0.count
         if top != 0 {
@@ -84,11 +89,13 @@ class HomepageViewController: UIViewController {
                 progressBar[i]?.setProgress(Float(kataUnikData.0[i].total)/Float(kataUnikData.1), animated: false)
                 labelCount[i]?.text = String(kataUnikData.0[i].total)
             }
-        for j in top...3 {
-            labelWord[j]?.text = "---"
-            progressBar[j]?.setProgress(0, animated: false)
-            labelCount[j]?.text = String(0)
-        }
+            if top < 4 {
+                for j in top...3 {
+                    labelWord[j]?.text = "---"
+                    progressBar[j]?.setProgress(0, animated: false)
+                    labelCount[j]?.text = String(0)
+                }
+            }
             
         }
         
@@ -121,6 +128,7 @@ class HomepageViewController: UIViewController {
         dailyCount.text = "\(riwayatData.count)"
         setProgressKataUnik()
         totalCount.text = String(kataUnikData.1)
+        setLastSeen()
     }
     
 }

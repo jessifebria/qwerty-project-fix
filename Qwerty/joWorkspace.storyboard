@@ -776,7 +776,7 @@
                         <outlet property="circle5" destination="Way-co-4RD" id="AdE-bm-g8g"/>
                         <outlet property="circle6" destination="ZMA-wH-ipe" id="NHL-jp-8YU"/>
                         <outlet property="warningPass" destination="zRM-T8-69d" id="eTL-6D-17w"/>
-                        <segue destination="Q9u-Ym-72H" kind="show" identifier="deleteSuccessSegue" id="RCN-IW-rJW"/>
+                        <segue destination="Q9u-Ym-72H" kind="showDetail" identifier="deleteSuccessSegue" id="RCN-IW-rJW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB0-ki-vmy" sceneMemberID="firstResponder"/>
