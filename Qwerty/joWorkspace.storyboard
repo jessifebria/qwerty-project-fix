@@ -354,6 +354,7 @@
                                     <action selector="selesaiButton:" destination="8aI-IH-Vfx" eventType="touchUpInside" id="IS4-Wd-KTN"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
