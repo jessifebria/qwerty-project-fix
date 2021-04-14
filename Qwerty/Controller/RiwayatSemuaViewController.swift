@@ -26,6 +26,10 @@ class RiwayatSemuaViewController: UIViewController {
         tableView.reloadData()
         title = "Riwayat"
         
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
+        
         tabBarController?.title = "Riwayat"
         tabBarController?.tabBarItem.selectedImage = UIImage(named: "clock.fill")
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableData), name: UIApplication.willEnterForegroundNotification, object: nil)

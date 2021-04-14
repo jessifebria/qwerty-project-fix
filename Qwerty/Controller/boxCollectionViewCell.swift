@@ -38,6 +38,7 @@ class boxCollectionViewCell: UICollectionViewCell {
             let mySubstring = kataKotor![range]
             
             profaniteLabel.text = String(mySubstring)
+            profaniteLabel.font = UIFont.boldSystemFont(ofSize: 14)
           
         } else {
             return

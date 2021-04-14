@@ -59,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUh-Tf-6O2" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="297"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="338"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JUMLAH KATA KOTOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsV-XM-6l5">
@@ -79,15 +79,23 @@
                                         <color key="highlightedColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(daily count)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb0-An-WQ7">
-                                        <rect key="frame" x="29" y="227.66666666666666" width="202" height="41.333333333333343"/>
+                                        <rect key="frame" x="29" y="227.66666666666663" width="239" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="highlightedColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hari ini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9b-AZ-o7B">
+                                        <rect key="frame" x="29" y="128" width="169" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <color key="textColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="highlightedColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdC-mn-WPj">
-                                        <rect key="frame" x="343" y="52" width="52" height="44"/>
+                                        <rect key="frame" x="326" y="71" width="52" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.71799951790000005" green="0.7791480422" blue="0.86275857690000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" image="gearshape.fill" catalog="system">
@@ -98,14 +106,6 @@
                                             <segue destination="Dbr-fV-WgW" kind="show" id="fUI-Xz-Nhe"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hari ini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9b-AZ-o7B">
-                                        <rect key="frame" x="29" y="128" width="100" height="40.666666666666657"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <color key="textColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="highlightedColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.15001505609999999" green="0.37100973729999998" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.14117647059999999" green="0.37647058820000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -116,7 +116,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zzf-Dv-0VF">
-                                <rect key="frame" x="16.666666666666657" y="235" width="373.33333333333337" height="112"/>
+                                <rect key="frame" x="16.666666666666657" y="245" width="373.33333333333337" height="112"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="kpP-Ar-fhM"/>
@@ -149,7 +149,7 @@
                                                             <rect key="frame" x="0.0" y="32.333333333333336" width="160" height="32.000000000000007"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(platform)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhP-Qt-N2L">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="32"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="32"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -160,9 +160,9 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhN-Kc-tEs">
-                                                                    <rect key="frame" x="130" y="0.0" width="30" height="32"/>
+                                                                    <rect key="frame" x="128" y="0.0" width="32" height="32"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="30" id="s9V-ZS-olc"/>
+                                                                        <constraint firstAttribute="width" constant="32" id="s9V-ZS-olc"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -225,19 +225,22 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 Jan 2021 - 22 Mar 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9L-n1-aSO">
-                                <rect key="frame" x="16" y="426.33333333333337" width="180" height="18"/>
+                                <rect key="frame" x="16" y="451.33333333333337" width="180" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" red="0.55297946929999997" green="0.55663830039999995" blue="0.57255166769999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Keseluruhan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWV-xH-MLv">
-                                <rect key="frame" x="16" y="392" width="167.66666666666666" height="26.333333333333314"/>
+                                <rect key="frame" x="16" y="417" width="167.66666666666666" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="izr-YP-MEo">
-                                <rect key="frame" x="16" y="464.33333333333337" width="358" height="200"/>
+                                <rect key="frame" x="16" y="489.33333333333337" width="358" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KATA PALING BANYAK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tiw-rN-OFy">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
@@ -463,7 +466,7 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyboard Terakhir Dipakai: 13 April 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG6-dk-KTz">
-                                <rect key="frame" x="16" y="362" width="244" height="15.666666666666686"/>
+                                <rect key="frame" x="16" y="372" width="244" height="15.666666666666686"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <nil key="highlightedColor"/>
@@ -476,9 +479,9 @@
                             <constraint firstItem="QWV-xH-MLv" firstAttribute="leading" secondItem="qny-Oa-0Gs" secondAttribute="leading" constant="16" id="MDp-Bm-IfE"/>
                             <constraint firstItem="x9L-n1-aSO" firstAttribute="top" secondItem="QWV-xH-MLv" secondAttribute="bottom" constant="8" symbolic="YES" id="WEv-Ag-XJg"/>
                             <constraint firstItem="izr-YP-MEo" firstAttribute="top" secondItem="x9L-n1-aSO" secondAttribute="bottom" constant="20" id="ZyZ-Zv-toZ"/>
-                            <constraint firstItem="QWV-xH-MLv" firstAttribute="top" secondItem="Zzf-Dv-0VF" secondAttribute="bottom" constant="45" id="czN-I7-nbo"/>
+                            <constraint firstItem="QWV-xH-MLv" firstAttribute="top" secondItem="Zzf-Dv-0VF" secondAttribute="bottom" constant="60" id="czN-I7-nbo"/>
                             <constraint firstItem="qny-Oa-0Gs" firstAttribute="trailing" secondItem="izr-YP-MEo" secondAttribute="trailing" constant="16" id="fqo-31-B3Q"/>
-                            <constraint firstItem="Zzf-Dv-0VF" firstAttribute="top" secondItem="qny-Oa-0Gs" secondAttribute="top" constant="235" id="fsv-vL-EXq"/>
+                            <constraint firstItem="Zzf-Dv-0VF" firstAttribute="top" secondItem="qny-Oa-0Gs" secondAttribute="top" constant="245" id="fsv-vL-EXq"/>
                             <constraint firstItem="Zzf-Dv-0VF" firstAttribute="trailing" secondItem="qny-Oa-0Gs" secondAttribute="trailing" id="ggM-gt-cOu"/>
                             <constraint firstItem="BG6-dk-KTz" firstAttribute="leading" secondItem="qny-Oa-0Gs" secondAttribute="leading" constant="16" id="hMo-SF-Y9B"/>
                             <constraint firstItem="BG6-dk-KTz" firstAttribute="top" secondItem="Zzf-Dv-0VF" secondAttribute="bottom" constant="15" id="iPq-xf-QTG"/>
@@ -488,6 +491,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UMc-c5-yqx"/>
                     <connections>
+                        <outlet property="allData" destination="QWV-xH-MLv" id="w9J-44-Ae0"/>
                         <outlet property="collectionView" destination="Zzf-Dv-0VF" id="Y7y-kS-nIu"/>
                         <outlet property="dailyCount" destination="Sb0-An-WQ7" id="DNo-cG-Dxk"/>
                         <outlet property="dateRecorded" destination="x9L-n1-aSO" id="PPg-ai-e0C"/>
@@ -505,6 +509,7 @@
                         <outlet property="thirdCount" destination="xde-Mi-HaR" id="6aE-24-zUL"/>
                         <outlet property="thirdProgressBar" destination="8mg-6O-rps" id="wux-n1-ro4"/>
                         <outlet property="thirdWord" destination="Txz-hP-pbC" id="fTy-dz-aY2"/>
+                        <outlet property="today" destination="N9b-AZ-o7B" id="bQg-LR-Kae"/>
                         <outlet property="topView" destination="lUh-Tf-6O2" id="Fl1-dg-S60"/>
                         <outlet property="totalCount" destination="xD3-ng-dl9" id="g0Y-pT-26r"/>
                         <outlet property="viewKataUnik" destination="izr-YP-MEo" id="cvM-w7-THl"/>
@@ -514,7 +519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wfq-xu-Fz0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7457" y="-112"/>
+            <point key="canvasLocation" x="7456.9230769230762" y="-112.32227488151658"/>
         </scene>
         <!--NavigationControllerSetting-->
         <scene sceneID="a6J-bC-IAb">
