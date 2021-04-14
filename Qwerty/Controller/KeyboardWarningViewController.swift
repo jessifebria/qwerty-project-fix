@@ -32,7 +32,7 @@ class KeyboardWarningViewController: UIViewController {
     }
     
     @objc func settingButton(sender : UIButton) {
-        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+        UIApplication.shared.open(URL(string:"App-Prefs:root=General")!)
     }
 
 }

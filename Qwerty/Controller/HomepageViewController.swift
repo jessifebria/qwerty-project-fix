@@ -34,7 +34,8 @@ class HomepageViewController: UIViewController {
     var labelWord = [UILabel?]()
     var progressBar = [UIProgressView?]()
     var labelCount = [UILabel?]()
-        
+    
+    var totalKataKotor = KataKotorService().getUniqueKataKotor(filter: "Day").countTotal
     var riwayatData = HistoryService().getHistory(filter: "Day")
     var kataUnikData = KataKotorService().getTopFour()
     var tanggal = UserService().getUserStartDate()
@@ -54,7 +55,7 @@ class HomepageViewController: UIViewController {
         setProgressKataUnik()
         setLastSeen()
         
-        dailyCount.text = "\(riwayatData.count)"
+        dailyCount.text = "\(totalKataKotor)"
         allData.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
         today.font = UIFont.systemFont(ofSize: 40, weight: .semibold)
         firstWord.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
@@ -136,7 +137,7 @@ class HomepageViewController: UIViewController {
         tanggal = UserService().getUserStartDate()
         lastSeen = KeyboardService().getLastSeen()
         collectionView.reloadData()
-        dailyCount.text = "\(riwayatData.count)"
+        dailyCount.text = "\(KataKotorService().getUniqueKataKotor(filter: "Day").countTotal)"
         setProgressKataUnik()
         totalCount.text = String(kataUnikData.1)
         setLastSeen()

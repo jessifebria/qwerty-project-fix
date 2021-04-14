@@ -75,7 +75,7 @@ class KeyboardViewController: UIInputViewController {
     let labelRowOneAlpha = ["q","w","e","r","t","y","u","i","o","p"]
     let labelRowOneNumFirst = ["1","2","3","4","5","6","7","8","9","0"]
     let labelRowOneNumSecond = ["[","]","{", "}", "#", "%", "^", "*", "","="]
-    let labelRowTwoNumFirst = ["-","/",":",";",")",")","$","&","@","\""]
+    let labelRowTwoNumFirst = ["-","/",":",";","(",")","$","&","@","\""]
     let labelRowTwoNumSecond = ["_","\\","|","~","<",">","€","£","¥","・"]
     
     var tempCapslockPressed = false
