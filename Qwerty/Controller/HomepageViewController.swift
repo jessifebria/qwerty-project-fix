@@ -28,6 +28,8 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var totalCount: UILabel!
     @IBOutlet weak var viewKataUnik: UIStackView!
     @IBOutlet weak var lastSeenKeyboard: UILabel!
+    @IBOutlet weak var allData: UILabel!
+    @IBOutlet weak var today: UILabel!
     
     var labelWord = [UILabel?]()
     var progressBar = [UIProgressView?]()
@@ -41,7 +43,7 @@ class HomepageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Ringkasan"
-        
+  
         NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         tabBarController?.tabBar.items?[1].title = "Riwayat"
@@ -53,11 +55,16 @@ class HomepageViewController: UIViewController {
         setLastSeen()
         
         dailyCount.text = "\(riwayatData.count)"
+        allData.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+        today.font = UIFont.systemFont(ofSize: 40, weight: .semibold)
+        firstWord.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        secondWord.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        thirdWord.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        fourthWord.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         
-        
-    
         totalCount.text = String(kataUnikData.1)
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapViewKataUnik(_:)))
         gestureRecognizer.numberOfTapsRequired = 1
@@ -93,7 +100,7 @@ class HomepageViewController: UIViewController {
                 for j in top...3 {
                     labelWord[j]?.text = "---"
                     progressBar[j]?.setProgress(0, animated: false)
-                    labelCount[j]?.text = String(0)
+                    labelCount[j]?.text = "---"
                 }
             }
             
@@ -103,7 +110,7 @@ class HomepageViewController: UIViewController {
             for k in 0...3 {
                 labelWord[k]?.text = "---"
                 progressBar[k]?.setProgress(0, animated: false)
-                labelCount[k]?.text = String(0)
+                labelCount[k]?.text = "---"
             }
         }
             
@@ -172,6 +179,8 @@ extension HomepageViewController: UICollectionViewDelegate {
             cell.riwayatHariIni = riwayat
             cell.layer.masksToBounds = true
             cell.contentView.layer.cornerRadius = 14
+            cell.layer.cornerRadius = 14
+            
             return cell
             
             

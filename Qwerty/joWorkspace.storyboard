@@ -310,7 +310,7 @@
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dlr-Na-7iE">
                                         <rect key="frame" x="0.0" y="0.5" width="174" height="149"/>
-                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <color key="tintColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -325,7 +325,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e0F-Mx-2lq"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" red="0.9452458024" green="0.96064811939999994" blue="0.96862941979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="z55-JU-pUp" firstAttribute="leading" secondItem="e0F-Mx-2lq" secondAttribute="leading" id="6SE-jP-TZH"/>
                             <constraint firstItem="3Az-9M-rgu" firstAttribute="top" secondItem="e0F-Mx-2lq" secondAttribute="top" constant="380" id="JAG-Yz-tmW"/>
@@ -579,7 +579,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVu-6t-6kO">
                                                 <rect key="frame" x="0.0" y="0.0" width="47.5" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="1"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="McS-fF-Gaf"/>
                                                 </connections>
@@ -587,7 +589,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doT-Jp-dau">
                                                 <rect key="frame" x="111.5" y="0.0" width="47" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="2"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="UvQ-xX-fCM"/>
                                                 </connections>
@@ -595,7 +599,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jH-Vt-kxj">
                                                 <rect key="frame" x="222.5" y="0.0" width="47.5" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="3"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="MVI-aN-IIE"/>
                                                 </connections>
@@ -608,7 +614,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9f-mk-3gR">
                                                 <rect key="frame" x="0.0" y="0.0" width="47.5" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="4"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="K75-ea-YMC"/>
                                                 </connections>
@@ -616,7 +624,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-4m-gI1">
                                                 <rect key="frame" x="111.5" y="0.0" width="47" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="5"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="or4-3n-ykz"/>
                                                 </connections>
@@ -624,7 +634,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwD-rr-Cke">
                                                 <rect key="frame" x="222.5" y="0.0" width="47.5" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="6"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="pFy-Je-27M"/>
                                                 </connections>
@@ -637,7 +649,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoq-zA-ycY">
                                                 <rect key="frame" x="0.0" y="0.0" width="47.5" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="7"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="d4X-rj-v2p"/>
                                                 </connections>
@@ -645,7 +659,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttT-BK-ik5">
                                                 <rect key="frame" x="111.5" y="0.0" width="47" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="8"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="ycd-iP-Usc"/>
                                                 </connections>
@@ -653,7 +669,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X34-UH-8Ql">
                                                 <rect key="frame" x="222.5" y="0.0" width="47.5" height="53"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="9"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="nCD-RR-UFX"/>
                                                 </connections>
@@ -670,7 +688,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVc-sz-k22">
                                                 <rect key="frame" x="111.5" y="0.0" width="47" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                                <state key="normal" title="0"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="passButton:" destination="JSb-AI-blb" eventType="touchUpInside" id="XG2-Yz-YgY"/>
                                                 </connections>
@@ -678,6 +698,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4c-Ow-qhY">
                                                 <rect key="frame" x="222.5" y="0.0" width="47.5" height="60"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                <color key="tintColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" image="delete.left" catalog="system"/>
                                                 <connections>
                                                     <action selector="passDelete:" destination="JSb-AI-blb" eventType="touchUpInside" id="FLU-ru-afx"/>
@@ -811,14 +832,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
