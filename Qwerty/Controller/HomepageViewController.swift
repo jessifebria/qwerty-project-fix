@@ -179,6 +179,8 @@ extension HomepageViewController: UICollectionViewDelegate {
             cell.riwayatHariIni = riwayat
             cell.layer.masksToBounds = true
             cell.contentView.layer.cornerRadius = 14
+            cell.layer.cornerRadius = 14
+            
             return cell
             
             
