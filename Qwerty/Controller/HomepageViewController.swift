@@ -62,6 +62,10 @@ class HomepageViewController: UIViewController {
         thirdWord.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
         fourthWord.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
         
+        topView.clipsToBounds = true
+        topView.layer.cornerRadius = 30
+        topView.layer.maskedCorners = [.layerMinXMaxYCorner] // Bottom left corner
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         
