@@ -104,8 +104,8 @@ extension RiwayatSemuaViewController: UITableViewDelegate {
             performSegue(withIdentifier: "showDetailSegue", sender: data)
         case 1:
             let kata = kataUnikData.0[indexPath.row].kata
-            let data = HistoryService().getHistoryByKataKotor(kataKotor: kata, filter: filterContentShown)
-            performSegue(withIdentifier: "showRiwayatKataUnik", sender: data)
+            
+            performSegue(withIdentifier: "showRiwayatKataUnik", sender: kata)
         default:
             break
         }
@@ -125,18 +125,11 @@ extension RiwayatSemuaViewController: UITableViewDelegate {
                 vc.riwayat = detailToSend
             }
         case 1:
-            if let vc = segue.destination as? RiwayatKataKotorViewController, let data = sender as? [History] {
-                vc.riwayatKataUnikData = data
+            if let vc = segue.destination as? RiwayatKataKotorViewController, let kata = sender {
+                let data = vc.riwayatKataUnikData = HistoryService().getHistoryByKataKotor(kataKotor: kata as! String, filter: filterContentShown)
                 vc.filter = filterContentShown
-                for i in 0...data.count - 1 {
-                    let title = Converter.replaceCommaToArray(kataKotor: data[i].kataKotor!)
-                    if title.count == 1 {
-                        let kata = Converter.addCommaFromArrayToString(kataKotor: title)
-                        vc.navigationItem.title = kata
-                        vc.kataKotor = kata
-                        break
-                    }
-                }
+                vc.navigationItem.title = kata as! String
+                vc.kataKotor = kata as! String
             }
         default:
             break

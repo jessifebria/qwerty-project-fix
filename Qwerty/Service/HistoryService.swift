@@ -109,7 +109,7 @@ class HistoryService {
         
         saveFakeData(kalimat: "Brengsek lu babi", kataKotor: ", Brengsek, Babi,", platform: "Mobile Legends", waktu: "2021-03-13 12:13:01")
         saveFakeData(kalimat: "Tai lu fak", kataKotor: ", Tai, Fak,", platform: "Mobile Legends", waktu: "2021-03-13 12:11:01")
-        saveFakeData(kalimat: "Tau lah serah lu aja gua gamau mikir lagi anjing babi fak", kataKotor: ", Anjing, Babi, Fak", platform: "WhatsApp", waktu: "2021-03-13 12:13:01")
+        saveFakeData(kalimat: "Tau lah serah lu aja gua gamau mikir lagi anjing babi fak", kataKotor: ", Anjing, Babi, Fak,", platform: "WhatsApp", waktu: "2021-03-13 12:13:01")
         saveFakeData(kalimat: "Asu", kataKotor: ", Asu,", platform: "Mobile Legends", waktu: "2021-03-13 14:13:01")
         saveFakeData(kalimat: "Fak", kataKotor: ", Fak,", platform: "Mobile Legends", waktu: "2021-03-12 12:15:01")
         saveFakeData(kalimat: "Fak", kataKotor: ", Fak,", platform: "Mobile Legends", waktu: "2021-03-12 18:24:01")
