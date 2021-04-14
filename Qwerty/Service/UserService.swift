@@ -32,10 +32,11 @@ class UserService {
     }
     
     func getUserStartDate() -> Date {
-        if let startDate = defaults.object(forKey: "startDate") {
-            return startDate as! Date
+        if defaults.object(forKey: "startDate") != nil{
+            print("ASDKJFHASDJFHKASJDFASJDFKASJDFJASHDFJASD")
+            return defaults.object(forKey: "startDate") as! Date
         } else {
-            return Date()
+            return Converter.convertStringToDate(dateInString: "2021-03-08 12:23:45")
         }
     }
     

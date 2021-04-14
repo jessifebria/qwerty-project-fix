@@ -96,7 +96,7 @@ class VerifPassViewController: UIViewController {
             circle6.image = UIImage.init(systemName: "circle.fill")
             if tempPass == newPass {
                 UserService().saveUserPassword(newPass)
-                UserService().saveUserStartDate()
+//                UserService().saveUserStartDate()
                
                 
                     if KeyboardService().isKeyboardExtensionEnabled() {
