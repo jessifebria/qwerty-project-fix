@@ -14,7 +14,7 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var device: UILabel!
     @IBOutlet weak var circle: UIImageView!
     
-    var names = UIDevice.current.model
+    var names = UIDevice.current.name
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.sendSubviewToBack(circle)

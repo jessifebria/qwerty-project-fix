@@ -20,6 +20,7 @@
 		4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */; };
 		4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */; };
 		4EDA3DFD261F370C00368B1B /* joWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */; };
+		5B22F1C326268E6B0035BA00 /* Onboard1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22F1C226268E6B0035BA00 /* Onboard1ViewController.swift */; };
 		5B3899D326242A5C0067926C /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */; };
 		5B3899E726242D470067926C /* KataKotor.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899D926242AC40067926C /* KataKotor.csv */; };
 		5B3899F026242E030067926C /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
@@ -112,6 +113,7 @@
 		4EDA3DF1261EDE5500368B1B /* Qwerty.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Qwerty.entitlements; sourceTree = "<group>"; };
 		4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKalimatViewController.swift; sourceTree = "<group>"; };
 		4EDA3DFC261F370C00368B1B /* joWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = joWorkspace.storyboard; sourceTree = "<group>"; };
+		5B22F1C226268E6B0035BA00 /* Onboard1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard1ViewController.swift; sourceTree = "<group>"; };
 		5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
 		5B3899D926242AC40067926C /* KataKotor.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KataKotor.csv; sourceTree = "<group>"; };
 		5B3899F5262436560067926C /* jessiWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jessiWorkspace.storyboard; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */,
 				4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */,
 				5B3899FB262436820067926C /* KeyboardWarningViewController.swift */,
+				5B22F1C226268E6B0035BA00 /* Onboard1ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 			files = (
 				4E43016826205A8200C288D4 /* HomepagetestViewController.swift in Sources */,
 				5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */,
+				5B22F1C326268E6B0035BA00 /* Onboard1ViewController.swift in Sources */,
 				BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */,
 				5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */,
 				5B6ADFE7261FFB6800ED8594 /* KeyboardService.swift in Sources */,
@@ -607,6 +611,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = QwertyKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -627,6 +632,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = QwertyKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

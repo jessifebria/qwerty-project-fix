@@ -24,7 +24,7 @@ class UserService {
     }
     
     func getUserDevice() -> String {
-        return UIDevice.current.name
+        return UIDevice.current.model
     }
     
     func saveUserStartDate(){

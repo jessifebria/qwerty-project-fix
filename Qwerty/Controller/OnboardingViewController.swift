@@ -7,14 +7,14 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureRecognizerDelegate {
+class OnboardingViewController: UIViewController,UIScrollViewDelegate {
 
     
     @IBOutlet weak var Onboardingstuffs: UIScrollView!
     @IBOutlet weak var OnboardingNavigation: UIPageControl!
     
     var scrollWidth: CGFloat! = 0.0
-        var scrollHeight: CGFloat! = 0.0
+    var scrollHeight: CGFloat! = 0.0
 
         //data for the slides
 
@@ -25,7 +25,7 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
         scrollWidth = Onboardingstuffs.frame.size.width
         scrollHeight = Onboardingstuffs.frame.size.height
     }
-//    let gifView = UIImageView.init()
+    let gifView = UIImageView.init()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
@@ -56,10 +56,10 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
             Onboardingstuffs.addSubview(slide)
             if index == 5{
                 
-//                gifView.loadGif(name: "tutorial")
-//                gifView.frame = CGRect(x:42,y:170,width:330,height:230)
-//                gifView.center = CGPoint(x:scrollWidth/2,y: 290)
-//                slide.addSubview(gifView)
+                gifView.loadGif(name: "tutorial")
+                gifView.frame = CGRect(x:42,y:170,width:330,height:230)
+                gifView.center = CGPoint(x:scrollWidth/2,y: 290)
+                slide.addSubview(gifView)
                 let settingButton = UIButton(frame: CGRect(x: 20, y: 20, width: 300, height: 40))
                 settingButton.center = CGPoint(x:scrollWidth/2,y: 680)
                 settingButton.setTitle("Go to Setting", for: .normal)
@@ -109,7 +109,7 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate,UIGestureR
     }
     
     @objc func settingButton(sender : UIButton) {
-        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+        UIApplication.shared.open(URL(string:"App-Prefs:root=General")!)
     }
     @objc func passButton(sender : UIButton) {
         performSegue(withIdentifier: "goToSetPassword", sender: sender)
