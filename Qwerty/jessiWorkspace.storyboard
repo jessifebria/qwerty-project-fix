@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="REVISIIIII ONBOARDING FINAL-9" translatesAutoresizingMaskIntoConstraints="NO" id="AF5-eg-gp1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardingFinalRev-9" translatesAutoresizingMaskIntoConstraints="NO" id="AF5-eg-gp1">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
                         </subviews>
@@ -280,7 +280,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="REVISIIIII ONBOARDING FINAL-9" width="781.66668701171875" height="1692"/>
+        <image name="OnboardingFinalRev-9" width="1125" height="2436"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <systemColor name="labelColor">

@@ -10,9 +10,15 @@ import UIKit
 class KeyboardWarningViewController: UIViewController {
 
     @IBOutlet var mainView: UIView!
-    
+    let gifView = UIImageView.init()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        gifView.loadGif(name: "tutorial")
+        gifView.frame = CGRect(x:42,y:170,width:330,height:230)
+        gifView.center = CGPoint(x:mainView.center.x,y: 345)
+        mainView.addSubview(gifView)
+        
         let settingButton = UIButton(frame: CGRect(x: 20, y: 20, width: 300, height: 40))
         settingButton.setTitle("Go to Setting", for: .normal)
         settingButton.center = CGPoint(x:mainView.frame.size.width/2,y: 680)

@@ -18,7 +18,7 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate {
 
         //data for the slides
 
-    var imgs = ["OnboardingFinal-2","OnboardingFinal-4","OnboardingFinal-5","OnboardingFinal-6","OnboardingFinal-7","OnboardingFinalRev-8","OnboardingFinal-3"]
+    var imgs = ["APP ONBOARDING REV 0-2","APP ONBOARDING REV 0-4","APP ONBOARDING REV 0-5","APP ONBOARDING REV 0-6","REVISIIIII ONBOARDING FINAL-7", "REVISIIIII ONBOARDING FINAL-8", "APP ONBOARDING REV 0-3"]
 
         //get dynamic width and height of scrollview and save it
     override func viewDidLayoutSubviews() {
@@ -55,9 +55,10 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate {
             slide.addSubview(imageView)
             Onboardingstuffs.addSubview(slide)
             if index == 5{
+                
                 gifView.loadGif(name: "tutorial")
                 gifView.frame = CGRect(x:42,y:170,width:330,height:230)
-                gifView.center = CGPoint(x:scrollWidth/2,y: 315)
+                gifView.center = CGPoint(x:scrollWidth/2,y: 290)
                 slide.addSubview(gifView)
                 let settingButton = UIButton(frame: CGRect(x: 20, y: 20, width: 300, height: 40))
                 settingButton.center = CGPoint(x:scrollWidth/2,y: 680)
