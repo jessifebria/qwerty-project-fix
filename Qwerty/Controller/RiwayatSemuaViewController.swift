@@ -52,9 +52,9 @@ class RiwayatSemuaViewController: UIViewController {
             segmentedControl.selectedSegmentIndex = 1
         }
 
-        let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+        let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 20, height: 25))
         containerView.addTarget(self, action: #selector(filterAction), for: .touchUpInside)
-        let imageSearch = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
+        let imageSearch = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 20, height: 25))
         imageSearch.image = UIImage(named: "filter")
         containerView.addSubview(imageSearch)
         let searchBarButtonItem = UIBarButtonItem(customView: containerView)
