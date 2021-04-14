@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if !isPreloaded {
             print("loading kata kotor")
             KataKotorService().loadKataKotor()
+            HistoryService().createHistoryFakeData()
             defaults.set(true, forKey: "kataKotorLoaded")
         }
         

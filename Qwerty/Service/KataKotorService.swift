@@ -129,9 +129,11 @@ class KataKotorService {
             let csv = csvData?.components(separatedBy: "\n")
             for row in csv!{
                 print(row)
-                let newKataKotor = KataKotor(context: contextService.context)
-                newKataKotor.kata = row.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression).capitalized
-                contextService.saveChanges()
+                if row != ""{
+                    let newKataKotor = KataKotor(context: contextService.context)
+                    newKataKotor.kata = row.replacingOccurrences(of: "\\s+$", with: "", options: .regularExpression).capitalized
+                    contextService.saveChanges()
+                }
             }
        
         } catch{
@@ -157,6 +159,20 @@ class KataKotorService {
             let newTotal = kataObject.total - 1
             kataObject.setValue(newTotal, forKey: "total")
             contextService.saveChanges()
+        }
+    }
+    
+    func addCountToKataKotor(_ kata : String, _ count : Int){
+        let request : NSFetchRequest<KataKotor> = KataKotor.fetchRequest()
+        request.predicate = NSPredicate(format: "kata MATCHES[cd] %@", kata.capitalized)
+        do {
+            print(kata)
+            let kataKotor = contextService.loadKataKotor(request)
+            let newTotal = Int(kataKotor[0].total) + count
+            kataKotor[0].setValue(newTotal, forKey: "total")
+            contextService.saveChanges()
+        } catch  {
+            print("Error checking row count \(error)")
         }
     }
     

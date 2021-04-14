@@ -94,4 +94,51 @@ class HistoryService {
     }
     
     
+    func createHistoryFakeData(){
+        
+        saveFakeData(kalimat: "Anjing lu babi", kataKotor: ", Anjing, Babi,", platform: "Mobile Legends", waktu: "2021-04-13 12:13:01")
+        saveFakeData(kalimat: "Lonte", kataKotor: ", Lonte,", platform: "Mobile Legends", waktu: "2021-04-13 10:13:01")
+        saveFakeData(kalimat: "fak lu", kataKotor: ", Fak,", platform: "WhatsApp", waktu: "2021-04-13 10:12:23")
+        saveFakeData(kalimat: "bacot banget lu jadi orang", kataKotor: ", Bacot,", platform: "WhatsApp", waktu: "2021-04-12 09:13:01")
+        saveFakeData(kalimat: "Tai asu", kataKotor: ", Tai, Asu,", platform: "Instagram", waktu: "2021-04-12 09:13:01")
+        saveFakeData(kalimat: "kontol", kataKotor: ", Kontol,", platform: "Line", waktu: "2021-04-09 09:13:01")
+        saveFakeData(kalimat: "kok lu bacot banget sih lu jadi orang, gua capek banget dengernya asu", kataKotor: ", Bacot, Asu,", platform: "Instagram", waktu: "2021-04-09 09:13:01")
+        saveFakeData(kalimat: "duh anjing lu kampret bangsat", kataKotor: ", Anjing, Bangsat,", platform: "WhatsApp", waktu: "2021-04-09 12:13:12")
+        saveFakeData(kalimat: "lu tuh kebanyakan ngomong njir pusing gua", kataKotor: ", Njir,", platform: "WhatsApp", waktu: "2021-04-08 08:23:12")
+        
+        
+        saveFakeData(kalimat: "Brengsek lu babi", kataKotor: ", Brengsek, Babi,", platform: "Mobile Legends", waktu: "2021-03-13 12:13:01")
+        saveFakeData(kalimat: "Tai lu fak", kataKotor: ", Tai, Fak,", platform: "Mobile Legends", waktu: "2021-03-13 12:11:01")
+        saveFakeData(kalimat: "Tau lah serah lu aja gua gamau mikir lagi anjing babi fak", kataKotor: ", Anjing, Babi, Fak", platform: "WhatsApp", waktu: "2021-03-13 12:13:01")
+        saveFakeData(kalimat: "Asu", kataKotor: ", Asu,", platform: "Mobile Legends", waktu: "2021-03-13 14:13:01")
+        saveFakeData(kalimat: "Fak", kataKotor: ", Fak,", platform: "Mobile Legends", waktu: "2021-03-12 12:15:01")
+        saveFakeData(kalimat: "Fak", kataKotor: ", Fak,", platform: "Mobile Legends", waktu: "2021-03-12 18:24:01")
+        saveFakeData(kalimat: "Fak", kataKotor: ", Fak,", platform: "Mobile Legends", waktu: "2021-03-11 17:12:45")
+        saveFakeData(kalimat: "Fak", kataKotor: ", Fak,", platform: "Mobile Legends", waktu: "2021-03-10 20:34:14")
+        saveFakeData(kalimat: "Fak", kataKotor: ", Fak,", platform: "Mobile Legends", waktu: "2021-03-10 21:45:36")
+      
+        KataKotorService().addCountToKataKotor("Anjing", 3)
+        KataKotorService().addCountToKataKotor("Babi", 3)
+        KataKotorService().addCountToKataKotor("Lonte", 1)
+        KataKotorService().addCountToKataKotor("Fak", 8)
+        KataKotorService().addCountToKataKotor("Bacot", 2)
+        KataKotorService().addCountToKataKotor("Tai", 2)
+        KataKotorService().addCountToKataKotor("Asu", 3)
+        KataKotorService().addCountToKataKotor("Kontol", 1)
+        KataKotorService().addCountToKataKotor("Bangsat", 1)
+        KataKotorService().addCountToKataKotor("Njir", 1)
+        KataKotorService().addCountToKataKotor("Brengsek", 1)
+        
+        
+        contextService.saveChanges()
+    }
+    
+    func saveFakeData(kalimat : String, kataKotor : String, platform : String, waktu : String){
+        let newHistory = History(context: contextService.context)
+        newHistory.kalimat = kalimat
+        newHistory.kataKotor = kataKotor
+        newHistory.platform = platform
+        newHistory.waktu = Converter.convertStringToDate(dateInString: waktu)
+    }
+    
 }

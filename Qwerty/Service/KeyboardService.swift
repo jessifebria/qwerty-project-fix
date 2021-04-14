@@ -20,7 +20,7 @@ class KeyboardService {
             return date
         }
         else {
-            return Converter.convertStringToDate()
+            return Converter.convertStringToDate(dateInString: "1999-12-01 00:00:00")
         }
     }
        

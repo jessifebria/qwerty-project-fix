@@ -73,7 +73,7 @@ class HomepageViewController: UIViewController {
     }
     
     func setLastSeen(){
-        if lastSeen == Converter.convertStringToDate() {
+        if lastSeen == Converter.convertStringToDate(dateInString: "1999-12-01 00:00:00") {
             lastSeenKeyboard.text = "Keyboard Qwerty belum dipakai"
         }
         else {
