@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-extension Keyboards {
+extension Keyboard {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Keyboard> {
         return NSFetchRequest<Keyboard>(entityName: "Keyboard")

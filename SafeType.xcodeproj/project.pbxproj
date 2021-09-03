@@ -23,7 +23,6 @@
 		5B22F1C326268E6B0035BA00 /* Onboard1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22F1C226268E6B0035BA00 /* Onboard1ViewController.swift */; };
 		5B3899D326242A5C0067926C /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */; };
 		5B3899E726242D470067926C /* KataKotor.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899D926242AC40067926C /* KataKotor.csv */; };
-		5B3899F026242E030067926C /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
 		5B3899F6262436560067926C /* jessiWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899F5262436560067926C /* jessiWorkspace.storyboard */; };
 		5B3899FC262436820067926C /* KeyboardWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3899FB262436820067926C /* KeyboardWarningViewController.swift */; };
 		5B389A0226243A3F0067926C /* MasukkanPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B389A0126243A3F0067926C /* MasukkanPassViewController.swift */; };
@@ -37,12 +36,13 @@
 		5B76A425261E050C00D708DC /* SafeType.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF2C789C261C567400F1FFCA /* SafeType.xcdatamodeld */; };
 		5B76A464261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
 		5B76A465261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
-		5B76A46F261E10D000D708DC /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
 		5B7D6CFE261CA5510086F45E /* SafeTypeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B7D6CF6261CA5510086F45E /* SafeTypeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */; };
 		5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D6D2F261CA7450086F45E /* keyboard.storyboard */; };
 		B729824C2620693C00D8B395 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B729824B2620693C00D8B395 /* HomepageViewController.swift */; };
 		B760EE4D26242E81004176A7 /* boxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760EE4C26242E81004176A7 /* boxCollectionViewCell.swift */; };
+		BF2221C226E25F5500FF977A /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
+		BF2221C326E25F6400FF977A /* KeyboardDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataController.swift */; };
 		BF2B61BB26E22569004D8304 /* Keyboard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B61B526E22569004D8304 /* Keyboard+CoreDataClass.swift */; };
 		BF2B61BC26E22569004D8304 /* Keyboard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B61B626E22569004D8304 /* Keyboard+CoreDataProperties.swift */; };
 		BF2B61BD26E22569004D8304 /* KataKotor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B61B726E22569004D8304 /* KataKotor+CoreDataClass.swift */; };
@@ -520,7 +520,7 @@
 			files = (
 				5B76A465261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */,
 				5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */,
-				5B76A46F261E10D000D708DC /* KeyboardDataController.swift in Sources */,
+				BF2221C326E25F6400FF977A /* KeyboardDataController.swift in Sources */,
 				5B76A425261E050C00D708DC /* SafeType.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,10 +556,10 @@
 				BF2B61C026E22569004D8304 /* History+CoreDataProperties.swift in Sources */,
 				5B6ADFDB261FFB4C00ED8594 /* KataKotorService.swift in Sources */,
 				BF2C7894261C567400F1FFCA /* AppDelegate.swift in Sources */,
-				5B3899F026242E030067926C /* KeyboardDataController.swift in Sources */,
 				4E43017426205AA300C288D4 /* KataTerdeteksiViewController.swift in Sources */,
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
 				5B389A0226243A3F0067926C /* MasukkanPassViewController.swift in Sources */,
+				BF2221C226E25F5500FF977A /* KeyboardDataController.swift in Sources */,
 				5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */,
 				4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */,
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,

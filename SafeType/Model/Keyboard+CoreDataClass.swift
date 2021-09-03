@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(Keyboard)
-public class Keyboards: NSManagedObject {
+public class Keyboard: NSManagedObject {
 
 }

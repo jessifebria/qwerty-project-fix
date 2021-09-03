@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 
-extension KataKotors {
+extension KataKotor {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<KataKotor> {
-        return NSFetchRequest<KataKotors>(entityName: "KataKotor")
+        return NSFetchRequest<KataKotor>(entityName: "KataKotor")
     }
 
     @NSManaged public var kata: String?
@@ -21,6 +21,6 @@ extension KataKotors {
 
 }
 
-extension KataKotors : Identifiable {
+extension KataKotor : Identifiable {
 
 }

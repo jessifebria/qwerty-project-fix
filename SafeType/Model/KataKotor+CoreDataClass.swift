@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(KataKotor)
-public class KataKotors: NSManagedObject {
+public class KataKotor: NSManagedObject {
 
 }

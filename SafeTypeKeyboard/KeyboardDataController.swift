@@ -11,6 +11,7 @@ import UIKit
 
 class KeyboardDataController {
     
+    
     // MARK: - Core Data Setting
        lazy var persistentContainer: NSPersistentContainer = {
            let container = NSCustomPersistentContainer(name: "SafeType")
@@ -75,6 +76,7 @@ class KeyboardDataController {
     func saveKeyboardSetting(_ isFullAccess : Bool){
         let context = getContext()
         let request : NSFetchRequest<Keyboard> = Keyboard.fetchRequest()
+        
         var keyboards = [Keyboard]()
         do {
             try keyboards = context.fetch(request)
@@ -86,7 +88,7 @@ class KeyboardDataController {
             context.delete(keyboard)
         }
         print(keyboards.count)
-        let keyboardSetting = Keyboard (context: context)
+        let keyboardSetting = Keyboard(context: context)
         keyboardSetting.isFullAccess = isFullAccess
         keyboardSetting.lastSeen = Date()
         

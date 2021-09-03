@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 @objc(History)
-public class Historys: NSManagedObject {
+public class History: NSManagedObject {
 
 }
