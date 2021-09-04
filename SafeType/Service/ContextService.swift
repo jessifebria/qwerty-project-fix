@@ -12,17 +12,17 @@ class ContextService {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func deleteHistory(_ history : Historys) {
+    func deleteHistory(_ history : History) {
         context.delete(history)
         saveChanges()
     }
     
-    func deleteKataKotor(_ kataKotor : KataKotors) {
+    func deleteKataKotor(_ kataKotor : KataKotor) {
         context.delete(kataKotor)
         saveChanges()
     }
     
-    func loadHistory(_ request : NSFetchRequest<Historys>) -> [Historys]{
+    func loadHistory(_ request : NSFetchRequest<History>) -> [History]{
         do {
             request.sortDescriptors = [NSSortDescriptor(key: "waktu", ascending: false)]
             return try context.fetch(request)
@@ -32,7 +32,7 @@ class ContextService {
         return []
     }
     
-    func loadKataKotor(_ request : NSFetchRequest<KataKotors>) -> [KataKotors]{
+    func loadKataKotor(_ request : NSFetchRequest<KataKotor>) -> [KataKotor]{
         do {
             return try context.fetch(request)
         } catch  {
@@ -41,7 +41,7 @@ class ContextService {
         return []
     }
     
-    func loadKeyboardSetting(_ request : NSFetchRequest<Keyboards>) -> [Keyboards]{
+    func loadKeyboardSetting(_ request : NSFetchRequest<Keyboard>) -> [Keyboard]{
         do {
             return try context.fetch(request)
         } catch  {

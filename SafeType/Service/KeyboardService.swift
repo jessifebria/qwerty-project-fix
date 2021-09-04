@@ -28,7 +28,7 @@ class KeyboardService {
 
         let keyboards = UserDefaults.standard.dictionaryRepresentation()["AppleKeyboards"] as? [String]
 
-        let keyboardExtensionBundleID = "com.jessifebria.SafeType.SafeTypeKeyboard"
+        let keyboardExtensionBundleID = "com.SafeType.SafeType.SafeTypeKeyboard"
         if keyboards!.contains(keyboardExtensionBundleID) {
             return true
         }
