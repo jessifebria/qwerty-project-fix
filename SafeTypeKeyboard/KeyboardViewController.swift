@@ -238,8 +238,10 @@ class KeyboardViewController: UIInputViewController {
     
     
     @IBAction func insertButton(_ sender: UIButton) {
-        self.textDocumentProxy.insertText(sender.currentTitle!)
-        backToNoCapslockIfTappedAfterOneTimeCapslockOn()
+        DispatchQueue.main.async {
+            self.textDocumentProxy.insertText(sender.currentTitle!)
+            self.backToNoCapslockIfTappedAfterOneTimeCapslockOn()
+        }
     }
     
     @IBAction func spaceButton(_ sender: UIButton) {
