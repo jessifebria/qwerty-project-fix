@@ -9,20 +9,19 @@ import Foundation
 import CoreData
 import UIKit
 
-class KeyboardDataController {
-    
+final class KeyboardDataController {
     
     // MARK: - Core Data Setting
-       lazy var persistentContainer: NSPersistentContainer = {
-           let container = NSCustomPersistentContainer(name: "SafeType")
-           
-           container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-               if let error = error as NSError? {
-                   fatalError("Unresolved error \(error), \(error.userInfo)")
-               }
-           })
-           return container
-       }()
+   lazy var persistentContainer: NSPersistentContainer = {
+       let container = NSCustomPersistentContainer(name: "SafeType")
+       
+       container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+           if let error = error as NSError? {
+               fatalError("Unresolved error \(error), \(error.userInfo)")
+           }
+       })
+       return container
+   }()
     
     //MARK: Controller
     
@@ -44,7 +43,6 @@ class KeyboardDataController {
         }
         
         if rowCount > 0 {
-            print("--------------------------------------------------- \(rowCount) ----------------------------")
             do {
                 let kataKotor = try context.fetch(request)[0]
                 let newTotal = kataKotor.total + 1
@@ -61,16 +59,15 @@ class KeyboardDataController {
     
 
     func saveHistory (kalimat : String, kataKotor : String, platform : String) {
-        print("tring to save")
         let context = getContext()
         let newHistory = History(context: context)
+        
         newHistory.kalimat = kalimat
         newHistory.kataKotor = kataKotor
         newHistory.platform = platform
         newHistory.waktu = Date()
         
         saveChanges(context)
-        print("--------------------------------------------------- sukses kesimpen woeeyy ----------------------------")
     }
     
     func saveKeyboardSetting(_ isFullAccess : Bool){
@@ -78,6 +75,7 @@ class KeyboardDataController {
         let request : NSFetchRequest<Keyboard> = Keyboard.fetchRequest()
         
         var keyboards = [Keyboard]()
+        
         do {
             try keyboards = context.fetch(request)
         } catch  {
@@ -87,7 +85,7 @@ class KeyboardDataController {
         for keyboard in keyboards{
             context.delete(keyboard)
         }
-        print(keyboards.count)
+        
         let keyboardSetting = Keyboard(context: context)
         keyboardSetting.isFullAccess = isFullAccess
         keyboardSetting.lastSeen = Date()
