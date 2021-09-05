@@ -54,6 +54,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window = CustomWindow(windowScene: windowScene)
             window?.rootViewController = initialViewController
             window!.makeKeyAndVisible()
+          
 
         }
 //        

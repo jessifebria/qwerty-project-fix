@@ -8,6 +8,7 @@
 import UIKit
 
 class HomepageViewController: UIViewController {
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var periodOfDate: UILabel!
@@ -30,10 +31,15 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var lastSeenKeyboard: UILabel!
     @IBOutlet weak var allData: UILabel!
     @IBOutlet weak var today: UILabel!
+//    @IBOutlet weak var scrollView: UIScrollView!
+    
+    var scrollWidth: CGFloat! = 0.0
+    var scrollHeight: CGFloat! = 0.0
     
     var labelWord = [UILabel?]()
     var progressBar = [UIProgressView?]()
     var labelCount = [UILabel?]()
+    
     
     var totalKataKotor = KataKotorService().getUniqueKataKotor(filter: "Day").countTotal
     var riwayatData = HistoryService().getHistory(filter: "Day")
@@ -43,8 +49,16 @@ class HomepageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        scrollView.addSubview(mainView)
+//        scrollView.delegate = self
+//
+//        scrollView.isPagingEnabled = true
+//        scrollView.showsHorizontalScrollIndicator = false
+//        scrollView.showsVerticalScrollIndicator = false
+
         self.navigationItem.title = "Ringkasan"
-  
+//        scrollWidth = scrollView.frame.size.width
+//        scrollHeight = scrollView.frame.size.height
         NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         tabBarController?.tabBar.items?[1].title = "Riwayat"
