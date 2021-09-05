@@ -988,53 +988,53 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Upper" destination="GEQ-az-Sts" id="2F7-ed-XR2"/>
-                        <outlet property="a" destination="WGO-sa-5vh" id="I0s-Le-I60"/>
-                        <outlet property="b" destination="Snr-8f-8Mh" id="qG2-Nb-DK4"/>
-                        <outlet property="c" destination="wBg-N1-6MQ" id="M4m-mJ-aY3"/>
-                        <outlet property="char21" destination="SwX-DT-aYq" id="jyH-e5-cab"/>
-                        <outlet property="char22" destination="GAp-sS-W4z" id="yWv-vo-wUL"/>
-                        <outlet property="char23" destination="1lh-rL-dhz" id="qW2-iE-Kav"/>
-                        <outlet property="char24" destination="Tqu-Sa-beX" id="uA6-9H-M1c"/>
-                        <outlet property="char25" destination="Yug-uP-rfA" id="Sup-nj-r9K"/>
-                        <outlet property="char26" destination="ak4-Se-3EK" id="k7k-Jm-uFm"/>
-                        <outlet property="char27" destination="kEX-a0-e3O" id="l02-Ax-No6"/>
-                        <outlet property="char28" destination="h1M-Py-OgA" id="Mdp-Yh-Gbj"/>
-                        <outlet property="char29" destination="4HX-lO-E8o" id="TVP-J3-v0t"/>
-                        <outlet property="char30" destination="lvg-sf-rFH" id="1vl-Gs-IJX"/>
-                        <outlet property="d" destination="3SQ-Th-KjE" id="vYK-Ef-bxx"/>
-                        <outlet property="del" destination="Ofu-AM-Vpz" id="zhm-L8-6Ag"/>
-                        <outlet property="e" destination="D0z-jR-pyP" id="wPv-Dm-gWm"/>
-                        <outlet property="f" destination="Zhl-ub-SeH" id="tcx-fE-luc"/>
-                        <outlet property="g" destination="KY5-27-sk9" id="8A2-oU-GGC"/>
-                        <outlet property="h" destination="QCr-jq-JW8" id="7GN-9r-yZ5"/>
-                        <outlet property="i" destination="rF6-Fd-Zgt" id="mpg-4F-dpA"/>
-                        <outlet property="j" destination="R15-Ij-Dle" id="nht-UI-m5X"/>
-                        <outlet property="k" destination="bqi-hT-2b9" id="ywW-lE-thE"/>
-                        <outlet property="l" destination="iEF-VE-4OZ" id="vK6-2v-yST"/>
-                        <outlet property="m" destination="pqa-26-lec" id="W2k-OG-hfC"/>
+                        <outlet property="aButton" destination="WGO-sa-5vh" id="I0s-Le-I60"/>
+                        <outlet property="bButton" destination="Snr-8f-8Mh" id="qG2-Nb-DK4"/>
+                        <outlet property="cButton" destination="wBg-N1-6MQ" id="M4m-mJ-aY3"/>
+                        <outlet property="charRow2Col10Button" destination="lvg-sf-rFH" id="1vl-Gs-IJX"/>
+                        <outlet property="charRow2Col1Button" destination="SwX-DT-aYq" id="jyH-e5-cab"/>
+                        <outlet property="charRow2Col2Button" destination="GAp-sS-W4z" id="yWv-vo-wUL"/>
+                        <outlet property="charRow2Col3Button" destination="1lh-rL-dhz" id="qW2-iE-Kav"/>
+                        <outlet property="charRow2Col4Button" destination="Tqu-Sa-beX" id="uA6-9H-M1c"/>
+                        <outlet property="charRow2Col5Button" destination="Yug-uP-rfA" id="Sup-nj-r9K"/>
+                        <outlet property="charRow2Col6Button" destination="ak4-Se-3EK" id="k7k-Jm-uFm"/>
+                        <outlet property="charRow2Col7Button" destination="kEX-a0-e3O" id="l02-Ax-No6"/>
+                        <outlet property="charRow2Col8Button" destination="h1M-Py-OgA" id="Mdp-Yh-Gbj"/>
+                        <outlet property="charRow2Col9Button" destination="4HX-lO-E8o" id="TVP-J3-v0t"/>
+                        <outlet property="dButton" destination="3SQ-Th-KjE" id="vYK-Ef-bxx"/>
+                        <outlet property="delButton" destination="Ofu-AM-Vpz" id="zhm-L8-6Ag"/>
+                        <outlet property="eButton" destination="D0z-jR-pyP" id="wPv-Dm-gWm"/>
+                        <outlet property="fButton" destination="Zhl-ub-SeH" id="tcx-fE-luc"/>
+                        <outlet property="gButton" destination="KY5-27-sk9" id="8A2-oU-GGC"/>
+                        <outlet property="hButton" destination="QCr-jq-JW8" id="7GN-9r-yZ5"/>
+                        <outlet property="iButton" destination="rF6-Fd-Zgt" id="mpg-4F-dpA"/>
+                        <outlet property="jButton" destination="R15-Ij-Dle" id="nht-UI-m5X"/>
+                        <outlet property="kButton" destination="bqi-hT-2b9" id="ywW-lE-thE"/>
+                        <outlet property="lButton" destination="iEF-VE-4OZ" id="vK6-2v-yST"/>
+                        <outlet property="mButton" destination="pqa-26-lec" id="W2k-OG-hfC"/>
                         <outlet property="mainView" destination="6HO-Aa-CqU" id="IRq-Qc-b2f"/>
-                        <outlet property="n" destination="oXz-RH-R2D" id="vCW-P9-AJu"/>
-                        <outlet property="numb" destination="W6A-Kh-bAH" id="mLg-xN-I3e"/>
-                        <outlet property="o" destination="DC7-qX-gdd" id="J8i-NK-sJW"/>
-                        <outlet property="p" destination="Wbm-qX-4cD" id="7Yo-bt-TbU"/>
-                        <outlet property="q" destination="XRE-n6-QgU" id="mJG-z8-KhA"/>
-                        <outlet property="r" destination="D0U-t2-oJ3" id="YQx-h7-gUp"/>
-                        <outlet property="return" destination="daB-SD-fDp" id="fZC-Eo-07Q"/>
-                        <outlet property="s" destination="Y6Z-dt-neS" id="9ej-gz-lo4"/>
-                        <outlet property="space" destination="iPu-Kr-dTQ" id="rmN-uS-KWN"/>
+                        <outlet property="nButton" destination="oXz-RH-R2D" id="vCW-P9-AJu"/>
+                        <outlet property="oButton" destination="DC7-qX-gdd" id="J8i-NK-sJW"/>
+                        <outlet property="pButton" destination="Wbm-qX-4cD" id="7Yo-bt-TbU"/>
+                        <outlet property="qButton" destination="XRE-n6-QgU" id="mJG-z8-KhA"/>
+                        <outlet property="rButton" destination="D0U-t2-oJ3" id="YQx-h7-gUp"/>
+                        <outlet property="returnButton" destination="daB-SD-fDp" id="fZC-Eo-07Q"/>
+                        <outlet property="sButton" destination="Y6Z-dt-neS" id="9ej-gz-lo4"/>
+                        <outlet property="spaceButton" destination="iPu-Kr-dTQ" id="rmN-uS-KWN"/>
                         <outlet property="stackRowThreeAlpha" destination="A2p-tV-bD2" id="QSZ-1o-7UK"/>
                         <outlet property="stackRowThreeNum" destination="Xki-Ik-299" id="aYR-4a-AvV"/>
                         <outlet property="stackRowTwoAlpha" destination="BRr-o4-Pob" id="8rP-3f-lIi"/>
                         <outlet property="stackRowTwoNum" destination="McX-kO-UxS" id="ZAz-rR-ykx"/>
-                        <outlet property="switchNum" destination="vuj-kK-pCF" id="tOX-k9-Qe2"/>
-                        <outlet property="t" destination="hwJ-RY-6JQ" id="ZFq-3z-i02"/>
-                        <outlet property="u" destination="gJU-0o-aFP" id="cjc-lh-tNS"/>
-                        <outlet property="v" destination="Pby-Tz-nv4" id="1hW-cf-jw1"/>
-                        <outlet property="w" destination="gSG-ts-piB" id="fIC-l5-zw4"/>
-                        <outlet property="x" destination="XgK-yZ-amv" id="CX5-yj-vrn"/>
-                        <outlet property="y" destination="t3C-fk-t86" id="VYf-5K-5Ye"/>
-                        <outlet property="z" destination="yt7-Wg-HDF" id="Q3V-7Q-e1Z"/>
+                        <outlet property="switchAlphaAndCharButton" destination="W6A-Kh-bAH" id="mLg-xN-I3e"/>
+                        <outlet property="switchNumAndCharButton" destination="vuj-kK-pCF" id="tOX-k9-Qe2"/>
+                        <outlet property="tButton" destination="hwJ-RY-6JQ" id="ZFq-3z-i02"/>
+                        <outlet property="uButton" destination="gJU-0o-aFP" id="cjc-lh-tNS"/>
+                        <outlet property="upperButton" destination="GEQ-az-Sts" id="2F7-ed-XR2"/>
+                        <outlet property="vButton" destination="Pby-Tz-nv4" id="1hW-cf-jw1"/>
+                        <outlet property="wButton" destination="gSG-ts-piB" id="fIC-l5-zw4"/>
+                        <outlet property="xButton" destination="XgK-yZ-amv" id="CX5-yj-vrn"/>
+                        <outlet property="yButton" destination="t3C-fk-t86" id="VYf-5K-5Ye"/>
+                        <outlet property="zButton" destination="yt7-Wg-HDF" id="Q3V-7Q-e1Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LO3-ZK-6A1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

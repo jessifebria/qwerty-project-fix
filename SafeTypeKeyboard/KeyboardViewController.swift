@@ -13,58 +13,78 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var nextKeyboardButton: UIButton!
     
     @IBOutlet var mainView: UIView!
-    @IBOutlet weak var q: UIButton!
-    @IBOutlet weak var w: UIButton!
-    @IBOutlet weak var e: UIButton!
-    @IBOutlet weak var r: UIButton!
-    @IBOutlet weak var t: UIButton!
-    @IBOutlet weak var y: UIButton!
-    @IBOutlet weak var u: UIButton!
-    @IBOutlet weak var i: UIButton!
-    @IBOutlet weak var o: UIButton!
-    @IBOutlet weak var p: UIButton!
-    @IBOutlet weak var a: UIButton!
-    @IBOutlet weak var s: UIButton!
-    @IBOutlet weak var d: UIButton!
-    @IBOutlet weak var f: UIButton!
-    @IBOutlet weak var g: UIButton!
-    @IBOutlet weak var h: UIButton!
-    @IBOutlet weak var j: UIButton!
-    @IBOutlet weak var k: UIButton!
-    @IBOutlet weak var l: UIButton!
-    @IBOutlet weak var z: UIButton!
-    @IBOutlet weak var x: UIButton!
-    @IBOutlet weak var c: UIButton!
-    @IBOutlet weak var v: UIButton!
-    @IBOutlet weak var b: UIButton!
-    @IBOutlet weak var n: UIButton!
-    @IBOutlet weak var m: UIButton!
-    @IBOutlet weak var del: UIButton!
-    @IBOutlet weak var space: UIButton!
-    @IBOutlet weak var `return`: UIButton!
-    @IBOutlet weak var numb: UIButton!
-    @IBOutlet weak var Upper: UIButton!
     
+    /**
+     Universal Button
+     */
+    @IBOutlet weak var delButton: UIButton!
+    @IBOutlet weak var spaceButton: UIButton!
+    @IBOutlet weak var returnButton: UIButton!
+    @IBOutlet weak var switchAlphaAndCharButton: UIButton!
     
-    @IBOutlet weak var char21: UIButton!
-    @IBOutlet weak var char22: UIButton!
-    @IBOutlet weak var char23: UIButton!
-    @IBOutlet weak var char24: UIButton!
-    @IBOutlet weak var char25: UIButton!
-    @IBOutlet weak var char26: UIButton!
-    @IBOutlet weak var char27: UIButton!
-    @IBOutlet weak var char28: UIButton!
-    @IBOutlet weak var char29: UIButton!
-    @IBOutlet weak var char30: UIButton!
-    @IBOutlet weak var switchNum: UIButton!
+    /**
+     ROW ONE universal (alpha -> num, vice versa)
+     */
+    @IBOutlet weak var qButton: UIButton!
+    @IBOutlet weak var wButton: UIButton!
+    @IBOutlet weak var eButton: UIButton!
+    @IBOutlet weak var rButton: UIButton!
+    @IBOutlet weak var tButton: UIButton!
+    @IBOutlet weak var yButton: UIButton!
+    @IBOutlet weak var uButton: UIButton!
+    @IBOutlet weak var iButton: UIButton!
+    @IBOutlet weak var oButton: UIButton!
+    @IBOutlet weak var pButton: UIButton!
     
-    
+    /**
+     ROW TWO only Alpha
+     */
     @IBOutlet weak var stackRowTwoAlpha: UIStackView!
+    @IBOutlet weak var aButton: UIButton!
+    @IBOutlet weak var sButton: UIButton!
+    @IBOutlet weak var dButton: UIButton!
+    @IBOutlet weak var fButton: UIButton!
+    @IBOutlet weak var gButton: UIButton!
+    @IBOutlet weak var hButton: UIButton!
+    @IBOutlet weak var jButton: UIButton!
+    @IBOutlet weak var kButton: UIButton!
+    @IBOutlet weak var lButton: UIButton!
+    
+    /**
+     ROW THREE only Alpha
+     */
     @IBOutlet weak var stackRowThreeAlpha: UIStackView!
+    @IBOutlet weak var upperButton: UIButton!
+    @IBOutlet weak var zButton: UIButton!
+    @IBOutlet weak var xButton: UIButton!
+    @IBOutlet weak var cButton: UIButton!
+    @IBOutlet weak var vButton: UIButton!
+    @IBOutlet weak var bButton: UIButton!
+    @IBOutlet weak var nButton: UIButton!
+    @IBOutlet weak var mButton: UIButton!
+    
+    
+    /**
+     ROW TWO only Character
+     */
     @IBOutlet weak var stackRowTwoNum: UIStackView!
+    @IBOutlet weak var charRow2Col1Button: UIButton!
+    @IBOutlet weak var charRow2Col2Button: UIButton!
+    @IBOutlet weak var charRow2Col3Button: UIButton!
+    @IBOutlet weak var charRow2Col4Button: UIButton!
+    @IBOutlet weak var charRow2Col5Button: UIButton!
+    @IBOutlet weak var charRow2Col6Button: UIButton!
+    @IBOutlet weak var charRow2Col7Button: UIButton!
+    @IBOutlet weak var charRow2Col8Button: UIButton!
+    @IBOutlet weak var charRow2Col9Button: UIButton!
+    @IBOutlet weak var charRow2Col10Button: UIButton!
+    
+    
+    /**
+     ROW THREE only Character
+     */
     @IBOutlet weak var stackRowThreeNum: UIStackView!
-    
-    
+    @IBOutlet weak var switchNumAndCharButton: UIButton!
     
     var outletRowOneUniversal: [UIButton] = [UIButton]()
     var outletRowTwoNum: [UIButton] = [UIButton]()
@@ -74,12 +94,12 @@ class KeyboardViewController: UIInputViewController {
 
     let labelRowOneAlpha = ["q","w","e","r","t","y","u","i","o","p"]
     let labelRowOneNumFirst = ["1","2","3","4","5","6","7","8","9","0"]
-    let labelRowOneNumSecond = ["[","]","{", "}", "#", "%", "^", "*", "","="]
+    let labelRowOneNumSecond = ["[","]","{", "}", "#", "%", "^", "*", "+","="]
+    
     let labelRowTwoNumFirst = ["-","/",":",";","(",")","$","&","@","\""]
     let labelRowTwoNumSecond = ["_","\\","|","~","<",">","€","£","¥","・"]
     
-    var tempCapslockPressed = false
-    
+    var isCapslock = false
     
     @IBAction func changeButton(_ sender: UIButton) {
         if sender.currentTitle! == "123" {
@@ -102,13 +122,13 @@ class KeyboardViewController: UIInputViewController {
             setCustomLabel(outletRowOneUniversal, labelRowOneAlpha)
             setUpperLower(true)
             
-            changeLabel(switchNum, "#+=")
+            changeLabel(switchNumAndCharButton, "#+=")
             changeLabel(sender, "123")
         }
     }
     
     @IBAction func switchNumButton(_ sender: UIButton) {
-        if tempCapslockPressed {
+        if isCapslock {
             setUpperLower(true)
         }
         if sender.currentTitle! == "#+=" {
@@ -141,7 +161,7 @@ class KeyboardViewController: UIInputViewController {
         let isUpper = outletAllAlpha[0].currentTitle!.uppercased() == outletAllAlpha[0].currentTitle!
         setUpperLower(isUpper)
         if isUpper == false {
-            tempCapslockPressed = true
+            isCapslock = true
         }
     }
     
@@ -155,48 +175,48 @@ class KeyboardViewController: UIInputViewController {
             }
         }
         if isUpper{
-            Upper.setImage(UIImage.init(systemName: "shift"), for: .normal)
-            Upper.backgroundColor = UIColor.systemGray2
+            upperButton.setImage(UIImage.init(systemName: "shift"), for: .normal)
+            upperButton.backgroundColor = UIColor.systemGray2
         } else {
-            Upper.setImage(UIImage.init(systemName: "shift.fill"), for: .normal)
-            Upper.backgroundColor = UIColor.white
+            upperButton.setImage(UIImage.init(systemName: "shift.fill"), for: .normal)
+            upperButton.backgroundColor = UIColor.white
         }
         
-        Upper.tintColor = UIColor.black
+        upperButton.tintColor = UIColor.black
         
     }
     
     
     @IBAction func insertButton(_ sender: UIButton) {
         self.textDocumentProxy.insertText(sender.currentTitle!)
-        if tempCapslockPressed {
+        if isCapslock {
             setUpperLower(true)
-            tempCapslockPressed = false
+            isCapslock = false
         }
     }
     
     
     @IBAction func spaceButton(_ sender: UIButton) {
         self.textDocumentProxy.insertText(" ")
-        if tempCapslockPressed {
+        if isCapslock {
             setUpperLower(true)
-            tempCapslockPressed = false
+            isCapslock = false
         }
         
     }
     @IBAction func delButton(_ sender: UIButton) {
         self.textDocumentProxy.deleteBackward()
-        if tempCapslockPressed {
+        if isCapslock {
             setUpperLower(true)
-            tempCapslockPressed = false
+            isCapslock = false
         }
     }
     
     @IBAction func returnButton(_ sender: UIButton) {
         self.textDocumentProxy.insertText("\n")
-        if tempCapslockPressed {
+        if isCapslock {
             setUpperLower(true)
-            tempCapslockPressed = false
+            isCapslock = false
         }
     }
     
@@ -209,18 +229,18 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        outletRowOneUniversal = [q,w,e,r,t,y,u,i,o,p]
+        outletRowOneUniversal = [qButton,wButton,eButton,rButton,tButton,yButton,uButton,iButton,oButton,pButton]
         
-        outletRowTwoNum = [char21, char22, char23, char24, char25, char26, char27, char28, char29, char30 ]
+        outletRowTwoNum = [charRow2Col1Button, charRow2Col2Button, charRow2Col3Button, charRow2Col4Button, charRow2Col5Button, charRow2Col6Button, charRow2Col7Button, charRow2Col8Button, charRow2Col9Button, charRow2Col10Button ]
         
-        outletAllAlpha = [q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m]
+        outletAllAlpha = [qButton,wButton,eButton,rButton,tButton,yButton,uButton,iButton,oButton,pButton,aButton,sButton,dButton,fButton,gButton,hButton,jButton,kButton,lButton,zButton,xButton,cButton,vButton,bButton,nButton,mButton]
     
         stackRowTwoNum.isHidden = true
         stackRowThreeNum.isHidden = true
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
             tap.numberOfTapsRequired = 2
-            Upper.addGestureRecognizer(tap)
+            upperButton.addGestureRecognizer(tap)
         //Don't do in action
      
         
@@ -240,10 +260,10 @@ class KeyboardViewController: UIInputViewController {
     
     @objc func doubleTapped() {
         setUpperLower(false)
-        Upper.setImage(UIImage.init(systemName: "capslock.fill"), for: .normal)
-        Upper.backgroundColor = UIColor.white
-        Upper.tintColor = UIColor.black
-        tempCapslockPressed = false
+        upperButton.setImage(UIImage.init(systemName: "capslock.fill"), for: .normal)
+        upperButton.backgroundColor = UIColor.white
+        upperButton.tintColor = UIColor.black
+        isCapslock = false
         
     }
     
