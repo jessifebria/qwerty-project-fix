@@ -22,20 +22,20 @@
                                 <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="iDL-PX-Ap7" userLabel="StackMain">
-                                        <rect key="frame" x="3" y="8" width="384" height="758"/>
+                                        <rect key="frame" x="3" y="8" width="384" height="750"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4v-Rj-OFx" userLabel="ViewRow1">
-                                                <rect key="frame" x="0.0" y="0.0" width="384" height="180.66666666666666"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="178.66666666666666"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-W6-CDl" userLabel="row1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="180.66666666666666"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="178.66666666666666"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRE-n6-QgU">
-                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRE-n6-QgU" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="q">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -46,12 +46,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="SLH-ad-567"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-ts-piB">
-                                                                <rect key="frame" x="39" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-ts-piB" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="39" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="w">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -62,13 +62,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="SuV-hh-59B"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-jR-pyP">
-                                                                <rect key="frame" x="78" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-jR-pyP" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="78" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="e">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -79,13 +78,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="QWk-I5-NcW"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0U-t2-oJ3">
-                                                                <rect key="frame" x="117" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0U-t2-oJ3" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="117" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="r">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -96,12 +94,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="waD-ob-1O0"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwJ-RY-6JQ">
-                                                                <rect key="frame" x="156" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwJ-RY-6JQ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="t">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -113,13 +111,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="RFL-yZ-GD9"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3C-fk-t86">
-                                                                <rect key="frame" x="195" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3C-fk-t86" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="195" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="y">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -130,13 +127,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="Uen-BJ-Okt"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJU-0o-aFP">
-                                                                <rect key="frame" x="234" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJU-0o-aFP" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="234" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="u">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -147,13 +143,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="qn3-AN-ezI"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF6-Fd-Zgt">
-                                                                <rect key="frame" x="273" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF6-Fd-Zgt" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="273" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="i">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -164,13 +159,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="hVB-dR-UdA"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DC7-qX-gdd">
-                                                                <rect key="frame" x="312" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DC7-qX-gdd" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="312" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                                                 <state key="normal" title="o">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -181,12 +175,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="rkH-8N-jm8"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-qX-4cD">
-                                                                <rect key="frame" x="351" y="0.0" width="33" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-qX-4cD" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="351" y="0.0" width="33" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="p">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -200,7 +194,6 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="cd7-W6-CDl" secondAttribute="bottom" id="FtB-qz-ShF"/>
                                                     <constraint firstItem="cd7-W6-CDl" firstAttribute="top" secondItem="M4v-Rj-OFx" secondAttribute="top" id="be4-dZ-0jO"/>
@@ -209,17 +202,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKu-KE-U6A" userLabel="ViewRow2">
-                                                <rect key="frame" x="0.0" y="192.66666666666663" width="384" height="180.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="190.66666666666663" width="384" height="178.33333333333337"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="BRr-o4-Pob" userLabel="StackHurufRow2">
-                                                        <rect key="frame" x="19.666666666666657" y="0.0" width="345" height="180.33333333333334"/>
+                                                        <rect key="frame" x="19.666666666666657" y="0.0" width="345" height="178.33333333333334"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGO-sa-5vh">
-                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGO-sa-5vh" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="a">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -230,13 +223,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="yQU-x9-3xh"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Z-dt-neS">
-                                                                <rect key="frame" x="39" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Z-dt-neS" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="39" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="s">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -247,13 +239,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="xYA-SP-vff"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SQ-Th-KjE">
-                                                                <rect key="frame" x="78" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SQ-Th-KjE" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="78" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="d">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -264,13 +255,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="HkZ-bL-uRK"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhl-ub-SeH">
-                                                                <rect key="frame" x="117" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhl-ub-SeH" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="117" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="f">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -281,13 +271,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="MMo-nw-Uxg"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-27-sk9">
-                                                                <rect key="frame" x="156" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-27-sk9" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="g">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -298,13 +287,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="Dy1-zx-Yxj"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCr-jq-JW8">
-                                                                <rect key="frame" x="195" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCr-jq-JW8" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="195" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="h">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -315,13 +303,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="3jo-eT-5s8"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R15-Ij-Dle">
-                                                                <rect key="frame" x="234.00000000000003" y="0.0" width="32.999999999999972" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R15-Ij-Dle" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="234.00000000000003" y="0.0" width="32.999999999999972" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="j">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -332,13 +319,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="xMh-8p-9YB"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqi-hT-2b9">
-                                                                <rect key="frame" x="273" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqi-hT-2b9" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="273" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="k">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -349,12 +335,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="gGH-qG-BXT"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEF-VE-4OZ">
-                                                                <rect key="frame" x="312" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEF-VE-4OZ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="312" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                 <state key="normal" title="l">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -368,14 +354,14 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="McX-kO-UxS" userLabel="StackAngkaRow2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="180.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="178.33333333333334"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwX-DT-aYq">
-                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwX-DT-aYq" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title="-">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -386,13 +372,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="VaD-HS-jbZ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAp-sS-W4z">
-                                                                <rect key="frame" x="39" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAp-sS-W4z" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="39" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title="/">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -403,13 +388,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="65t-mW-G3s"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-rL-dhz">
-                                                                <rect key="frame" x="78" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-rL-dhz" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="78" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title=":">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -420,13 +404,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="tXC-wZ-cDv"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqu-Sa-beX">
-                                                                <rect key="frame" x="117" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqu-Sa-beX" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="117" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title=";">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -437,13 +420,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="bwI-tT-FRn"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yug-uP-rfA">
-                                                                <rect key="frame" x="156" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yug-uP-rfA" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="156" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title="(">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -454,13 +436,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="1ia-ic-uDX"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-Se-3EK">
-                                                                <rect key="frame" x="195" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-Se-3EK" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="195" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title=")">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -471,13 +452,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="DmK-iW-cz5"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEX-a0-e3O">
-                                                                <rect key="frame" x="234" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEX-a0-e3O" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="234" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title="$">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -488,13 +468,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="N87-Sv-fpd"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1M-Py-OgA">
-                                                                <rect key="frame" x="273" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1M-Py-OgA" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="273" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title="&amp;">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -505,12 +484,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="dlv-vd-fIi"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-lO-E8o">
-                                                                <rect key="frame" x="312" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-lO-E8o" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="312" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title="@">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -521,12 +500,12 @@
                                                                     <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="bt9-Xy-RBv"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvg-sf-rFH">
-                                                                <rect key="frame" x="351" y="0.0" width="33" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvg-sf-rFH" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="351" y="0.0" width="33" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                 <state key="normal" title="&quot;">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -540,7 +519,6 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
                                                     <constraint firstItem="McX-kO-UxS" firstAttribute="top" secondItem="CKu-KE-U6A" secondAttribute="top" id="2AQ-hJ-4oF"/>
                                                     <constraint firstAttribute="trailing" secondItem="McX-kO-UxS" secondAttribute="trailing" id="8oY-YM-UEU"/>
@@ -552,18 +530,18 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-gp-ojY" userLabel="ViewRow3">
-                                                <rect key="frame" x="0.0" y="385" width="384" height="180.66666666666663"/>
+                                                <rect key="frame" x="0.0" y="381" width="384" height="178.66666666666663"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-tV-bD2" userLabel="StackHurufRow3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="180.66666666666666"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="178.66666666666666"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEQ-az-Sts">
-                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="standardDarkButton"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEQ-az-Sts" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGSpecButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                <color key="tintColor" red="0.1176470588" green="0.12941176469999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
                                                                 <state key="normal" image="shift" catalog="system">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -575,15 +553,14 @@
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ScA-Vg-WGx" userLabel="StackHurufRow3Detail">
-                                                                <rect key="frame" x="58.666666666666657" y="0.0" width="267" height="180.66666666666666"/>
+                                                                <rect key="frame" x="58.666666666666657" y="0.0" width="267" height="178.66666666666666"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt7-Wg-HDF">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt7-Wg-HDF" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                         <state key="normal" title="z">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -594,13 +571,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="sdn-di-q48"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgK-yZ-amv">
-                                                                        <rect key="frame" x="39.000000000000007" y="0.0" width="32.999999999999993" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgK-yZ-amv" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="39.000000000000007" y="0.0" width="32.999999999999993" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                         <state key="normal" title="x">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -611,13 +587,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vX0-f0-cLH"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-N1-6MQ">
-                                                                        <rect key="frame" x="78" y="0.0" width="33" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-N1-6MQ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="78" y="0.0" width="33" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                         <state key="normal" title="c">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -628,13 +603,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vZZ-hW-Iqf"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-Tz-nv4">
-                                                                        <rect key="frame" x="117" y="0.0" width="33" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-Tz-nv4" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="117" y="0.0" width="33" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                         <state key="normal" title="v">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -645,13 +619,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="oaM-S8-yCU"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snr-8f-8Mh">
-                                                                        <rect key="frame" x="156" y="0.0" width="33" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snr-8f-8Mh" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="156" y="0.0" width="33" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                         <state key="normal" title="b">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -662,13 +635,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="dB9-Ic-yiI"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXz-RH-R2D">
-                                                                        <rect key="frame" x="195.00000000000003" y="0.0" width="33" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXz-RH-R2D" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="195.00000000000003" y="0.0" width="33" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                         <state key="normal" title="n">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -679,13 +651,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="ASa-A2-iJr"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-26-lec">
-                                                                        <rect key="frame" x="234.00000000000003" y="0.0" width="32.999999999999972" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-26-lec" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="234.00000000000003" y="0.0" width="32.999999999999972" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                                                                         <state key="normal" title="m">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -698,13 +669,15 @@
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofu-AM-Vpz">
-                                                                <rect key="frame" x="341" y="0.0" width="43" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="standardDarkButton"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofu-AM-Vpz" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="341" y="0.0" width="43" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGSpecButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                <color key="tintColor" red="0.1176470588" green="0.12941176469999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
                                                                 <size key="titleShadowOffset" width="4" height="0.0"/>
-                                                                <state key="normal" image="delete.left" catalog="system"/>
+                                                                <state key="normal" image="delete.left" catalog="system">
+                                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                                </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                                         <integer key="value" value="5"/>
@@ -723,14 +696,15 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xki-Ik-299" userLabel="StackAngkaRow3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="180.66666666666666"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="178.66666666666666"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuj-kK-pCF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="standardDarkButton"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuj-kK-pCF" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGSpecButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
                                                                 <state key="normal" title="#+=">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -742,15 +716,14 @@
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="I9Y-Fd-XrC" userLabel="StackAngkaRow3dDetail">
-                                                                <rect key="frame" x="51" y="0.0" width="282" height="180.66666666666666"/>
+                                                                <rect key="frame" x="51" y="0.0" width="282" height="178.66666666666666"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXq-Gd-KwR">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXq-Gd-KwR" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                                                                         <state key="normal" title=".">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -761,13 +734,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="wfc-vW-AzB"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-bM-70Y">
-                                                                        <rect key="frame" x="57.666666666666671" y="0.0" width="51.666666666666671" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-bM-70Y" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="57.666666666666671" y="0.0" width="51.666666666666671" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                         <state key="normal" title=",">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -778,13 +750,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="8f3-Oj-Wfa"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f33-hR-mmY">
-                                                                        <rect key="frame" x="115.33333333333333" y="0.0" width="51.333333333333329" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f33-hR-mmY" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="115.33333333333333" y="0.0" width="51.333333333333329" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                         <state key="normal" title="?">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -795,13 +766,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vcU-92-OLz"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbD-4l-87I">
-                                                                        <rect key="frame" x="172.66666666666666" y="0.0" width="51.666666666666657" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbD-4l-87I" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="172.66666666666666" y="0.0" width="51.666666666666657" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                         <state key="normal" title="!">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -812,13 +782,12 @@
                                                                             <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="ln8-4X-bGE"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7F5-lh-rjH">
-                                                                        <rect key="frame" x="230.33333333333329" y="0.0" width="51.666666666666657" height="180.66666666666666"/>
-                                                                        <color key="backgroundColor" name="darkButtonText"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7F5-lh-rjH" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                        <rect key="frame" x="230.33333333333329" y="0.0" width="51.666666666666657" height="178.66666666666666"/>
+                                                                        <color key="backgroundColor" name="BGBasicButton"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                         <state key="normal" title="'">
-                                                                            <color key="titleColor" name="lightButtonText"/>
-                                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <color key="titleColor" systemColor="labelColor"/>
                                                                         </state>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -831,15 +800,14 @@
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-D8-zfW">
-                                                                <rect key="frame" x="341" y="0.0" width="43" height="180.66666666666666"/>
-                                                                <color key="backgroundColor" name="standardDarkButton"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-D8-zfW" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="341" y="0.0" width="43" height="178.66666666666666"/>
+                                                                <color key="backgroundColor" name="BGSpecButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                <color key="tintColor" name="lightButtonText"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
                                                                 <size key="titleShadowOffset" width="4" height="0.0"/>
                                                                 <state key="normal" image="delete.left" catalog="system">
-                                                                    <color key="titleColor" name="lightButtonText"/>
-                                                                    <color key="titleShadowColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -856,7 +824,6 @@
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
                                                     <constraint firstItem="A2p-tV-bD2" firstAttribute="leading" secondItem="eSl-gp-ojY" secondAttribute="leading" id="2HK-Cu-eFh"/>
                                                     <constraint firstItem="Xki-Ik-299" firstAttribute="leading" secondItem="eSl-gp-ojY" secondAttribute="leading" id="2J7-Aa-16x"/>
@@ -869,17 +836,17 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXV-2a-sZy" userLabel="ViewRow4" colorLabel="IBBuiltInLabel-Yellow">
-                                                <rect key="frame" x="0.0" y="577.66666666666663" width="384" height="180.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="571.66666666666663" width="384" height="178.33333333333337"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Iym-jK-EaE" userLabel="row4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="180.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="384" height="178.33333333333334"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6A-Kh-bAH">
-                                                                <rect key="frame" x="0.0" y="0.0" width="76.666666666666671" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="standardDarkButton"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6A-Kh-bAH" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="76.666666666666671" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGSpecButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                                 <state key="normal" title="123">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -890,12 +857,12 @@
                                                                     <action selector="changeButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="tRZ-Nh-zhI"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-Kr-dTQ">
-                                                                <rect key="frame" x="82.666666666666671" y="0.0" width="218.66666666666663" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="darkButtonText"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-Kr-dTQ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="82.666666666666671" y="0.0" width="218.66666666666663" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGBasicButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                                                 <state key="normal" title="Space">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -906,12 +873,13 @@
                                                                     <action selector="spaceButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="tBu-To-CKi"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daB-SD-fDp">
-                                                                <rect key="frame" x="307.33333333333331" y="0.0" width="76.666666666666686" height="180.33333333333334"/>
-                                                                <color key="backgroundColor" name="standardDarkButton"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daB-SD-fDp" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
+                                                                <rect key="frame" x="307.33333333333331" y="0.0" width="76.666666666666686" height="178.33333333333334"/>
+                                                                <color key="backgroundColor" name="BGSpecButton"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                                <color key="tintColor" systemColor="labelColor"/>
                                                                 <state key="normal" title="Return">
-                                                                    <color key="titleColor" name="lightButtonText"/>
+                                                                    <color key="titleColor" systemColor="labelColor"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -929,7 +897,6 @@
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="Iym-jK-EaE" secondAttribute="trailing" id="KMK-fH-d1R"/>
                                                     <constraint firstAttribute="bottom" secondItem="Iym-jK-EaE" secondAttribute="bottom" id="jky-2L-UGh"/>
@@ -969,17 +936,16 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <color key="tintColor" name="BGKeyboard"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="iDL-PX-Ap7" secondAttribute="trailing" constant="3" id="I07-Yf-1IC"/>
                                     <constraint firstItem="iDL-PX-Ap7" firstAttribute="leading" secondItem="thg-FB-9gX" secondAttribute="leading" constant="3" id="ipv-Rn-Ne3"/>
-                                    <constraint firstAttribute="bottom" secondItem="iDL-PX-Ap7" secondAttribute="bottom" id="pqv-4O-u9Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="iDL-PX-Ap7" secondAttribute="bottom" constant="8" id="pqv-4O-u9Q"/>
                                     <constraint firstItem="iDL-PX-Ap7" firstAttribute="top" secondItem="thg-FB-9gX" secondAttribute="top" constant="8" id="ze0-YB-JpM"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S6K-Pc-9u9"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
-                        <color key="tintColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="thg-FB-9gX" firstAttribute="trailing" secondItem="S6K-Pc-9u9" secondAttribute="trailing" id="1U1-ca-hxr"/>
                             <constraint firstItem="thg-FB-9gX" firstAttribute="top" secondItem="S6K-Pc-9u9" secondAttribute="top" id="CD9-41-yMv"/>
@@ -1045,17 +1011,17 @@
     <resources>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <image name="shift" catalog="system" width="128" height="106"/>
-        <namedColor name="darkButtonText">
+        <namedColor name="BGBasicButton">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="lightButtonText">
-            <color red="0.058823529411764705" green="0.058823529411764705" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="BGKeyboard">
+            <color red="0.83137254901960778" green="0.84705882352941175" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="standardDarkButton">
-            <color red="0.70196078431372544" green="0.71764705882352942" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="BGSpecButton">
+            <color red="0.70196078431372544" green="0.72156862745098038" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

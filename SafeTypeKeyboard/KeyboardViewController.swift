@@ -154,8 +154,6 @@ class KeyboardViewController: UIInputViewController {
         setToLower(false)
         
         upperButton.setImage(UIImage.init(systemName: "capslock.fill"), for: .normal)
-        upperButton.backgroundColor = UIColor.white
-        upperButton.tintColor = UIColor.black
         
         isOneTimeCapslock = false
         
@@ -191,23 +189,23 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @IBAction func changeButton(_ sender: UIButton) {
-        if sender.currentTitle == "123" {
+        if sender.currentTitle == "ABC" {
             
             setupAlphaView()
             
-            setCustomLabel(outletRowOneUniversal, labelRowOneNumFirst)
-            setCustomLabel(outletRowTwoNum, labelRowTwoNumFirst)
+            setCustomLabel(outletRowOneUniversal, labelRowOneAlpha)
             
-            changeLabel(sender, "ABC")
+            changeLabel(sender, "123")
             
         } else {
             
             setupCharView()
             
-            setCustomLabel(outletRowOneUniversal, labelRowOneAlpha)
+            setCustomLabel(outletRowOneUniversal, labelRowOneNumFirst)
+            setCustomLabel(outletRowTwoNum, labelRowTwoNumFirst)
             
             changeLabel(switchNumAndCharButton, "#+=")
-            changeLabel(sender, "123")
+            changeLabel(sender, "ABC")
         }
     }
     
@@ -230,10 +228,9 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func upperButton(_ sender: UIButton) {
         let isUpper = outletAllAlpha[0].currentTitle!.uppercased() == outletAllAlpha[0].currentTitle!
         
-        if isUpper == false {
-            setToLower(isUpper)
-            isOneTimeCapslock = true
-        }
+        isOneTimeCapslock = true
+        
+        setToLower(isUpper)
     }
     
     
@@ -271,13 +268,13 @@ class KeyboardViewController: UIInputViewController {
         
         if isUpper{
             upperButton.setImage(UIImage.init(systemName: "shift"), for: .normal)
-            upperButton.backgroundColor = UIColor.systemGray2
+            upperButton.backgroundColor = KeyboardColors.bgSpecButton
+            upperButton.tintColor = UIColor.label
         } else {
             upperButton.setImage(UIImage.init(systemName: "shift.fill"), for: .normal)
             upperButton.backgroundColor = UIColor.white
+            upperButton.tintColor = UIColor.black
         }
-        
-        upperButton.tintColor = UIColor.black
     }
     
     func backToNoCapslockIfTappedAfterOneTimeCapslockOn(){
