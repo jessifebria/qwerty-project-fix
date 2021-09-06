@@ -42,13 +42,13 @@
 		5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFEC261FFB7800ED8594 /* ContextService.swift */; };
 		5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFF3261FFBB700ED8594 /* DateExtension.swift */; };
 		5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */; };
-		5B76A464261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
 		5B76A465261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
 		5B7D6CFE261CA5510086F45E /* SafeTypeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B7D6CF6261CA5510086F45E /* SafeTypeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */; };
 		5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D6D2F261CA7450086F45E /* keyboard.storyboard */; };
 		5BE40CFD26E5D14D0076527A /* KeyboardColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE40CFC26E5D14D0076527A /* KeyboardColors.swift */; };
 		5BE40CFE26E5F8440076527A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2C789F261C567500F1FFCA /* Assets.xcassets */; };
+		5BE40D0126E601EE0076527A /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
 		B729824C2620693C00D8B395 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B729824B2620693C00D8B395 /* HomepageViewController.swift */; };
 		B760EE4D26242E81004176A7 /* boxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760EE4C26242E81004176A7 /* boxCollectionViewCell.swift */; };
 		BF2221C326E25F6400FF977A /* KeyboardDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A46E261E10D000D708DC /* KeyboardDataService.swift */; };
@@ -296,16 +296,32 @@
 		5B7D6CF7261CA5510086F45E /* SafeTypeKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				5BE40D0026E6011A0076527A /* Controller */,
+				5BE40CFF26E600DE0076527A /* Helper */,
 				5B27D9DE26E4E86500D511F8 /* Services */,
 				5B6ADFC6261FFAD600ED8594 /* SafeTypeKeyboard.entitlements */,
-				5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */,
 				5B7D6D2F261CA7450086F45E /* keyboard.storyboard */,
 				5B7D6D1D261CA6AF0086F45E /* Info.plist */,
-				5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */,
-				5BE40CFC26E5D14D0076527A /* KeyboardColors.swift */,
-				5B27D9E126E5B5E300D511F8 /* KeyboardButton.swift */,
 			);
 			path = SafeTypeKeyboard;
+			sourceTree = "<group>";
+		};
+		5BE40CFF26E600DE0076527A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5BE40CFC26E5D14D0076527A /* KeyboardColors.swift */,
+				5B27D9E126E5B5E300D511F8 /* KeyboardButton.swift */,
+				5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		5BE40D0026E6011A0076527A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		BF2C7887261C567400F1FFCA = {
@@ -598,9 +614,9 @@
 				5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */,
 				BF2B61BF26E22569004D8304 /* History+CoreDataClass.swift in Sources */,
 				BF2B61BD26E22569004D8304 /* KataKotor+CoreDataClass.swift in Sources */,
+				5BE40D0126E601EE0076527A /* NSCustomPersistentContainer.swift in Sources */,
 				BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */,
 				BF2C789E261C567400F1FFCA /* SafeType.xcdatamodeld in Sources */,
-				5B76A464261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -913,7 +929,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6S52R6225B;
+				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = QwertyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -933,7 +949,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6S52R6225B;
+				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = QwertyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

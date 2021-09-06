@@ -8,7 +8,9 @@
 import UIKit
 
 struct KeyboardColors {
+    
     static let bgBasicButton = UIColor(named: "BGBasicButton")
     static let bgSpecButton = UIColor(named: "BGSpecButton")
     static let bgKeyboard = UIColor(named: "BGKeyboard")
+    
 }

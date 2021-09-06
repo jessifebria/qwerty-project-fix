@@ -20,6 +20,6 @@ final class KeyboardButton: UIButton {
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = 0.0
         self.layer.masksToBounds = false
-//        self.layer.cornerRadius = 4.0
     }
+    
 }

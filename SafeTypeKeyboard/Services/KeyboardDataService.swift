@@ -44,15 +44,18 @@ final class KeyboardDataController {
         
         if rowCount > 0 {
             do {
+                /**
+                 If kataKotor found, it will increment the num of kataKotor detected.
+                 */
                 let kataKotor = try context.fetch(request)[0]
                 let newTotal = kataKotor.total + 1
+                
                 kataKotor.setValue(newTotal, forKey: "total")
                 saveChanges(context)
             } catch  {
                 print("Error update total in KataKotor \(error)")
             }
         }
-        
         
         return rowCount == 0 ? false : true
     }

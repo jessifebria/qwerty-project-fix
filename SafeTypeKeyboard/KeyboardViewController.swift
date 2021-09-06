@@ -331,6 +331,8 @@ class KeyboardViewController: UIInputViewController {
         let textAfter = proxy.documentContextAfterInput ?? "nil18236491824after"
         let selectedText = proxy.selectedText ?? ""
         
+        print(">>>> \(textBefore) >>>> \(textAfter)")
+        
         if ((fullText != selectedText) && (textBefore == "nil18236491824before") && (textAfter == "nil18236491824after"))  {
             
             print(self.hasFullAccess)
