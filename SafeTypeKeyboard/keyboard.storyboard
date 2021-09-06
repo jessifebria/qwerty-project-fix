@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -532,11 +531,11 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSl-gp-ojY" userLabel="ViewRow3">
                                                 <rect key="frame" x="0.0" y="381" width="384" height="178.66666666666663"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-tV-bD2" userLabel="StackHurufRow3">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="A2p-tV-bD2" userLabel="StackHurufRow3">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="178.66666666666666"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEQ-az-Sts" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="178.66666666666666"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="178.66666666666666"/>
                                                                 <color key="backgroundColor" name="BGSpecButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <color key="tintColor" systemColor="labelColor"/>
@@ -670,7 +669,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofu-AM-Vpz" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                <rect key="frame" x="341" y="0.0" width="43" height="178.66666666666666"/>
+                                                                <rect key="frame" x="339.66666666666669" y="0.0" width="44.333333333333314" height="178.66666666666666"/>
                                                                 <color key="backgroundColor" name="BGSpecButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <color key="tintColor" systemColor="labelColor"/>
@@ -689,17 +688,14 @@
                                                             </button>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="GEQ-az-Sts" firstAttribute="width" secondItem="yt7-Wg-HDF" secondAttribute="width" multiplier="1.3" id="7DO-v3-Vfd"/>
-                                                            <constraint firstItem="ScA-Vg-WGx" firstAttribute="centerY" secondItem="A2p-tV-bD2" secondAttribute="centerY" id="DeY-c6-qT5"/>
-                                                            <constraint firstItem="ScA-Vg-WGx" firstAttribute="centerX" secondItem="A2p-tV-bD2" secondAttribute="centerX" id="cbk-5v-KjC"/>
                                                             <constraint firstItem="Ofu-AM-Vpz" firstAttribute="width" secondItem="GEQ-az-Sts" secondAttribute="width" id="l0o-dK-ckL"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xki-Ik-299" userLabel="StackAngkaRow3">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Xki-Ik-299" userLabel="StackAngkaRow3">
                                                         <rect key="frame" x="0.0" y="0.0" width="384" height="178.66666666666666"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuj-kK-pCF" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="178.66666666666666"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="178.66666666666666"/>
                                                                 <color key="backgroundColor" name="BGSpecButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <color key="tintColor" systemColor="labelColor"/>
@@ -716,10 +712,10 @@
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="I9Y-Fd-XrC" userLabel="StackAngkaRow3dDetail">
-                                                                <rect key="frame" x="51" y="0.0" width="282" height="178.66666666666666"/>
+                                                                <rect key="frame" x="58.666666666666657" y="0.0" width="267" height="178.66666666666666"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXq-Gd-KwR" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="178.66666666666666"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="48.333333333333336" height="178.66666666666666"/>
                                                                         <color key="backgroundColor" name="BGBasicButton"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                                                                         <state key="normal" title=".">
@@ -735,7 +731,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-bM-70Y" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                        <rect key="frame" x="57.666666666666671" y="0.0" width="51.666666666666671" height="178.66666666666666"/>
+                                                                        <rect key="frame" x="54.333333333333343" y="0.0" width="48.666666666666657" height="178.66666666666666"/>
                                                                         <color key="backgroundColor" name="BGBasicButton"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                         <state key="normal" title=",">
@@ -751,7 +747,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f33-hR-mmY" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                        <rect key="frame" x="115.33333333333333" y="0.0" width="51.333333333333329" height="178.66666666666666"/>
+                                                                        <rect key="frame" x="109.00000000000001" y="0.0" width="48.666666666666671" height="178.66666666666666"/>
                                                                         <color key="backgroundColor" name="BGBasicButton"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                         <state key="normal" title="?">
@@ -767,7 +763,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbD-4l-87I" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                        <rect key="frame" x="172.66666666666666" y="0.0" width="51.666666666666657" height="178.66666666666666"/>
+                                                                        <rect key="frame" x="163.66666666666669" y="0.0" width="48.666666666666657" height="178.66666666666666"/>
                                                                         <color key="backgroundColor" name="BGBasicButton"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                         <state key="normal" title="!">
@@ -783,7 +779,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7F5-lh-rjH" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                        <rect key="frame" x="230.33333333333329" y="0.0" width="51.666666666666657" height="178.66666666666666"/>
+                                                                        <rect key="frame" x="218.33333333333334" y="0.0" width="48.666666666666657" height="178.66666666666666"/>
                                                                         <color key="backgroundColor" name="BGBasicButton"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                                                         <state key="normal" title="'">
@@ -801,7 +797,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-D8-zfW" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
-                                                                <rect key="frame" x="341" y="0.0" width="43" height="178.66666666666666"/>
+                                                                <rect key="frame" x="339.66666666666669" y="0.0" width="44.333333333333314" height="178.66666666666666"/>
                                                                 <color key="backgroundColor" name="BGSpecButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <color key="tintColor" systemColor="labelColor"/>
@@ -830,6 +826,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="A2p-tV-bD2" secondAttribute="bottom" id="57a-0N-8uR"/>
                                                     <constraint firstAttribute="trailing" secondItem="A2p-tV-bD2" secondAttribute="trailing" id="WvL-OB-o0s"/>
                                                     <constraint firstItem="Xki-Ik-299" firstAttribute="top" secondItem="eSl-gp-ojY" secondAttribute="top" id="Zpl-5k-S48"/>
+                                                    <constraint firstItem="vuj-kK-pCF" firstAttribute="width" secondItem="GEQ-az-Sts" secondAttribute="width" id="d2S-fY-h11"/>
                                                     <constraint firstAttribute="bottom" secondItem="Xki-Ik-299" secondAttribute="bottom" id="dch-Jt-poM"/>
                                                     <constraint firstItem="A2p-tV-bD2" firstAttribute="top" secondItem="eSl-gp-ojY" secondAttribute="top" id="lq9-aB-RCr"/>
                                                     <constraint firstAttribute="trailing" secondItem="Xki-Ik-299" secondAttribute="trailing" id="mUu-bt-l1T"/>
@@ -908,7 +905,6 @@
                                         <constraints>
                                             <constraint firstItem="WGO-sa-5vh" firstAttribute="width" secondItem="XRE-n6-QgU" secondAttribute="width" id="6sK-Pi-Ksq"/>
                                             <constraint firstAttribute="trailing" secondItem="M4v-Rj-OFx" secondAttribute="trailing" id="FA8-0d-Bpd"/>
-                                            <constraint firstItem="vuj-kK-pCF" firstAttribute="width" secondItem="SwX-DT-aYq" secondAttribute="width" multiplier="1.3" id="H4n-Nd-m0g"/>
                                             <constraint firstItem="Zhl-ub-SeH" firstAttribute="width" secondItem="D0U-t2-oJ3" secondAttribute="width" id="Iop-7x-S2Z"/>
                                             <constraint firstItem="oXz-RH-R2D" firstAttribute="width" secondItem="R15-Ij-Dle" secondAttribute="width" id="KcV-3b-aIy"/>
                                             <constraint firstItem="wBg-N1-6MQ" firstAttribute="width" secondItem="Zhl-ub-SeH" secondAttribute="width" id="Ktw-kS-0T1"/>
