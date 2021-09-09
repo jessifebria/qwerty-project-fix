@@ -15,7 +15,7 @@ class NSCustomPersistentContainer: NSPersistentContainer {
         storeURL = storeURL?.appendingPathComponent("Caches", isDirectory: true)
         
         storeURL = storeURL?.appendingPathComponent("SafeType.sqlite")
-        print("URLNYA \(storeURL!)")
+
         return storeURL!
     }
 
