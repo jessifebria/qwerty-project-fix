@@ -514,6 +514,28 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.shadowOffset" value=".zero"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBM-xj-dID" userLabel="No Data View">
+                                <rect key="frame" x="30" y="220" width="368" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tidak ada kata kotor hari ini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQB-Zi-vkG" userLabel="No Data Label">
+                                        <rect key="frame" x="90" y="19.666666666666686" width="188" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="CQB-Zi-vkG" firstAttribute="centerY" secondItem="jBM-xj-dID" secondAttribute="centerY" id="cKk-co-7ya"/>
+                                    <constraint firstAttribute="height" constant="57" id="jxS-Pp-yg4"/>
+                                    <constraint firstItem="CQB-Zi-vkG" firstAttribute="centerX" secondItem="jBM-xj-dID" secondAttribute="centerX" id="l2e-2i-Ivn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3HD-Fi-YkW"/>
                         <color key="backgroundColor" red="0.94905418159999999" green="0.96066409350000004" blue="0.96862941979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -521,6 +543,7 @@
                             <constraint firstItem="lUh-Tf-6O2" firstAttribute="trailing" secondItem="3HD-Fi-YkW" secondAttribute="trailing" id="1Z2-Bf-1RN"/>
                             <constraint firstItem="Zzf-Dv-0VF" firstAttribute="top" secondItem="lUh-Tf-6O2" secondAttribute="bottom" constant="-40" id="2fQ-5Y-DNz"/>
                             <constraint firstItem="W8I-bN-QD8" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" constant="10" id="3qc-70-RoZ"/>
+                            <constraint firstItem="jBM-xj-dID" firstAttribute="leading" secondItem="Vfe-40-d8I" secondAttribute="leading" constant="30" id="7Dr-PO-ylZ"/>
                             <constraint firstItem="x9L-n1-aSO" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" constant="20" id="8jm-O8-ii4"/>
                             <constraint firstItem="3HD-Fi-YkW" firstAttribute="trailing" secondItem="W8I-bN-QD8" secondAttribute="trailing" constant="10" id="BpW-L8-Pr1"/>
                             <constraint firstItem="lUh-Tf-6O2" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" id="FGt-Ag-lOi"/>
@@ -529,7 +552,9 @@
                             <constraint firstItem="W8I-bN-QD8" firstAttribute="top" secondItem="x9L-n1-aSO" secondAttribute="bottom" constant="20" id="QLX-RG-i7X"/>
                             <constraint firstItem="x9L-n1-aSO" firstAttribute="top" secondItem="QWV-xH-MLv" secondAttribute="bottom" constant="8" symbolic="YES" id="WEv-Ag-XJg"/>
                             <constraint firstItem="BG6-dk-KTz" firstAttribute="top" secondItem="Zzf-Dv-0VF" secondAttribute="bottom" constant="20" id="buH-WQ-8hB"/>
+                            <constraint firstAttribute="trailing" secondItem="jBM-xj-dID" secondAttribute="trailing" constant="30" id="e8G-ni-x4r"/>
                             <constraint firstItem="Zzf-Dv-0VF" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" id="ltu-dv-Jnw"/>
+                            <constraint firstItem="jBM-xj-dID" firstAttribute="top" secondItem="lUh-Tf-6O2" secondAttribute="bottom" constant="-30" id="n8p-WB-9lB"/>
                             <constraint firstItem="3HD-Fi-YkW" firstAttribute="trailing" secondItem="Zzf-Dv-0VF" secondAttribute="trailing" id="tni-YA-LUl"/>
                             <constraint firstItem="BG6-dk-KTz" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" constant="20" id="wnF-sK-mPf"/>
                             <constraint firstItem="QWV-xH-MLv" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" constant="20" id="yg1-gr-Pjr"/>
@@ -548,6 +573,8 @@
                         <outlet property="fourthProgressBar" destination="8Ea-PJ-gOq" id="N2i-xv-iJA"/>
                         <outlet property="fourthWord" destination="0fk-pS-y7H" id="PPT-wi-WGp"/>
                         <outlet property="lastSeenKeyboard" destination="BG6-dk-KTz" id="mzU-tr-tDk"/>
+                        <outlet property="noDataLabel" destination="CQB-Zi-vkG" id="lOi-vM-E3p"/>
+                        <outlet property="noDataView" destination="jBM-xj-dID" id="1RK-xA-blu"/>
                         <outlet property="periodOfDate" destination="x9L-n1-aSO" id="gvR-FO-5iC"/>
                         <outlet property="secondCount" destination="K7k-VF-QSJ" id="Hl2-FI-BA6"/>
                         <outlet property="secondProgressBar" destination="fSo-tB-sI9" id="nZf-sr-DRd"/>
