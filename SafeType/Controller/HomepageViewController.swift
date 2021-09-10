@@ -50,6 +50,7 @@ class HomepageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = #colorLiteral(red: 0, green: 0.3772116005, blue: 0.6474196315, alpha: 1)
         setLastSeenConstraint()
         self.navigationItem.title = "Ringkasan"
         NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: UIApplication.willEnterForegroundNotification, object: nil)
@@ -130,11 +131,7 @@ class HomepageViewController: UIViewController {
                     else if constraint.identifier == "lastSeenKeyboardToCollectionView" {
                         constraint.priority = .defaultHigh
                     }
-                    
-                    
                 }
-
-                
             }
         }
     }
@@ -236,8 +233,6 @@ extension HomepageViewController: UICollectionViewDelegate {
         }
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-                    let itemsPerRow:CGFloat = 2
-                    let padding:CGFloat = 20
                     let itemWidth = 190
                     let itemHeight = 150
                     return CGSize(width: itemWidth, height: itemHeight)

@@ -58,6 +58,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="755"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfk-iY-0pC" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="200" width="428" height="555"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUh-Tf-6O2" userLabel="Top View">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="250"/>
                                 <subviews>
@@ -200,11 +204,6 @@
                                                 <constraint firstAttribute="trailing" secondItem="cmg-64-C4F" secondAttribute="trailing" constant="20" symbolic="YES" id="gQ5-YH-dq0"/>
                                                 <constraint firstItem="cmg-64-C4F" firstAttribute="leading" secondItem="3Rz-Oi-dqk" secondAttribute="leading" constant="20" symbolic="YES" id="iyy-s9-JtZ"/>
                                             </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
-                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.99999064209999999" green="0.9999936223" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <size key="customSize" width="210" height="141"/>
@@ -212,8 +211,11 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -224,6 +226,14 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.080000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="5pK-hp-VTK" id="Ccb-VR-dSq"/>
                                     <outlet property="delegate" destination="5pK-hp-VTK" id="hXy-1a-kUJ"/>
@@ -248,6 +258,12 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -524,16 +540,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <integer key="value" value="1"/>
+                                        <real key="value" value="0.050000000000000003"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.shadowOffset" value=".zero"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -545,6 +557,7 @@
                             <constraint firstItem="W8I-bN-QD8" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" constant="10" id="3qc-70-RoZ"/>
                             <constraint firstItem="jBM-xj-dID" firstAttribute="leading" secondItem="Vfe-40-d8I" secondAttribute="leading" constant="30" id="7Dr-PO-ylZ"/>
                             <constraint firstItem="x9L-n1-aSO" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" constant="20" id="8jm-O8-ii4"/>
+                            <constraint firstItem="3HD-Fi-YkW" firstAttribute="bottom" secondItem="Bfk-iY-0pC" secondAttribute="bottom" id="A2v-FX-TO3"/>
                             <constraint firstItem="3HD-Fi-YkW" firstAttribute="trailing" secondItem="W8I-bN-QD8" secondAttribute="trailing" constant="10" id="BpW-L8-Pr1"/>
                             <constraint firstItem="lUh-Tf-6O2" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" id="FGt-Ag-lOi"/>
                             <constraint firstItem="lUh-Tf-6O2" firstAttribute="top" secondItem="3HD-Fi-YkW" secondAttribute="top" id="Hbm-xx-wUF"/>
@@ -553,12 +566,15 @@
                             <constraint firstItem="W8I-bN-QD8" firstAttribute="top" secondItem="x9L-n1-aSO" secondAttribute="bottom" constant="20" id="QLX-RG-i7X"/>
                             <constraint firstItem="x9L-n1-aSO" firstAttribute="top" secondItem="QWV-xH-MLv" secondAttribute="bottom" constant="8" symbolic="YES" id="WEv-Ag-XJg"/>
                             <constraint firstItem="BG6-dk-KTz" firstAttribute="top" secondItem="Zzf-Dv-0VF" secondAttribute="bottom" priority="99" constant="20" identifier="lastSeenKeyboardToCollectionView" id="buH-WQ-8hB"/>
+                            <constraint firstItem="Bfk-iY-0pC" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" id="d14-7c-PmL"/>
                             <constraint firstAttribute="trailing" secondItem="jBM-xj-dID" secondAttribute="trailing" constant="30" id="e8G-ni-x4r"/>
                             <constraint firstItem="Zzf-Dv-0VF" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" id="ltu-dv-Jnw"/>
+                            <constraint firstItem="Bfk-iY-0pC" firstAttribute="top" secondItem="lUh-Tf-6O2" secondAttribute="bottom" constant="-50" id="mx6-Ga-RSu"/>
                             <constraint firstItem="jBM-xj-dID" firstAttribute="top" secondItem="lUh-Tf-6O2" secondAttribute="bottom" constant="-30" id="n8p-WB-9lB"/>
                             <constraint firstItem="3HD-Fi-YkW" firstAttribute="trailing" secondItem="Zzf-Dv-0VF" secondAttribute="trailing" id="tni-YA-LUl"/>
                             <constraint firstItem="BG6-dk-KTz" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" constant="20" id="wnF-sK-mPf"/>
                             <constraint firstItem="QWV-xH-MLv" firstAttribute="leading" secondItem="3HD-Fi-YkW" secondAttribute="leading" constant="20" id="yg1-gr-Pjr"/>
+                            <constraint firstItem="3HD-Fi-YkW" firstAttribute="trailing" secondItem="Bfk-iY-0pC" secondAttribute="trailing" id="yuk-sH-obq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UMc-c5-yqx"/>
