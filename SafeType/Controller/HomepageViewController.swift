@@ -105,26 +105,35 @@ class HomepageViewController: UIViewController {
             DispatchQueue.main.async {
                 self.noDataLabel.isHidden = false
                 self.noDataView.isHidden = false
-                self.lastSeenKeyboard.translatesAutoresizingMaskIntoConstraints = false
-                self.noDataLabel.translatesAutoresizingMaskIntoConstraints = true
-                self.noDataView.translatesAutoresizingMaskIntoConstraints = true
-                NSLayoutConstraint.activate([
-                    self.lastSeenKeyboard.topAnchor.constraint(equalTo: self.noDataView.topAnchor, constant: 80),
-                    self.lastSeenKeyboard.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
-                    ])
+    
+                for constraint in self.view.constraints {
+                    if constraint.identifier == "lastSeenKeyboardToCollectionView" {
+                        constraint.priority = .defaultLow
+                    }
+                    else if constraint.identifier == "lastSeenKeyboardToNoDataView" {
+                        constraint.priority = .defaultHigh
+                    }
+                    
+                    
+                }
             }
         }
         else {
             DispatchQueue.main.async {
                 self.noDataLabel.isHidden = true
                 self.noDataView.isHidden = true
-                self.lastSeenKeyboard.translatesAutoresizingMaskIntoConstraints = false
-                self.collectionView.translatesAutoresizingMaskIntoConstraints = true
-//                
-//                NSLayoutConstraint.activate([
-//                    self.lastSeenKeyboard.topAnchor.constraint(equalTo: self.collectionView.topAnchor, constant: 20),
-//                    self.lastSeenKeyboard.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
-//                    ])
+           
+                for constraint in self.view.constraints {
+                    if constraint.identifier == "lastSeenKeyboardToNoDataView" {
+                        constraint.priority = .defaultLow
+                    }
+                    else if constraint.identifier == "lastSeenKeyboardToCollectionView" {
+                        constraint.priority = .defaultHigh
+                    }
+                    
+                    
+                }
+
                 
             }
         }

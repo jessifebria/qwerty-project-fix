@@ -29,7 +29,7 @@ final class KeyboardButton: UIButton {
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         normalSetup()
-        #error("FAILED DISINI, HARUSNYA PAS MOVED BS TRIGGER KE YG LAIN")
+//        #error("FAILED DISINI, HARUSNYA PAS MOVED BS TRIGGER KE YG LAIN")
         super.touchesEnded(touches, with: event)
     }
     
