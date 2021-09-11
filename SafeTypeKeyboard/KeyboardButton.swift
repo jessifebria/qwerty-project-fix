@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class KeyboardButton: UIButton {
+class KeyboardBasic: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -16,7 +16,7 @@ final class KeyboardButton: UIButton {
 
     func setup() {
         self.layer.shadowColor = KeyboardColors.shadowNormal?.cgColor
-        self.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = 0.0
         self.layer.masksToBounds = false
@@ -26,13 +26,16 @@ final class KeyboardButton: UIButton {
         super.touchesBegan(touches, with: event)
         selectedSetup()
     }
-
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        normalSetup()
-        #error("FAILED DISINI, HARUSNYA PAS MOVED BS TRIGGER KE YG LAIN")
-        super.touchesEnded(touches, with: event)
-    }
     
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if isTouchInside {
+            self.isHighlighted = false
+        } else {
+            normalSetup()
+            super.touchesEnded(touches, with: event)
+        }
+    }
+
     override func touchesEnded(_ touches: Set<UITouch>, with event:     UIEvent?) {
         normalSetup()
         super.touchesEnded(touches, with: event)
@@ -44,32 +47,57 @@ final class KeyboardButton: UIButton {
     }
     
     func selectedSetup(){
-        self.backgroundColor = KeyboardColors.bgBasicButtonSelected
         self.layer.shadowColor = KeyboardColors.shadowSelected?.cgColor
         self.isHighlighted = false
     }
     
     func normalSetup(){
-        self.backgroundColor = KeyboardColors.bgBasicButton
         self.layer.shadowColor = KeyboardColors.shadowNormal?.cgColor
         self.titleLabel?.textColor = UIColor.label
+        self.isHighlighted = false
+    }
+}
+
+final class KeyboardButton: KeyboardBasic {
+    
+    override func selectedSetup(){
+        super.selectedSetup()
+        self.backgroundColor = KeyboardColors.bgBasicButtonSelected
+    }
+    
+    override func normalSetup(){
+        super.normalSetup()
+        self.backgroundColor = KeyboardColors.bgBasicButton
     }
     
 }
 
-final class KeyboardSpecButton: UIButton {
+final class KeyboardSpecButton: KeyboardBasic {
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        setup()
+    override func selectedSetup(){
+        super.selectedSetup()
+        self.backgroundColor = KeyboardColors.bgSpecButtonSelected
     }
+    
+    override func normalSetup(){
+        super.normalSetup()
+        self.backgroundColor = KeyboardColors.bgSpecButton
+    }
+    
+}
 
-    func setup() {
-        self.layer.shadowColor = KeyboardColors.shadowNormal?.cgColor
-        self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
-//        self.layer.shadowOpacity = 1.0
-        self.layer.shadowRadius = 0.0
-        self.layer.masksToBounds = false
+final class DeleteButton: KeyboardBasic {
+    
+    override func selectedSetup(){
+        super.selectedSetup()
+        self.backgroundColor = KeyboardColors.bgSpecButtonSelected
+        self.setImage(UIImage.init(systemName: "delete.left.fill"), for: .normal)
+    }
+    
+    override func normalSetup(){
+        super.normalSetup()
+        self.backgroundColor = KeyboardColors.bgSpecButton
+        self.setImage(UIImage.init(systemName: "delete.left"), for: .normal)
     }
     
 }
