@@ -33,6 +33,7 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var today: UILabel!
     @IBOutlet weak var noDataLabel: UILabel!
     @IBOutlet weak var noDataView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var scrollWidth: CGFloat! = 0.0
     var scrollHeight: CGFloat! = 0.0
@@ -50,6 +51,7 @@ class HomepageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.scrollView.contentSize = (CGSize(width: self.mainView.frame.size.width, height: self.mainView.frame.size.height))
         self.view.backgroundColor = #colorLiteral(red: 0, green: 0.3772116005, blue: 0.6474196315, alpha: 1)
         setLastSeenConstraint()
         self.navigationItem.title = "Ringkasan"
@@ -107,7 +109,7 @@ class HomepageViewController: UIViewController {
                 self.noDataLabel.isHidden = false
                 self.noDataView.isHidden = false
     
-                for constraint in self.view.constraints {
+                for constraint in self.scrollView.constraints {
                     if constraint.identifier == "lastSeenKeyboardToCollectionView" {
                         constraint.priority = .defaultLow
                     }
@@ -124,7 +126,7 @@ class HomepageViewController: UIViewController {
                 self.noDataLabel.isHidden = true
                 self.noDataView.isHidden = true
            
-                for constraint in self.view.constraints {
+                for constraint in self.scrollView.constraints {
                     if constraint.identifier == "lastSeenKeyboardToNoDataView" {
                         constraint.priority = .defaultLow
                     }
