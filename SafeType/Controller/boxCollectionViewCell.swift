@@ -22,7 +22,7 @@ class boxCollectionViewCell: UICollectionViewCell {
     func updateUI() {
       
         if let riwayatHariIni = riwayatHariIni {
-            platformLabel.text = riwayatHariIni.platform
+            platformLabel.text = riwayatHariIni.platform?.uppercased()
             if let jam = riwayatHariIni.waktu{
                 dateLabel.text = Converter.convertDateToStringHourMinute(date: jam)
             }
