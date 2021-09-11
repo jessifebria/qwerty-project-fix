@@ -49,6 +49,7 @@ class KeyboardBasic: UIButton {
     func selectedSetup(){
         self.layer.shadowColor = KeyboardColors.shadowSelected?.cgColor
         self.isHighlighted = false
+        playSound()
     }
     
     func normalSetup(){
@@ -56,6 +57,11 @@ class KeyboardBasic: UIButton {
         self.titleLabel?.textColor = UIColor.label
         self.isHighlighted = false
     }
+    
+    func playSound(){
+        KeyboardSounds.playModifierSound()
+    }
+    
 }
 
 final class KeyboardButton: KeyboardBasic {
@@ -70,6 +76,9 @@ final class KeyboardButton: KeyboardBasic {
         self.backgroundColor = KeyboardColors.bgBasicButton
     }
     
+    override func playSound(){
+        KeyboardSounds.playInsertSound()
+    }
 }
 
 final class KeyboardSpecButton: KeyboardBasic {
@@ -82,6 +91,10 @@ final class KeyboardSpecButton: KeyboardBasic {
     override func normalSetup(){
         super.normalSetup()
         self.backgroundColor = KeyboardColors.bgSpecButton
+    }
+    
+    override func playSound(){
+        KeyboardSounds.playModifierSound()
     }
     
 }
@@ -98,6 +111,10 @@ final class DeleteButton: KeyboardBasic {
         super.normalSetup()
         self.backgroundColor = KeyboardColors.bgSpecButton
         self.setImage(UIImage.init(systemName: "delete.left"), for: .normal)
+    }
+    
+    override func playSound(){
+        KeyboardSounds.playDeleteSound()
     }
     
 }
