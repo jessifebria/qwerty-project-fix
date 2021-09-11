@@ -973,6 +973,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" name="BGKeyboard"/>
                                 <color key="tintColor" name="BGKeyboard"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="iDL-PX-Ap7" secondAttribute="trailing" constant="3" id="I07-Yf-1IC"/>
@@ -983,7 +984,6 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S6K-Pc-9u9"/>
-                        <color key="backgroundColor" name="BGKeyboard"/>
                         <constraints>
                             <constraint firstItem="thg-FB-9gX" firstAttribute="trailing" secondItem="S6K-Pc-9u9" secondAttribute="trailing" id="1U1-ca-hxr"/>
                             <constraint firstItem="thg-FB-9gX" firstAttribute="top" secondItem="S6K-Pc-9u9" secondAttribute="top" id="CD9-41-yMv"/>
