@@ -8,6 +8,7 @@
 import UIKit
 
 class HomepageViewController: UIViewController {
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var periodOfDate: UILabel!
@@ -30,10 +31,17 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var lastSeenKeyboard: UILabel!
     @IBOutlet weak var allData: UILabel!
     @IBOutlet weak var today: UILabel!
+    @IBOutlet weak var noDataLabel: UILabel!
+    @IBOutlet weak var noDataView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    var scrollWidth: CGFloat! = 0.0
+    var scrollHeight: CGFloat! = 0.0
     
     var labelWord = [UILabel?]()
     var progressBar = [UIProgressView?]()
     var labelCount = [UILabel?]()
+    
     
     var totalKataKotor = KataKotorService().getUniqueKataKotor(filter: "Day").countTotal
     var riwayatData = HistoryService().getHistory(filter: "Day")
@@ -43,8 +51,10 @@ class HomepageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.scrollView.contentSize = (CGSize(width: self.mainView.frame.size.width, height: self.mainView.frame.size.height))
+        self.view.backgroundColor = #colorLiteral(red: 0, green: 0.3772116005, blue: 0.6474196315, alpha: 1)
+        setLastSeenConstraint()
         self.navigationItem.title = "Ringkasan"
-  
         NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         tabBarController?.tabBar.items?[1].title = "Riwayat"
@@ -86,10 +96,45 @@ class HomepageViewController: UIViewController {
     
     func setLastSeen(){
         if lastSeen == Converter.convertStringToDate(dateInString: "1999-12-01 00:00:00") {
-            lastSeenKeyboard.text = "Keyboard Qwerty belum dipakai"
+            lastSeenKeyboard.text = "Keyboard SafeType belum dipakai"
         }
         else {
             lastSeenKeyboard.text = "Keyboard terakhir digunakan " + Converter.convertDateToStringYearDateHourMinute(date: lastSeen)
+        }
+    }
+    
+    func setLastSeenConstraint() {
+        if riwayatData.count == 0 {
+            DispatchQueue.main.async {
+                self.noDataLabel.isHidden = false
+                self.noDataView.isHidden = false
+    
+                for constraint in self.scrollView.constraints {
+                    if constraint.identifier == "lastSeenKeyboardToCollectionView" {
+                        constraint.priority = .defaultLow
+                    }
+                    else if constraint.identifier == "lastSeenKeyboardToNoDataView" {
+                        constraint.priority = .defaultHigh
+                    }
+                    
+                    
+                }
+            }
+        }
+        else {
+            DispatchQueue.main.async {
+                self.noDataLabel.isHidden = true
+                self.noDataView.isHidden = true
+           
+                for constraint in self.scrollView.constraints {
+                    if constraint.identifier == "lastSeenKeyboardToNoDataView" {
+                        constraint.priority = .defaultLow
+                    }
+                    else if constraint.identifier == "lastSeenKeyboardToCollectionView" {
+                        constraint.priority = .defaultHigh
+                    }
+                }
+            }
         }
     }
     
@@ -141,6 +186,7 @@ class HomepageViewController: UIViewController {
         setProgressKataUnik()
         totalCount.text = String(kataUnikData.1)
         setLastSeen()
+        setLastSeenConstraint()
     }
     
 }
@@ -182,9 +228,6 @@ extension HomepageViewController: UICollectionViewDelegate {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "riwayatHariIniCell", for: indexPath) as! boxCollectionViewCell
             let riwayat = riwayatData[indexPath.row]
             cell.riwayatHariIni = riwayat
-            cell.layer.masksToBounds = true
-            cell.contentView.layer.cornerRadius = 14
-            cell.layer.cornerRadius = 14
             
             return cell
             
@@ -192,8 +235,6 @@ extension HomepageViewController: UICollectionViewDelegate {
         }
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-                    let itemsPerRow:CGFloat = 2
-                    let padding:CGFloat = 20
                     let itemWidth = 190
                     let itemHeight = 150
                     return CGSize(width: itemWidth, height: itemHeight)
@@ -205,17 +246,4 @@ extension HomepageViewController: UICollectionViewDelegate {
         
        
     }
-
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 
