@@ -9,24 +9,40 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
-    @IBOutlet weak var initial: UILabel!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var device: UILabel!
-    @IBOutlet weak var circle: UIImageView!
-    
-    var names = UIDevice.current.name
+    @IBOutlet weak var settingsTableView: UITableView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.sendSubviewToBack(circle)
-        initial.text = String(names.first!)
-        name.text = names
-        device.text = UserService().getUserDevice()
-        //kalo kebalik tinggal diganti yo
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "Pengaturan"
+        
+        settingsTableView.delegate = self
+        settingsTableView.dataSource = self
+
     }
     
     @IBAction func selesaiButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+}
+
+extension SettingViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tapped settings cell")
+    }
+}
+
+extension SettingViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath)
+        cell.textLabel?.text = "Hello World"
+        return cell
+    }
+    
     
 }
