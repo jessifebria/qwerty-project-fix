@@ -10,9 +10,12 @@ import UIKit
 class SettingViewController: UIViewController {
 
     @IBOutlet weak var settingsTableView: UITableView!
-        
+    var staticSettingsItem = SettingsItem()
+    var settingsItems = [SettingsItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        settingsItems = staticSettingsItem.createSettingsItem()
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.title = "Pengaturan"
         
@@ -29,19 +32,23 @@ class SettingViewController: UIViewController {
 
 extension SettingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("tapped settings cell")
+        
     }
 }
 
 extension SettingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return settingsItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath)
-        cell.textLabel?.text = "Hello World"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath) as! SettingsTableViewCell
+        cell.settingsItem = settingsItems[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 92
     }
     
     

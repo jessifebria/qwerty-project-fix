@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -218,25 +219,74 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-Z2-BFS">
-                                <rect key="frame" x="20" y="138" width="374" height="524"/>
+                                <rect key="frame" x="20" y="128" width="374" height="534"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settingsCell" id="VIX-fa-QHD">
-                                        <rect key="frame" x="0.0" y="24.5" width="374" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settingsCell" rowHeight="87" id="VIX-fa-QHD" customClass="SettingsTableViewCell" customModule="SafeType" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="374" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VIX-fa-QHD" id="e2D-e4-w0c">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxu-Z8-ecw">
-                                                    <rect key="frame" x="31" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ik3-Z7-xqg">
+                                                    <rect key="frame" x="20" y="26.5" width="34" height="34"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scroll.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0l9-qj-0jF">
+                                                            <rect key="frame" x="5" y="5" width="24" height="24"/>
+                                                            <color key="tintColor" name="Blue"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="0l9-qj-0jF" secondAttribute="trailing" constant="5" id="H6p-EW-H4c"/>
+                                                        <constraint firstAttribute="width" constant="34" id="HtA-sI-JNL"/>
+                                                        <constraint firstAttribute="height" constant="34" id="RRT-UE-jrH"/>
+                                                        <constraint firstItem="0l9-qj-0jF" firstAttribute="leading" secondItem="Ik3-Z7-xqg" secondAttribute="leading" constant="5" id="SFJ-L0-rXH"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0l9-qj-0jF" secondAttribute="bottom" constant="5" id="Sbv-ju-1Ae"/>
+                                                        <constraint firstItem="0l9-qj-0jF" firstAttribute="top" secondItem="Ik3-Z7-xqg" secondAttribute="top" constant="5" id="cE1-ho-sBh"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                            <color key="value" systemColor="systemGreenColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kata Terdeteksi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Lu-DD-Cqj" userLabel="Item">
+                                                    <rect key="frame" x="64" y="19" width="130" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <color key="textColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lihat, tambah, dan hapus kata yang terdeteksi oleh aplikasi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yo-fj-atI" userLabel="Detail">
+                                                    <rect key="frame" x="64" y="44.5" width="290" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" systemColor="systemGrayColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9Lu-DD-Cqj" firstAttribute="leading" secondItem="Ik3-Z7-xqg" secondAttribute="trailing" constant="10" id="4cl-pO-wqi"/>
+                                                <constraint firstItem="8Yo-fj-atI" firstAttribute="leading" secondItem="Ik3-Z7-xqg" secondAttribute="trailing" constant="10" id="DoW-nY-siY"/>
+                                                <constraint firstItem="8Yo-fj-atI" firstAttribute="top" secondItem="9Lu-DD-Cqj" secondAttribute="bottom" constant="4" id="F1m-Q9-88K"/>
+                                                <constraint firstItem="Ik3-Z7-xqg" firstAttribute="leading" secondItem="e2D-e4-w0c" secondAttribute="leading" constant="20" id="Gnt-2g-ev7"/>
+                                                <constraint firstAttribute="trailing" secondItem="8Yo-fj-atI" secondAttribute="trailing" constant="20" id="H1Y-Wz-1Df"/>
+                                                <constraint firstItem="Ik3-Z7-xqg" firstAttribute="centerY" secondItem="e2D-e4-w0c" secondAttribute="centerY" id="LtJ-Ea-fSr"/>
+                                                <constraint firstItem="9Lu-DD-Cqj" firstAttribute="top" secondItem="e2D-e4-w0c" secondAttribute="topMargin" constant="8" id="Za6-jv-cuB"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailLabel" destination="8Yo-fj-atI" id="MuZ-rs-3gR"/>
+                                            <outlet property="imageIcon" destination="0l9-qj-0jF" id="ghs-WO-cpc"/>
+                                            <outlet property="itemLabel" destination="9Lu-DD-Cqj" id="Jeb-h0-0ZK"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -246,7 +296,7 @@
                         <constraints>
                             <constraint firstItem="Uts-Z2-BFS" firstAttribute="leading" secondItem="e0F-Mx-2lq" secondAttribute="leading" constant="20" id="J73-8S-LDl"/>
                             <constraint firstItem="e0F-Mx-2lq" firstAttribute="trailing" secondItem="Uts-Z2-BFS" secondAttribute="trailing" constant="20" id="Ooh-fi-Zpb"/>
-                            <constraint firstItem="Uts-Z2-BFS" firstAttribute="top" secondItem="e0F-Mx-2lq" secondAttribute="top" constant="50" id="X2F-R2-Iq4"/>
+                            <constraint firstItem="Uts-Z2-BFS" firstAttribute="top" secondItem="e0F-Mx-2lq" secondAttribute="top" constant="40" id="X2F-R2-Iq4"/>
                             <constraint firstItem="e0F-Mx-2lq" firstAttribute="bottom" secondItem="Uts-Z2-BFS" secondAttribute="bottom" constant="200" id="g1r-iS-EdT"/>
                         </constraints>
                     </view>
@@ -269,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WyX-CQ-vL6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="103"/>
+            <point key="canvasLocation" x="995.65217391304361" y="102.45535714285714"/>
         </scene>
         <!--Kata Terdeteksi-->
         <scene sceneID="XjC-UX-9IM">
@@ -722,7 +772,11 @@
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="scroll.fill" catalog="system" width="128" height="116"/>
         <image name="trash" catalog="system" width="121" height="128"/>
+        <namedColor name="Blue">
+            <color red="0.14117647058823529" green="0.37647058823529411" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -734,6 +788,9 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
