@@ -577,7 +577,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="upperButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="txl-N2-cbt"/>
+                                                                    <action selector="upperButton:" destination="aqG-qS-ln0" eventType="touchDown" id="2jI-0O-Njl"/>
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ScA-Vg-WGx" userLabel="StackHurufRow3Detail">
@@ -719,7 +719,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="delButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="g0B-JE-TQ6"/>
+                                                                    <action selector="delButton:" destination="aqG-qS-ln0" eventType="touchDown" id="Xtu-0p-AcG"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -744,7 +744,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="switchNumButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="ThG-uV-Puk"/>
+                                                                    <action selector="switchNumButton:" destination="aqG-qS-ln0" eventType="touchDown" id="ZLg-99-AbE"/>
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="I9Y-Fd-XrC" userLabel="StackAngkaRow3dDetail">
@@ -852,7 +852,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="delButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="IcM-0j-Uxn"/>
+                                                                    <action selector="delButton:" destination="aqG-qS-ln0" eventType="touchDown" id="0JU-KV-p38"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -892,7 +892,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="changeButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="tRZ-Nh-zhI"/>
+                                                                    <action selector="changeButton:" destination="aqG-qS-ln0" eventType="touchDown" id="n7t-02-Ih3"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-Kr-dTQ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -973,22 +973,28 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="BGKeyboard"/>
                                 <color key="tintColor" name="BGKeyboard"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="iDL-PX-Ap7" secondAttribute="trailing" constant="3" id="I07-Yf-1IC"/>
                                     <constraint firstItem="iDL-PX-Ap7" firstAttribute="leading" secondItem="thg-FB-9gX" secondAttribute="leading" constant="3" id="ipv-Rn-Ne3"/>
                                     <constraint firstAttribute="bottom" secondItem="iDL-PX-Ap7" secondAttribute="bottom" constant="8" id="pqv-4O-u9Q"/>
                                     <constraint firstItem="iDL-PX-Ap7" firstAttribute="top" secondItem="thg-FB-9gX" secondAttribute="top" constant="8" id="ze0-YB-JpM"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="UEf-p6-smC" appends="YES" id="tOa-Vk-8Hk"/>
+                                    <outletCollection property="gestureRecognizers" destination="3M1-r0-CgJ" appends="YES" id="oJQ-Aw-gHg"/>
+                                </connections>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="S6K-Pc-9u9"/>
+                        <viewLayoutGuide key="safeArea" id="kOR-Za-af3"/>
+                        <color key="backgroundColor" name="BGKeyboard"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="thg-FB-9gX" firstAttribute="trailing" secondItem="S6K-Pc-9u9" secondAttribute="trailing" id="1U1-ca-hxr"/>
-                            <constraint firstItem="thg-FB-9gX" firstAttribute="top" secondItem="S6K-Pc-9u9" secondAttribute="top" id="CD9-41-yMv"/>
-                            <constraint firstItem="thg-FB-9gX" firstAttribute="leading" secondItem="S6K-Pc-9u9" secondAttribute="leading" id="MrP-Zx-RCM"/>
-                            <constraint firstItem="thg-FB-9gX" firstAttribute="bottom" secondItem="S6K-Pc-9u9" secondAttribute="bottom" id="sNq-Vq-fTR"/>
+                            <constraint firstItem="thg-FB-9gX" firstAttribute="trailing" secondItem="kOR-Za-af3" secondAttribute="trailing" id="1U1-ca-hxr"/>
+                            <constraint firstItem="thg-FB-9gX" firstAttribute="top" secondItem="kOR-Za-af3" secondAttribute="top" id="CD9-41-yMv"/>
+                            <constraint firstItem="thg-FB-9gX" firstAttribute="leading" secondItem="kOR-Za-af3" secondAttribute="leading" id="MrP-Zx-RCM"/>
+                            <constraint firstItem="thg-FB-9gX" firstAttribute="bottom" secondItem="kOR-Za-af3" secondAttribute="bottom" id="sNq-Vq-fTR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1005,6 +1011,11 @@
                         <outlet property="charRow2Col7Button" destination="kEX-a0-e3O" id="l02-Ax-No6"/>
                         <outlet property="charRow2Col8Button" destination="h1M-Py-OgA" id="Mdp-Yh-Gbj"/>
                         <outlet property="charRow2Col9Button" destination="4HX-lO-E8o" id="TVP-J3-v0t"/>
+                        <outlet property="charRow3Col1Button" destination="iXq-Gd-KwR" id="hYN-2D-195"/>
+                        <outlet property="charRow3Col2Button" destination="Syc-bM-70Y" id="Thc-dP-uKE"/>
+                        <outlet property="charRow3Col3Button" destination="f33-hR-mmY" id="09z-1e-gkE"/>
+                        <outlet property="charRow3Col4Button" destination="tbD-4l-87I" id="bqK-c3-9aD"/>
+                        <outlet property="charRow3Col5Button" destination="7F5-lh-rjH" id="8mm-1H-vVN"/>
                         <outlet property="dButton" destination="3SQ-Th-KjE" id="vYK-Ef-bxx"/>
                         <outlet property="delButton" destination="Ofu-AM-Vpz" id="zhm-L8-6Ag"/>
                         <outlet property="eButton" destination="D0z-jR-pyP" id="wPv-Dm-gWm"/>
@@ -1019,6 +1030,7 @@
                         <outlet property="mainView" destination="6HO-Aa-CqU" id="IRq-Qc-b2f"/>
                         <outlet property="nButton" destination="oXz-RH-R2D" id="vCW-P9-AJu"/>
                         <outlet property="oButton" destination="DC7-qX-gdd" id="J8i-NK-sJW"/>
+                        <outlet property="outerView" destination="thg-FB-9gX" id="Ptw-5C-Qba"/>
                         <outlet property="pButton" destination="Wbm-qX-4cD" id="7Yo-bt-TbU"/>
                         <outlet property="qButton" destination="XRE-n6-QgU" id="mJG-z8-KhA"/>
                         <outlet property="rButton" destination="D0U-t2-oJ3" id="YQx-h7-gUp"/>
@@ -1042,6 +1054,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LO3-ZK-6A1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UEf-p6-smC">
+                    <connections>
+                        <action selector="handleTapGesture:" destination="aqG-qS-ln0" id="xwL-bb-j7A"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3M1-r0-CgJ">
+                    <connections>
+                        <action selector="handlePanGesture:" destination="aqG-qS-ln0" id="022-8k-RrA"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-340" y="97.393364928909946"/>
         </scene>

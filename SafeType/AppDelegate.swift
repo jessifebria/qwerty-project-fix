@@ -19,18 +19,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // user default location
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         
-        print("ini app baru lagii mangatststst clone clone clone")
-        
-        let defaults = UserDefaults.standard
-        
-        // check if kata kotor already loaded
-        let isPreloaded = defaults.bool(forKey: "kataKotorLoaded")
-        if !isPreloaded {
-            print("loading kata kotor")
-            KataKotorService().loadKataKotor()
-            HistoryService().createHistoryFakeData()
-            defaults.set(true, forKey: "kataKotorLoaded")
-        }
+//        print("ini app baru lagii mangatststst clone clone clone")
+//
+//        let defaults = UserDefaults.standard
+//
+//        // check if kata kotor already loaded
+//        let isPreloaded = defaults.bool(forKey: "kataKotorLoaded")
+//        if !isPreloaded {
+//            print("loading kata kotor")
+//            KataKotorService().loadKataKotor()
+//            HistoryService().createHistoryFakeData()
+//            defaults.set(true, forKey: "kataKotorLoaded")
+//        }
         
         
         // Override point for customization after application launch.

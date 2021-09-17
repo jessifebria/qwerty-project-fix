@@ -13,6 +13,7 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var nextKeyboardButton: UIButton!
     
     @IBOutlet var mainView: UIView!
+    @IBOutlet weak var outerView: UIView!
     
     /**
      Universal Button
@@ -83,12 +84,21 @@ class KeyboardViewController: UIInputViewController {
      */
     @IBOutlet weak var stackRowThreeNum: UIStackView!
     @IBOutlet weak var switchNumAndCharButton: UIButton!
+    @IBOutlet weak var charRow3Col1Button: KeyboardButton!
+    @IBOutlet weak var charRow3Col2Button: KeyboardButton!
+    @IBOutlet weak var charRow3Col3Button: KeyboardButton!
+    @IBOutlet weak var charRow3Col4Button: KeyboardButton!
+    @IBOutlet weak var charRow3Col5Button: KeyboardButton!
     
     var outletRowOneUniversal: [UIButton] = [UIButton]()
     var outletRowTwoNum: [UIButton] = [UIButton]()
-    var outletRowTwoAlpha: [UIButton] = [UIButton]()
     var outletRowThreeAlpha: [UIButton] = [UIButton]()
+    var outletRowThreeNum: [UIButton] = [UIButton]()
     var outletAllAlpha: [UIButton] = [UIButton]()
+    var outletAllNum: [UIButton] = [UIButton]()
+    
+    var allAlphaButtonLocation: [CGPoint] = [CGPoint]()
+    var allNumButtonLocation: [CGPoint] = [CGPoint]()
     
     let bundleIDService = BundleIDService()
     
@@ -101,7 +111,7 @@ class KeyboardViewController: UIInputViewController {
     
     var isOneTimeCapslock = false
     
-    var pendingButton: String?
+    var pendingButton: UIButton?
     
     //MARK: KEYBOARD LIFE CYCLE
     override func viewDidLoad() {
@@ -114,6 +124,7 @@ class KeyboardViewController: UIInputViewController {
         setupAlphaView()
         
         setTriggerForDoubleTapInUpperButton()
+        
         
         /**
          Default custom setup
@@ -129,6 +140,13 @@ class KeyboardViewController: UIInputViewController {
         self.view.addSubview(self.nextKeyboardButton)
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(false)
+        
+        setupButtonLocation()
     }
     
     func setupVar(){
@@ -141,6 +159,12 @@ class KeyboardViewController: UIInputViewController {
         outletRowTwoNum = [charRow2Col1Button, charRow2Col2Button, charRow2Col3Button, charRow2Col4Button, charRow2Col5Button, charRow2Col6Button, charRow2Col7Button, charRow2Col8Button, charRow2Col9Button, charRow2Col10Button ]
         
         outletAllAlpha = [qButton,wButton,eButton,rButton,tButton,yButton,uButton,iButton,oButton,pButton,aButton,sButton,dButton,fButton,gButton,hButton,jButton,kButton,lButton,zButton,xButton,cButton,vButton,bButton,nButton,mButton]
+        
+        outletRowThreeNum = [charRow3Col1Button, charRow3Col2Button, charRow3Col3Button, charRow3Col4Button, charRow3Col5Button]
+        
+        outletAllNum.append(contentsOf: outletRowOneUniversal)
+        outletAllNum.append(contentsOf: outletRowTwoNum)
+        outletAllNum.append(contentsOf: outletRowThreeNum)
     }
     
     func setTriggerForDoubleTapInUpperButton(){
@@ -212,6 +236,10 @@ class KeyboardViewController: UIInputViewController {
     }
     
     @IBAction func switchNumButton(_ sender: UIButton) {
+        
+        self.insertPendingButton()
+        self.pendingButton = nil
+        
         if isOneTimeCapslock {
             setToLower(true)
         }
@@ -240,7 +268,7 @@ class KeyboardViewController: UIInputViewController {
         
         print("BUTTON TOUCH UP INSIDE IN \(sender.currentTitle!)")
         
-        if self.pendingButton == sender.currentTitle {
+        if self.pendingButton?.currentTitle == sender.currentTitle {
             
             DispatchQueue.main.async {
                 self.textDocumentProxy.insertText(sender.currentTitle!)
@@ -249,46 +277,59 @@ class KeyboardViewController: UIInputViewController {
             self.pendingButton = nil
             self.backToNoCapslockIfTappedAfterOneTimeCapslockOn()
             
-            print("BUTTON ADD \(sender.currentTitle!)")
+            print("BUTTON ADD from TOUCH UP INSIDE \(sender.currentTitle!)")
         }
     }
     
-    
-    @IBAction func insertButtonTouchDown(_ sender: UIButton) {
-        
-        print("BUTTON TOUCH DOWN to \(sender.currentTitle!)")
+    func insertPendingButton() {
+//        print("BUTTON TOUCH DOWN to \(char)")
         print("-----------------------")
-        if let pendingText = self.pendingButton {
+        if let pendingButton = self.pendingButton as? KeyboardBasic {
             
             DispatchQueue.main.async {
-                self.textDocumentProxy.insertText(pendingText)
+                self.textDocumentProxy.insertText(pendingButton.currentTitle!)
+                pendingButton.cancelTracking(with: nil)
+                pendingButton.normalSetup()
             }
             
             self.backToNoCapslockIfTappedAfterOneTimeCapslockOn()
-            print("BUTTON ADD \(pendingText)")
+            print("BUTTON ADD FROM TOUCH DOWN \(pendingButton.currentTitle!)")
         }
-        
-        
-        self.pendingButton = sender.currentTitle!
-        
+    }
+    
+    @IBAction func insertButtonTouchDown(_ sender: UIButton) {
+        insertPendingButton()
+        self.pendingButton = sender
     }
     
     @IBAction func spaceButton(_ sender: UIButton) {
-        self.textDocumentProxy.insertText(" ")
-        backToNoCapslockIfTappedAfterOneTimeCapslockOn()
+        DispatchQueue.main.async {
+            self.insertPendingButton()
+            self.pendingButton = nil
+            self.textDocumentProxy.insertText(" ")
+        }
     }
     
     @IBAction func delButton(_ sender: UIButton) {
-        self.textDocumentProxy.deleteBackward()
+        DispatchQueue.main.async {
+            self.insertPendingButton()
+            self.pendingButton = nil
+            self.textDocumentProxy.deleteBackward()
+        }
         backToNoCapslockIfTappedAfterOneTimeCapslockOn()
     }
     
     @IBAction func returnButton(_ sender: UIButton) {
-        self.textDocumentProxy.insertText("\n")
+        DispatchQueue.main.async {
+            self.insertPendingButton()
+            self.pendingButton = nil
+            self.textDocumentProxy.insertText("\n")
+        }
         backToNoCapslockIfTappedAfterOneTimeCapslockOn()
     }
     
     func setToLower(_ isUpper:Bool){
+        
         for button in outletAllAlpha{
             let currLabel = button.currentTitle!
             if isUpper {
@@ -415,6 +456,91 @@ class KeyboardViewController: UIInputViewController {
         }
         
         return stringKataKotor
+    }
+ 
+    // COBA TAP GESTURE
+    
+    @IBAction func handleTapGesture(_ gesture: UITapGestureRecognizer) {
+//        print("OUTLET Q", qButton.center)
+        print("TAP TRIGGERED", gesture.location(in: outerView))
+        
+        let touchLocation = gesture.location(in: outerView)
+        
+        let closestButtonIndexNearTap: Int?
+        
+        print("\(switchAlphaAndCharButton.currentTitle!)")
+        
+        if switchAlphaAndCharButton.currentTitle! == "123" {
+            closestButtonIndexNearTap = checkTapNearButton(buttonCollectionLoc: allAlphaButtonLocation, touchLoc: touchLocation)
+            if let buttonIndex = closestButtonIndexNearTap {
+                insertButtonTouchDown(outletAllAlpha[buttonIndex])
+                print("TAPPED FROM TAP GESTURE \(outletAllAlpha[buttonIndex].currentTitle!)")
+            }
+            
+        } else {
+            closestButtonIndexNearTap = checkTapNearButton(buttonCollectionLoc: allNumButtonLocation, touchLoc: touchLocation)
+            if let buttonIndex = closestButtonIndexNearTap {
+                insertButtonTouchDown(outletAllNum[buttonIndex])
+                print("TAPPED FROM TAP GESTURE \(outletAllNum[buttonIndex].currentTitle!)")
+            }
+        }
+    }
+
+    func setupButtonLocation(){
+        for charButton in outletAllAlpha {
+            
+            let loc = charButton.superview?.convert(charButton.center, to: self.viewIfLoaded)
+            allAlphaButtonLocation.append(loc!)
+        }
+        
+        for numButton in outletAllNum {
+            
+            let loc = numButton.superview?.convert(numButton.center, to: self.viewIfLoaded)
+            allNumButtonLocation.append(loc!)
+        }
+    }
+    
+    
+    @IBAction func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
+//        print("PAN GESTURE TRIGGERED", gesture.location(in: view))
+    }
+    
+    func checkTapNearButton(buttonCollectionLoc: [CGPoint], touchLoc: CGPoint ) -> Int? {
+        
+        var nearestButtonIndex = -1
+        var nearestDistance = Float(10000)
+        
+        for i in 0..<buttonCollectionLoc.count {
+            let loc = buttonCollectionLoc[i]
+            
+            let distance = distanceBetweenTwoPoint(point1: loc, point2: touchLoc)
+
+            print("distance \(distance) FROM \(touchLoc) to \(outletAllAlpha[i].currentTitle!)")
+            
+            if distance < nearestDistance {
+                nearestDistance = distance
+                nearestButtonIndex = i
+            }
+        }
+        
+        let threshold = Float(1000.0)
+        
+        print("DISTANCE, \(nearestDistance)")
+        
+        if nearestDistance < threshold {
+            return nearestButtonIndex
+        } else {
+            return nil
+        }
+        
+    }
+    
+    func distanceBetweenTwoPoint(point1: CGPoint, point2: CGPoint) -> Float {
+        let gapX = point1.x - point2.x
+        let gapY = point1.y - point2.y
+        
+//        return Float(gapX)
+        return Float(sqrt((gapX * gapX) + (gapY * gapY)))
     }
     
 }
