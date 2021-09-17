@@ -10,12 +10,13 @@ import UIKit
 class SettingViewController: UIViewController {
 
     @IBOutlet weak var settingsTableView: UITableView!
-    var staticSettingsItem = SettingsItem()
     var settingsItems = [SettingsItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        settingsItems = staticSettingsItem.createSettingsItem()
+        for item in SettingsItem.allCases {
+            settingsItems.append(item)
+        }
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.title = "Pengaturan"
         
@@ -24,15 +25,43 @@ class SettingViewController: UIViewController {
 
     }
     
+    @IBAction func deleteAllButton(_ sender: Any) {
+        showDeleteAlert()
+    }
+    
     @IBAction func selesaiButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func showDeleteAlert() {
+        let alert = UIAlertController(title: "Apakah Anda yakin?", message: "Semua data akan terhapus dan tidak dapat dikembalikan.", preferredStyle: UIAlertController.Style.alert)
+       
+        let cancel = UIAlertAction(title: "Tidak", style: .cancel, handler: { (action : UIAlertAction!) -> Void in
+            
+        })
+        let yesAction = UIAlertAction(title: "Ya", style: .default, handler: { (action) -> Void in
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "DeleteAllViewController") as! DeleteAllViewController
+            vc.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+            self.present(vc, animated: true, completion: nil)
+        })
+        alert.addAction(cancel)
+        alert.addAction(yesAction)
+        alert.preferredAction = yesAction
+        
+        present(alert, animated: true, completion: nil)
     }
     
 }
 
 extension SettingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        switch settingsItems[indexPath.row] {
+        case .KataTerdeteksi:
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "KataTerdeteksiViewController") as! KataTerdeteksiViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .Bantuan:
+            print("bantuan")
+        }
     }
 }
 

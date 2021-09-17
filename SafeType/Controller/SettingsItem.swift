@@ -5,21 +5,24 @@
 //  Created by Yafonia Hutabarat on 16/09/21.
 //
 
-struct SettingsItem {
-    var name: String?
-    var detail: String?
-    var image: String?
+enum SettingsItem: String, CaseIterable {
+    case KataTerdeteksi = "Kata Terdeteksi", Bantuan = "Bantuan"
     
-    func createSettingsItem() -> [SettingsItem] {
-        var settingsItems = [SettingsItem]()
-        
-        let kataTerdeteksi = SettingsItem(name: "Kata Terdeteksi", detail: "Lihat, tambah, dan hapus kata yang terdeteksi oleh aplikasi", image: "scroll.fill")
-        let bantuan = SettingsItem(name: "Bantuan", detail: "Pelajari cara menggunakan aplikasi", image: "questionmark")
-        
-        
-        settingsItems.append(kataTerdeteksi)
-        settingsItems.append(bantuan)
-        
-        return settingsItems
+    func detail() -> String {
+        switch self {
+        case .KataTerdeteksi:
+            return "Lihat, tambah, dan hapus kata yang terdeteksi oleh aplikasi"
+        case .Bantuan:
+            return "Pelajari cara menggunakan aplikasi"
+        }
+    }
+    
+    func imageName() -> String {
+        switch self {
+        case .KataTerdeteksi:
+            return "scroll.fill"
+        case .Bantuan:
+            return "questionmark"
+        }
     }
 }

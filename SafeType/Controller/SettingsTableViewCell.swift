@@ -20,9 +20,9 @@ class SettingsTableViewCell: UITableViewCell {
     }
     
     func updateUI() {
-        itemLabel.text = settingsItem?.name
-        detailLabel.text = settingsItem?.detail
-        guard let imageName = settingsItem?.image else {return}
+        itemLabel.text = settingsItem?.rawValue
+        detailLabel.text = settingsItem?.detail()
+        guard let imageName = settingsItem?.imageName() else {return}
         imageIcon.image = UIImage(systemName: imageName)
     }
     

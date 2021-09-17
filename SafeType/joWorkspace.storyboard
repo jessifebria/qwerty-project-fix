@@ -219,7 +219,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-Z2-BFS">
-                                <rect key="frame" x="20" y="128" width="374" height="534"/>
+                                <rect key="frame" x="20" y="88" width="374" height="574"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settingsCell" rowHeight="87" id="VIX-fa-QHD" customClass="SettingsTableViewCell" customModule="SafeType" customModuleProvider="target">
@@ -290,14 +290,51 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Semua statistik dan riwayat perkataan akan terhapus dan tidak dapat dikembalikan." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODO-HB-EIl">
+                                <rect key="frame" x="60" y="812" width="294" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="uJx-EE-oUL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ot3-MF-18Z">
+                                <rect key="frame" x="129" y="752" width="156" height="46"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.38823529411764707" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="T65-q0-x2v"/>
+                                    <constraint firstAttribute="width" constant="156" id="pgm-IN-ccu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="tintColor" red="0.96470588235294119" green="0.38823529411764707" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="4" maxX="5" maxY="5"/>
+                                <state key="normal" title="Hapus Semua Data">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteAllButton:" destination="8aI-IH-Vfx" eventType="touchUpInside" id="0P0-8f-X8c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="e0F-Mx-2lq"/>
                         <color key="backgroundColor" red="0.9452458024" green="0.96064811939999994" blue="0.96862941979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="ODO-HB-EIl" firstAttribute="centerX" secondItem="kCV-7c-eAP" secondAttribute="centerX" id="5XB-bm-Y97"/>
+                            <constraint firstItem="ODO-HB-EIl" firstAttribute="leading" secondItem="kCV-7c-eAP" secondAttribute="leading" constant="60" id="GDL-1K-ESA"/>
                             <constraint firstItem="Uts-Z2-BFS" firstAttribute="leading" secondItem="e0F-Mx-2lq" secondAttribute="leading" constant="20" id="J73-8S-LDl"/>
                             <constraint firstItem="e0F-Mx-2lq" firstAttribute="trailing" secondItem="Uts-Z2-BFS" secondAttribute="trailing" constant="20" id="Ooh-fi-Zpb"/>
-                            <constraint firstItem="Uts-Z2-BFS" firstAttribute="top" secondItem="e0F-Mx-2lq" secondAttribute="top" constant="40" id="X2F-R2-Iq4"/>
+                            <constraint firstItem="Uts-Z2-BFS" firstAttribute="top" secondItem="e0F-Mx-2lq" secondAttribute="top" id="X2F-R2-Iq4"/>
+                            <constraint firstItem="ODO-HB-EIl" firstAttribute="top" secondItem="Ot3-MF-18Z" secondAttribute="bottom" constant="14" id="bLS-FB-YzR"/>
+                            <constraint firstItem="e0F-Mx-2lq" firstAttribute="trailing" secondItem="ODO-HB-EIl" secondAttribute="trailing" constant="60" id="dn2-cK-qN7"/>
                             <constraint firstItem="e0F-Mx-2lq" firstAttribute="bottom" secondItem="Uts-Z2-BFS" secondAttribute="bottom" constant="200" id="g1r-iS-EdT"/>
+                            <constraint firstItem="e0F-Mx-2lq" firstAttribute="bottom" secondItem="ODO-HB-EIl" secondAttribute="bottom" constant="15" id="oDy-DQ-UHw"/>
+                            <constraint firstItem="Ot3-MF-18Z" firstAttribute="centerX" secondItem="kCV-7c-eAP" secondAttribute="centerX" id="yG7-Yl-6US"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oY9-K2-Kun">
@@ -321,10 +358,10 @@
             </objects>
             <point key="canvasLocation" x="995.65217391304361" y="102.45535714285714"/>
         </scene>
-        <!--Kata Terdeteksi-->
+        <!--KataTerdeteksiViewController-->
         <scene sceneID="XjC-UX-9IM">
             <objects>
-                <viewController id="1aW-5D-SXX" customClass="KataTerdeteksiViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KataTerdeteksiViewController" title="KataTerdeteksiViewController" id="1aW-5D-SXX" customClass="KataTerdeteksiViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d4x-kq-NmR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -397,7 +434,7 @@
         <!--Delete All View Controller-->
         <scene sceneID="21M-uI-NAB">
             <objects>
-                <viewController id="JSb-AI-blb" customClass="DeleteAllViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeleteAllViewController" id="JSb-AI-blb" customClass="DeleteAllViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8m2-5y-gni">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
