@@ -25,7 +25,7 @@ class RiwayatSemuaViewController: UIViewController {
         super.viewDidLoad()
         tableView.reloadData()
         title = "Riwayat"
-        
+        self.navigationController?.navigationBar.prefersLargeTitles = false
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.layoutIfNeeded()
@@ -65,6 +65,7 @@ class RiwayatSemuaViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         riwayatData = HistoryService().getHistory(filter: filterContentShown)
         kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
+        setBlueBackground(view: self)
         tableView.reloadData()
     }
     

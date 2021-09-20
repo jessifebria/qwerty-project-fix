@@ -54,7 +54,7 @@ class HomepageViewController: UIViewController {
         self.scrollView.contentSize = (CGSize(width: self.mainView.frame.size.width, height: self.mainView.frame.size.height))
         self.view.backgroundColor = #colorLiteral(red: 0, green: 0.3772116005, blue: 0.6474196315, alpha: 1)
         setLastSeenConstraint()
-        self.navigationItem.title = "Ringkasan"
+        self.navigationItem.title = "Hari ini"
         NotificationCenter.default.addObserver(self, selector: #selector(reloadData), name: UIApplication.willEnterForegroundNotification, object: nil)
         
         tabBarController?.tabBar.items?[1].title = "Riwayat"
@@ -93,6 +93,7 @@ class HomepageViewController: UIViewController {
     @objc func tapViewKataUnik(_ gesture: UITapGestureRecognizer) {
         performSegue(withIdentifier: "segueHomepageToKataUnik", sender: nil)
     }
+    
     
     func setLastSeen(){
         if lastSeen == Converter.convertStringToDate(dateInString: "1999-12-01 00:00:00") {
@@ -170,7 +171,7 @@ class HomepageViewController: UIViewController {
         reloadData()
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    
+ 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)

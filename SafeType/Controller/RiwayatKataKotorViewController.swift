@@ -19,6 +19,7 @@ class RiwayatKataKotorViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +27,7 @@ class RiwayatKataKotorViewController: UIViewController {
             riwayatKataUnikData = HistoryService().getHistoryByKataKotor(kataKotor: kataKotor!, filter: filter)
             tableView.reloadData()
         }
+        setBlueBackground(view: self)
     }
 }
 

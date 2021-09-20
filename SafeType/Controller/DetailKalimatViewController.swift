@@ -22,7 +22,9 @@ class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.prefersLargeTitles = false
         
+
         
 //        let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
 //        containerView.addTarget(self, action: #selector(deleteAction), for: .touchUpInside)
@@ -60,6 +62,10 @@ class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
         platformTerdeteksi?.text = riwayat?.platform
         hariTanggalTerdeteksi?.text = hariTanggal
         jumlahKataTerdeteksi?.text = String(arrayKataKotor.count)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setBlueBackground(view: self)
     }
     
 

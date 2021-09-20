@@ -102,7 +102,7 @@
                                                     <color key="titleShadowColor" red="0.99999064209999999" green="0.9999936223" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="Dbr-fV-WgW" kind="show" id="fUI-Xz-Nhe"/>
+                                                    <segue destination="Dbr-fV-WgW" kind="push" identifier="segueHomepageToSettings" id="fUI-Xz-Nhe"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -180,7 +180,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="170" height="14.333333333333334"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(platform)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhP-Qt-N2L">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="136" height="14.333333333333334"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="85" height="14.333333333333334"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="85" id="iIy-Kd-0oC"/>
                                                                             </constraints>
@@ -194,15 +194,15 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhN-Kc-tEs">
-                                                                            <rect key="frame" x="136" y="0.0" width="34" height="14.333333333333334"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="34" id="s9V-ZS-olc"/>
-                                                                            </constraints>
+                                                                            <rect key="frame" x="85" y="0.0" width="85" height="14.333333333333334"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="NhN-Kc-tEs" secondAttribute="trailing" id="rA0-0v-ryc"/>
+                                                                    </constraints>
                                                                 </stackView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(entry)" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd3-r2-RIb">
                                                                     <rect key="frame" x="0.0" y="22.333333333333336" width="170" height="50.000000000000007"/>
@@ -626,10 +626,10 @@
             </objects>
             <point key="canvasLocation" x="7456.5420560747662" y="-112.74298056155509"/>
         </scene>
-        <!--NavigationControllerSetting-->
+        <!--SettingViewController-->
         <scene sceneID="a6J-bC-IAb">
             <objects>
-                <viewControllerPlaceholder storyboardName="joWorkspace" referencedIdentifier="NavigationControllerSetting" id="Dbr-fV-WgW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="joWorkspace" referencedIdentifier="SettingViewController" id="Dbr-fV-WgW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="0ah-Qu-Gfw"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Q-HL-HtV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -647,11 +647,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="N2V-ln-sGk">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.96865731479999995" green="0.9725353122" blue="0.97254973649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <color key="textShadowColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -691,7 +691,7 @@
         <image name="doc.text.fill" catalog="system" width="115" height="128"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <namedColor name="Color">
-            <color red="0.14117647058823529" green="0.37647058823529411" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
