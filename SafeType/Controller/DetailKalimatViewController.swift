@@ -63,12 +63,7 @@ class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
         hariTanggalTerdeteksi?.text = hariTanggal
         jumlahKataTerdeteksi?.text = String(arrayKataKotor.count)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        setBlueBackground(view: self)
-    }
-    
-
+        
     @IBAction func deleteAction (_ sender: UIButton) {
         print("tapped")
         let actionSheetControllerIOS8: UIAlertController = UIAlertController(title: nil, message: "Hapus jika tidak mengandung kata kotor", preferredStyle: .actionSheet)

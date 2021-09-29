@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 
-func setBlueBackground(view: UIViewController) {
-//    let app = UINavigationBarAppearance()
-//    app.backgroundColor = #colorLiteral(red: 0, green: 0.3772116005, blue: 0.6474196315, alpha: 1)
-//    view.navigationController?.navigationBar.scrollEdgeAppearance = app
+func setStandardNavigationBar(navBar: UINavigationBar) {
+    let appearance = UINavigationBarAppearance()
+    appearance.configureWithOpaqueBackground()
+    appearance.backgroundColor = #colorLiteral(red: 0, green: 0.3772116005, blue: 0.6474196315, alpha: 1)
+    appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+    navBar.standardAppearance = appearance
+    navBar.scrollEdgeAppearance = navBar.standardAppearance
 }

@@ -65,7 +65,6 @@ class RiwayatSemuaViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         riwayatData = HistoryService().getHistory(filter: filterContentShown)
         kataUnikData = KataKotorService().getUniqueKataKotor(filter: filterContentShown)
-        setBlueBackground(view: self)
         tableView.reloadData()
     }
     

@@ -29,7 +29,13 @@ class SettingViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
+       
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if let navBar = self.navigationController?.navigationBar {
+            setStandardNavigationBar(navBar: navBar)
+        } else {return}
     }
     
     @IBAction func deleteAllButton(_ sender: Any) {

@@ -27,7 +27,6 @@ class RiwayatKataKotorViewController: UIViewController {
             riwayatKataUnikData = HistoryService().getHistoryByKataKotor(kataKotor: kataKotor!, filter: filter)
             tableView.reloadData()
         }
-        setBlueBackground(view: self)
     }
 }
 
