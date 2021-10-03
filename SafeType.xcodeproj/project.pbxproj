@@ -235,7 +235,6 @@
 				4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */,
 				4E43016D26205A9300C288D4 /* SettingViewController.swift */,
 				BF5BE0B026F38C3C001682AC /* SettingsItem.swift */,
-				BF5BE0AE26F37C15001682AC /* SettingsTableViewCell.swift */,
 				4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */,
 				4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */,
 				4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */,
@@ -272,6 +271,7 @@
 		5B389A1326244A750067926C /* Cell Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BF5BE0AE26F37C15001682AC /* SettingsTableViewCell.swift */,
 				BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */,
 				BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */,
 				5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */,

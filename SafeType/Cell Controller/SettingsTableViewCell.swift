@@ -12,6 +12,7 @@ class SettingsTableViewCell: UITableViewCell {
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var iconView: UIView!
     
     var settingsItem: SettingsItem? {
         didSet {
@@ -24,6 +25,7 @@ class SettingsTableViewCell: UITableViewCell {
         detailLabel.text = settingsItem?.detail()
         guard let imageName = settingsItem?.imageName() else {return}
         imageIcon.image = UIImage(systemName: imageName)
+        iconView.layer.borderColor = #colorLiteral(red: 0.7921568627, green: 0.7921568627, blue: 0.7921568627, alpha: 1)
     }
     
     override func awakeFromNib() {
