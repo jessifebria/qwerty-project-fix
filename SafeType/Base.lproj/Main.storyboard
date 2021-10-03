@@ -1046,7 +1046,6 @@
         <!--Riwayat-->
         <scene sceneID="WBH-Sl-LiS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iV6-bA-yDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="navigationControllerRiwayat" automaticallyAdjustsScrollViewInsets="NO" id="Yde-CZ-hAg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Riwayat" image="clock.fill" catalog="system" selectedImage="clock.fill" id="zAU-RT-xQv">
                         <color key="badgeColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1068,6 +1067,7 @@
                         <segue destination="B7v-g8-F2p" kind="relationship" relationship="rootViewController" id="6yo-mk-U2X"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iV6-bA-yDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="866.15384615384608" y="833.88625592417054"/>
         </scene>

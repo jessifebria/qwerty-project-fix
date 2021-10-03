@@ -73,6 +73,7 @@
 		BF5BE0B526F8565F001682AC /* joWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5BE0B426F8565F001682AC /* joWorkspace.storyboard */; };
 		BF8E45A92622DBC60052351B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45A82622DBC60052351B /* FilterViewController.swift */; };
 		BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */; };
+		BF93838C2705778E00FE6243 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF93838B2705778E00FE6243 /* NavigationHelper.swift */; };
 		BFD98C282625F65F00EAF875 /* djWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD98C272625F65F00EAF875 /* djWorkspace.storyboard */; };
 		BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -182,6 +183,7 @@
 		BF5BE0B426F8565F001682AC /* joWorkspace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = joWorkspace.storyboard; path = ../../.Trash/joWorkspace.storyboard; sourceTree = "<group>"; };
 		BF8E45A82622DBC60052351B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		BF93838B2705778E00FE6243 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		BFD98C272625F65F00EAF875 /* djWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = djWorkspace.storyboard; path = ../djWorkspace.storyboard; sourceTree = "<group>"; };
 		BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -295,6 +297,7 @@
 			children = (
 				5B6ADFF3261FFBB700ED8594 /* DateExtension.swift */,
 				BF5BE0B226F81DE4001682AC /* ViewExtension.swift */,
+				BF93838B2705778E00FE6243 /* NavigationHelper.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
 				5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */,
 				BF2B61BF26E22569004D8304 /* History+CoreDataClass.swift in Sources */,
+				BF93838C2705778E00FE6243 /* NavigationHelper.swift in Sources */,
 				BF2B61BD26E22569004D8304 /* KataKotor+CoreDataClass.swift in Sources */,
 				5BE40D0126E601EE0076527A /* NSCustomPersistentContainer.swift in Sources */,
 				BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */,

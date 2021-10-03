@@ -17,10 +17,6 @@ class SettingViewController: UIViewController {
         for item in SettingsItem.allCases {
             settingsItems.append(item)
         }
-        let app = UINavigationBarAppearance()
-        app.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.9607843137, blue: 0.968627451, alpha: 1)
-        self.navigationController?.navigationBar.scrollEdgeAppearance = app
-        self.title = "Pengaturan"
         
         settingsTableView.delegate = self
         settingsTableView.dataSource = self
@@ -29,6 +25,11 @@ class SettingViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        let app = UINavigationBarAppearance()
+        app.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.9607843137, blue: 0.968627451, alpha: 1)
+        self.navigationController?.navigationBar.scrollEdgeAppearance = app
+        self.title = "Pengaturan"
+        self.navigationController?.changeBarTintColor()
        
     }
     
@@ -36,6 +37,7 @@ class SettingViewController: UIViewController {
         if let navBar = self.navigationController?.navigationBar {
             setStandardNavigationBar(navBar: navBar)
         } else {return}
+        self.navigationController?.changeBackground()
     }
     
     @IBAction func deleteAllButton(_ sender: Any) {
