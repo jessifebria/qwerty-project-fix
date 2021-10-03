@@ -20,6 +20,7 @@ class SettingViewController: UIViewController {
         
         settingsTableView.delegate = self
         settingsTableView.dataSource = self
+        settingsTableView.tableFooterView = UIView()
 
     }
     
@@ -88,7 +89,7 @@ extension SettingViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 92
+        return 115
     }
     
     
