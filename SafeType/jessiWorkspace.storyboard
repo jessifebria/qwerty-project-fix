@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xb2-On-7jo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xb2-On-7jo">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,27 +12,17 @@
         <!--Keyboard Warning View Controller-->
         <scene sceneID="3xu-c5-HrP">
             <objects>
-                <viewController storyboardIdentifier="WarningPageController" modalPresentationStyle="fullScreen" id="JoF-1Z-yvY" customClass="KeyboardWarningViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WarningPageController" modalPresentationStyle="fullScreen" id="JoF-1Z-yvY" customClass="KeyboardWarningViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2bt-dF-aaM">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardingFinalRev-9" translatesAutoresizingMaskIntoConstraints="NO" id="AF5-eg-gp1">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gQI-IW-rkW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="AF5-eg-gp1" firstAttribute="trailing" secondItem="gQI-IW-rkW" secondAttribute="trailing" id="O26-rf-J5a"/>
-                            <constraint firstAttribute="bottom" secondItem="AF5-eg-gp1" secondAttribute="bottom" id="RWw-Ss-QLx"/>
-                            <constraint firstItem="AF5-eg-gp1" firstAttribute="top" secondItem="2bt-dF-aaM" secondAttribute="top" id="aDV-dF-dc8"/>
-                            <constraint firstItem="AF5-eg-gp1" firstAttribute="leading" secondItem="gQI-IW-rkW" secondAttribute="leading" id="dif-yB-SHT"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="UOl-pW-90V"/>
                     <connections>
                         <outlet property="mainView" destination="2bt-dF-aaM" id="pK4-3J-zY9"/>
+                        <segue destination="ALp-RW-uan" kind="show" identifier="seguePasswordToHomepage" id="e3m-H8-cXD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EX-Ph-j9G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -41,7 +32,7 @@
         <!--Masukkan Pass View Controller-->
         <scene sceneID="ErL-ES-GtO">
             <objects>
-                <viewController storyboardIdentifier="MasukkanPassViewController" modalPresentationStyle="fullScreen" id="xb2-On-7jo" customClass="MasukkanPassViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MasukkanPassViewController" modalPresentationStyle="fullScreen" id="xb2-On-7jo" customClass="MasukkanPassViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="48u-TT-GzW">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,7 +214,7 @@
                                     </label>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="4at-NZ-GE0"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="xie-GO-ffz" firstAttribute="top" secondItem="cY2-7k-HWg" secondAttribute="bottom" constant="82" id="2bh-VX-xkp"/>
                                     <constraint firstItem="cY2-7k-HWg" firstAttribute="top" secondItem="4at-NZ-GE0" secondAttribute="top" constant="150" id="2tG-Pl-M3A"/>
@@ -279,8 +270,10 @@
             <point key="canvasLocation" x="814" y="577"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cz5-x7-7ln"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="OnboardingFinalRev-9" width="1125" height="2436"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <systemColor name="labelColor">

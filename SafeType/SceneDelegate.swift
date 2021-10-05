@@ -39,7 +39,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             guard let windowScene = (scene as? UIWindowScene) else { return }
 
             let storyboard = UIStoryboard(name: "LinusWorkspace", bundle: nil)
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "Onboard1ViewController")
 
             window = CustomWindow(windowScene: windowScene)
             window?.rootViewController = initialViewController

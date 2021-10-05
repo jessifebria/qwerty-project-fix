@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wJr-z5-yUW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7iJ-C0-yyS">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="b21-fv-fCy">
             <objects>
-                <viewController storyboardIdentifier="OnboardingViewController" id="wJr-z5-yUW" customClass="OnboardingViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" id="wJr-z5-yUW" customClass="OnboardingViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vss-Rg-2TD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,68 +51,36 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41P-QR-8tJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="35"/>
+            <point key="canvasLocation" x="965" y="-382"/>
         </scene>
         <!--onboard1-->
         <scene sceneID="fy0-PX-dGg">
             <objects>
-                <viewController storyboardIdentifier="Onboard1ViewController" id="7iJ-C0-yyS" userLabel="onboard1" customClass="Onboard1ViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Onboard1ViewController" id="7iJ-C0-yyS" userLabel="onboard1" customClass="Onboard1ViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tro-d4-Vys">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="APP ONBOARDING REV 0-2" translatesAutoresizingMaskIntoConstraints="NO" id="Nc2-3N-7cb">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="cXa-MD-iPq" appends="YES" id="Yre-f9-fqf"/>
-                                </connections>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="f4e-Ln-rgp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="Nc2-3N-7cb" id="GSE-x0-j87"/>
+                        <segue destination="nyE-ce-Wbp" kind="show" identifier="goToSetPassword" id="hXL-ZX-FFK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ve-xd-MhI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="cXa-MD-iPq">
                     <connections>
                         <action selector="rightSwipe:" destination="7iJ-C0-yyS" id="sTd-sF-R3t"/>
-                        <segue destination="FgL-hH-CMH" kind="showDetail" id="XET-SX-Yjm"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-160" y="-537"/>
         </scene>
-        <!--onboard2-->
-        <scene sceneID="37W-Qd-WjA">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="FgL-hH-CMH" userLabel="onboard2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YEA-hj-BGD">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="APP ONBOARDING REV 0-4" translatesAutoresizingMaskIntoConstraints="NO" id="cLJ-kW-O0o">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="c7A-EJ-93e"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="s73-oo-bEp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Sr-c1-x4O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="675" y="-537"/>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hXL-ZX-FFK"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="APP ONBOARDING REV 0-2" width="1563" height="3383.333251953125"/>
-        <image name="APP ONBOARDING REV 0-4" width="1562.6666259765625" height="3383.666748046875"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
