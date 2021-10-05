@@ -282,7 +282,6 @@ class KeyboardViewController: UIInputViewController {
     }
     
     func insertPendingButton() {
-//        print("BUTTON TOUCH DOWN to \(char)")
         print("-----------------------")
         if let pendingButton = self.pendingButton as? KeyboardBasic {
             
@@ -539,7 +538,6 @@ class KeyboardViewController: UIInputViewController {
         let gapX = point1.x - point2.x
         let gapY = point1.y - point2.y
         
-//        return Float(gapX)
         return Float(sqrt((gapX * gapX) + (gapY * gapY)))
     }
     
