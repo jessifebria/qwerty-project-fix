@@ -94,6 +94,7 @@ class HomepageViewController: UIViewController {
         performSegue(withIdentifier: "segueHomepageToKataUnik", sender: nil)
     }
     
+    
     func setLastSeen(){
         if lastSeen == Converter.convertStringToDate(dateInString: "1999-12-01 00:00:00") {
             lastSeenKeyboard.text = "Keyboard SafeType belum dipakai"
@@ -170,7 +171,7 @@ class HomepageViewController: UIViewController {
         reloadData()
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    
+ 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
