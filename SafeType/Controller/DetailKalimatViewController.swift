@@ -22,7 +22,9 @@ class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.prefersLargeTitles = false
         
+
         
 //        let containerView = UIControl(frame: CGRect.init(x: 0, y: 0, width: 30, height: 30))
 //        containerView.addTarget(self, action: #selector(deleteAction), for: .touchUpInside)
@@ -61,8 +63,7 @@ class DetailKalimatViewController: UIViewController, UIActionSheetDelegate {
         hariTanggalTerdeteksi?.text = hariTanggal
         jumlahKataTerdeteksi?.text = String(arrayKataKotor.count)
     }
-    
-
+        
     @IBAction func deleteAction (_ sender: UIButton) {
         print("tapped")
         let actionSheetControllerIOS8: UIAlertController = UIAlertController(title: nil, message: "Hapus jika tidak mengandung kata kotor", preferredStyle: .actionSheet)
