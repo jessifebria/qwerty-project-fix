@@ -125,6 +125,12 @@ class KeyboardViewController: UIInputViewController {
         
         setTriggerForDoubleTapInUpperButton()
         
+//        // Add "long" press gesture recognizer
+//        let tap = UILongPressGestureRecognizer(target: self, action: #selector(tapHandler))
+//        tap.minimumPressDuration = 0
+//        tap.cancelsTouchesInView = true
+//        outerView.addGestureRecognizer(tap)
+
         
         /**
          Default custom setup
@@ -142,6 +148,7 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
     }
+   
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(false)
@@ -264,29 +271,51 @@ class KeyboardViewController: UIInputViewController {
     }
     
     
-    @IBAction func insertButton(_ sender: UIButton) {
+    @IBAction func insertButtonTouchUpInside(_ sender: UIButton) {
         
-        print("BUTTON TOUCH UP INSIDE IN \(sender.currentTitle!)")
+        guard var senderTitle = sender.currentTitle else {
+            return
+        }
         
-        if self.pendingButton?.currentTitle == sender.currentTitle {
+        print("BUTTON TOUCH UP INSIDE IN \(senderTitle)")
+        
+        if self.pendingButton?.currentTitle == senderTitle {
+            
+            if let button = sender as? KeyboardBasic {
+                button.normalSetup()
+            }
             
             DispatchQueue.main.async {
-                self.textDocumentProxy.insertText(sender.currentTitle!)
+                if senderTitle == "Space" {
+                    senderTitle = " "
+                }
+                
+                self.textDocumentProxy.insertText(senderTitle)
             }
             
             self.pendingButton = nil
             self.backToNoCapslockIfTappedAfterOneTimeCapslockOn()
             
-            print("BUTTON ADD from TOUCH UP INSIDE \(sender.currentTitle!)")
+            print("BUTTON ADD from TOUCH UP INSIDE \(senderTitle)")
         }
     }
     
     func insertPendingButton() {
         print("-----------------------")
+        
         if let pendingButton = self.pendingButton as? KeyboardBasic {
             
+            guard var pendingButtonTitle = pendingButton.currentTitle else {
+                return
+            }
+            
             DispatchQueue.main.async {
-                self.textDocumentProxy.insertText(pendingButton.currentTitle!)
+                if pendingButtonTitle == "Space" {
+                    pendingButtonTitle = " "
+                }
+        
+                self.textDocumentProxy.insertText(pendingButtonTitle)
+                
                 pendingButton.cancelTracking(with: nil)
                 pendingButton.normalSetup()
             }
@@ -294,18 +323,15 @@ class KeyboardViewController: UIInputViewController {
             self.backToNoCapslockIfTappedAfterOneTimeCapslockOn()
             print("BUTTON ADD FROM TOUCH DOWN \(pendingButton.currentTitle!)")
         }
+        
     }
     
     @IBAction func insertButtonTouchDown(_ sender: UIButton) {
         insertPendingButton()
         self.pendingButton = sender
-    }
-    
-    @IBAction func spaceButton(_ sender: UIButton) {
-        DispatchQueue.main.async {
-            self.insertPendingButton()
-            self.pendingButton = nil
-            self.textDocumentProxy.insertText(" ")
+        
+        if let buttonTouchDown = sender as? KeyboardBasic {
+            buttonTouchDown.selectedSetup()
         }
     }
     
@@ -372,6 +398,94 @@ class KeyboardViewController: UIInputViewController {
             }
         }
     }
+    
+    // called by gesture recognizer
+    @IBAction func tapHandler(gesture: UITapGestureRecognizer) {
+        
+        print("TAP TRIGGERED", gesture.location(in: outerView))
+        
+        let touchLocation = gesture.location(in: outerView)
+        
+        var buttonsLocation = [CGPoint]()
+        var buttonsOutlet = [UIButton]()
+        
+        if switchAlphaAndCharButton.currentTitle! == "123" {
+            buttonsLocation = allAlphaButtonLocation
+            buttonsOutlet = outletAllAlpha
+        } else {
+            buttonsLocation = allNumButtonLocation
+            buttonsOutlet = outletAllNum
+        }
+        
+        guard let closestButtonIndexNearTap = checkTapNearButton(buttonCollectionLoc: buttonsLocation, touchLoc: touchLocation) else {
+            return
+        }
+        let nearestButton = buttonsOutlet[closestButtonIndexNearTap]
+            
+        print("NEAREST BUTTON ISSSSS", nearestButton)
+        
+        insertButtonTouchDown(nearestButton)
+        insertButtonTouchUpInside(nearestButton)
+    }
+    
+    func setupButtonLocation(){
+        for charButton in outletAllAlpha {
+            
+            let loc = charButton.superview?.convert(charButton.center, to: self.viewIfLoaded)
+            allAlphaButtonLocation.append(loc!)
+        }
+        
+        for numButton in outletAllNum {
+            
+            let loc = numButton.superview?.convert(numButton.center, to: self.viewIfLoaded)
+            allNumButtonLocation.append(loc!)
+        }
+    }
+    
+    func checkTapNearButton(buttonCollectionLoc: [CGPoint], touchLoc: CGPoint ) -> Int? {
+        
+        var nearestButtonIndex = -1
+        var nearestDistance = Float(10000)
+        
+        for i in 0..<buttonCollectionLoc.count {
+            let loc = buttonCollectionLoc[i]
+            
+            let distance = distanceBetweenTwoPoint(point1: loc, point2: touchLoc)
+
+            print("distance \(distance) FROM \(touchLoc) to \(outletAllAlpha[i].currentTitle!)")
+            
+            if distance < nearestDistance {
+                nearestDistance = distance
+                nearestButtonIndex = i
+            }
+        }
+        
+        let threshold = Float(30.0)
+        
+        print("DISTANCE, \(nearestDistance)")
+        
+        if nearestDistance < threshold {
+            return nearestButtonIndex
+        } else {
+            return nil
+        }
+        
+    }
+    
+    func distanceBetweenTwoPoint(point1: CGPoint, point2: CGPoint) -> Float {
+        let gapX = point1.x - point2.x
+        let gapY = point1.y - point2.y
+        
+        return Float(sqrt((gapX * gapX) + (gapY * gapY)))
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     // MARK: START DETECTION
     
@@ -458,87 +572,30 @@ class KeyboardViewController: UIInputViewController {
     }
  
     // COBA TAP GESTURE
-    
-    @IBAction func handleTapGesture(_ gesture: UITapGestureRecognizer) {
-//        print("OUTLET Q", qButton.center)
-        print("TAP TRIGGERED", gesture.location(in: outerView))
-        
-        let touchLocation = gesture.location(in: outerView)
-        
-        let closestButtonIndexNearTap: Int?
-        
-        print("\(switchAlphaAndCharButton.currentTitle!)")
-        
-        if switchAlphaAndCharButton.currentTitle! == "123" {
-            closestButtonIndexNearTap = checkTapNearButton(buttonCollectionLoc: allAlphaButtonLocation, touchLoc: touchLocation)
-            if let buttonIndex = closestButtonIndexNearTap {
-                insertButtonTouchDown(outletAllAlpha[buttonIndex])
-                print("TAPPED FROM TAP GESTURE \(outletAllAlpha[buttonIndex].currentTitle!)")
-            }
-            
-        } else {
-            closestButtonIndexNearTap = checkTapNearButton(buttonCollectionLoc: allNumButtonLocation, touchLoc: touchLocation)
-            if let buttonIndex = closestButtonIndexNearTap {
-                insertButtonTouchDown(outletAllNum[buttonIndex])
-                print("TAPPED FROM TAP GESTURE \(outletAllNum[buttonIndex].currentTitle!)")
-            }
-        }
-    }
+//
+//    @IBAction func handleTapGesture(_ gesture: UITapGestureRecognizer) {
+//
+//        print("TAP TRIGGERED", gesture.location(in: outerView))
+//
+//        let touchLocation = gesture.location(in: outerView)
+//
+//        let closestButtonIndexNearTap: Int?
+//
+//        if switchAlphaAndCharButton.currentTitle! == "123" {
+//            closestButtonIndexNearTap = checkTapNearButton(buttonCollectionLoc: allAlphaButtonLocation, touchLoc: touchLocation)
+//            if let buttonIndex = closestButtonIndexNearTap {
+//                insertButtonTouchDown(outletAllAlpha[buttonIndex])
+//                print("TAPPED FROM TAP GESTURE \(outletAllAlpha[buttonIndex].currentTitle!)")
+//            }
+//
+//        } else {
+//            closestButtonIndexNearTap = checkTapNearButton(buttonCollectionLoc: allNumButtonLocation, touchLoc: touchLocation)
+//            if let buttonIndex = closestButtonIndexNearTap {
+//                insertButtonTouchDown(outletAllNum[buttonIndex])
+//                print("TAPPED FROM TAP GESTURE \(outletAllNum[buttonIndex].currentTitle!)")
+//            }
+//        }
+//    }
 
-    func setupButtonLocation(){
-        for charButton in outletAllAlpha {
-            
-            let loc = charButton.superview?.convert(charButton.center, to: self.viewIfLoaded)
-            allAlphaButtonLocation.append(loc!)
-        }
-        
-        for numButton in outletAllNum {
-            
-            let loc = numButton.superview?.convert(numButton.center, to: self.viewIfLoaded)
-            allNumButtonLocation.append(loc!)
-        }
-    }
-    
-    
-    @IBAction func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
-//        print("PAN GESTURE TRIGGERED", gesture.location(in: view))
-    }
-    
-    func checkTapNearButton(buttonCollectionLoc: [CGPoint], touchLoc: CGPoint ) -> Int? {
-        
-        var nearestButtonIndex = -1
-        var nearestDistance = Float(10000)
-        
-        for i in 0..<buttonCollectionLoc.count {
-            let loc = buttonCollectionLoc[i]
-            
-            let distance = distanceBetweenTwoPoint(point1: loc, point2: touchLoc)
-
-            print("distance \(distance) FROM \(touchLoc) to \(outletAllAlpha[i].currentTitle!)")
-            
-            if distance < nearestDistance {
-                nearestDistance = distance
-                nearestButtonIndex = i
-            }
-        }
-        
-        let threshold = Float(1000.0)
-        
-        print("DISTANCE, \(nearestDistance)")
-        
-        if nearestDistance < threshold {
-            return nearestButtonIndex
-        } else {
-            return nil
-        }
-        
-    }
-    
-    func distanceBetweenTwoPoint(point1: CGPoint, point2: CGPoint) -> Float {
-        let gapX = point1.x - point2.x
-        let gapY = point1.y - point2.y
-        
-        return Float(sqrt((gapX * gapX) + (gapY * gapY)))
-    }
     
 }

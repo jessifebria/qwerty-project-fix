@@ -685,6 +685,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SafeTypeKeyboard/SafeTypeKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = SafeTypeKeyboard/Info.plist;
 				INSTALL_OWNER = "$(USER)";
@@ -707,6 +708,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SafeTypeKeyboard/SafeTypeKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = SafeTypeKeyboard/Info.plist;
 				INSTALL_OWNER = "$(USER)";
@@ -848,7 +850,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SafeType/SafeType.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = SafeType/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -871,7 +873,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SafeType/SafeType.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = SafeType/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
