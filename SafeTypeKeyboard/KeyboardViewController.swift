@@ -101,6 +101,8 @@ class KeyboardViewController: UIInputViewController {
     
     var isOneTimeCapslock = false
     
+    var pendingButton: String?
+    
     //MARK: KEYBOARD LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -235,10 +237,40 @@ class KeyboardViewController: UIInputViewController {
     
     
     @IBAction func insertButton(_ sender: UIButton) {
-        DispatchQueue.main.async {
-            self.textDocumentProxy.insertText(sender.currentTitle!)
+        
+        print("BUTTON TOUCH UP INSIDE IN \(sender.currentTitle!)")
+        
+        if self.pendingButton == sender.currentTitle {
+            
+            DispatchQueue.main.async {
+                self.textDocumentProxy.insertText(sender.currentTitle!)
+            }
+            
+            self.pendingButton = nil
             self.backToNoCapslockIfTappedAfterOneTimeCapslockOn()
+            
+            print("BUTTON ADD \(sender.currentTitle!)")
         }
+    }
+    
+    
+    @IBAction func insertButtonTouchDown(_ sender: UIButton) {
+        
+        print("BUTTON TOUCH DOWN to \(sender.currentTitle!)")
+        print("-----------------------")
+        if let pendingText = self.pendingButton {
+            
+            DispatchQueue.main.async {
+                self.textDocumentProxy.insertText(pendingText)
+            }
+            
+            self.backToNoCapslockIfTappedAfterOneTimeCapslockOn()
+            print("BUTTON ADD \(pendingText)")
+        }
+        
+        
+        self.pendingButton = sender.currentTitle!
+        
     }
     
     @IBAction func spaceButton(_ sender: UIButton) {
