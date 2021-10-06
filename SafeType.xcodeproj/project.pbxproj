@@ -693,6 +693,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SafeTypeKeyboard/SafeTypeKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = SafeTypeKeyboard/Info.plist;
 				INSTALL_OWNER = "$(USER)";
@@ -715,6 +716,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SafeTypeKeyboard/SafeTypeKeyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = SafeTypeKeyboard/Info.plist;
 				INSTALL_OWNER = "$(USER)";
@@ -856,7 +858,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SafeType/SafeType.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6S52R6225B;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = SafeType/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -878,7 +881,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SafeType/SafeType.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6S52R6225B;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = UK7GU49NFY;
 				INFOPLIST_FILE = SafeType/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -42,8 +42,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="SLH-ad-567"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="DUL-G9-ctJ"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="SLH-ad-567"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-ts-piB" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -59,8 +59,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="SuV-hh-59B"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="JOg-O5-QZV"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="SuV-hh-59B"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-jR-pyP" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -76,8 +76,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="QWk-I5-NcW"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="ice-pg-m3b"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="QWk-I5-NcW"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0U-t2-oJ3" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -93,8 +93,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="waD-ob-1O0"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="Qfs-2P-FhE"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="waD-ob-1O0"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwJ-RY-6JQ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -111,8 +111,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="RFL-yZ-GD9"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="j7k-02-0NS"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="RFL-yZ-GD9"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3C-fk-t86" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -128,8 +128,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="Uen-BJ-Okt"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="61C-0K-yQw"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="Uen-BJ-Okt"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJU-0o-aFP" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -145,8 +145,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="qn3-AN-ezI"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="HEv-yy-ydq"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="qn3-AN-ezI"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF6-Fd-Zgt" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -162,8 +162,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="hVB-dR-UdA"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="6DJ-d9-QJD"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="hVB-dR-UdA"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DC7-qX-gdd" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -179,8 +179,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="rkH-8N-jm8"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="1mC-W3-g44"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="rkH-8N-jm8"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-qX-4cD" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -196,8 +196,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="0q7-s6-eMm"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="4Ow-P2-O9e"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="0q7-s6-eMm"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -229,8 +229,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="yQU-x9-3xh"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="FyO-cA-h2y"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="yQU-x9-3xh"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Z-dt-neS" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -246,8 +246,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="xYA-SP-vff"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="yXF-Nc-BXN"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="xYA-SP-vff"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SQ-Th-KjE" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -263,8 +263,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="HkZ-bL-uRK"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="dXX-ll-3km"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="HkZ-bL-uRK"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhl-ub-SeH" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -280,8 +280,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="MMo-nw-Uxg"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="mP6-a9-zxD"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="MMo-nw-Uxg"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY5-27-sk9" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -297,8 +297,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="Dy1-zx-Yxj"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="3yO-Sh-o9E"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="Dy1-zx-Yxj"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCr-jq-JW8" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -314,8 +314,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="3jo-eT-5s8"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="iak-gz-jNs"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="3jo-eT-5s8"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R15-Ij-Dle" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -331,8 +331,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="xMh-8p-9YB"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="pQj-7S-0Rj"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="xMh-8p-9YB"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqi-hT-2b9" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -348,8 +348,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="gGH-qG-BXT"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="aKY-ea-iIE"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="gGH-qG-BXT"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEF-VE-4OZ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -365,8 +365,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="Wdj-nr-cBF"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="LsQ-7a-2tF"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="Wdj-nr-cBF"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -387,8 +387,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="VaD-HS-jbZ"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="bkC-zI-JDx"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="VaD-HS-jbZ"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAp-sS-W4z" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -404,8 +404,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="65t-mW-G3s"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="okX-37-KC6"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="65t-mW-G3s"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-rL-dhz" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -421,8 +421,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="tXC-wZ-cDv"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="wvK-hm-AFe"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="tXC-wZ-cDv"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqu-Sa-beX" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -438,8 +438,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="bwI-tT-FRn"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="Mgd-Yz-63d"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="bwI-tT-FRn"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yug-uP-rfA" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -455,8 +455,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="1ia-ic-uDX"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="tNH-7z-HeX"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="1ia-ic-uDX"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-Se-3EK" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -472,8 +472,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="DmK-iW-cz5"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="3zn-WZ-Lz9"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="DmK-iW-cz5"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEX-a0-e3O" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -489,8 +489,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="N87-Sv-fpd"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="yjs-Mn-VFA"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="N87-Sv-fpd"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1M-Py-OgA" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -506,8 +506,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="dlv-vd-fIi"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="Db2-Yt-I3f"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="dlv-vd-fIi"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-lO-E8o" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -523,8 +523,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="bt9-Xy-RBv"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="ThN-GE-Pcf"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="bt9-Xy-RBv"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvg-sf-rFH" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -540,8 +540,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="PdU-UJ-Vsj"/>
                                                                     <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="zLW-KE-A9X"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="PdU-UJ-Vsj"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -577,7 +577,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="upperButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="txl-N2-cbt"/>
+                                                                    <action selector="upperButton:" destination="aqG-qS-ln0" eventType="touchDown" id="2jI-0O-Njl"/>
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ScA-Vg-WGx" userLabel="StackHurufRow3Detail">
@@ -596,8 +596,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="sdn-di-q48"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="PGl-7K-If0"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="sdn-di-q48"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgK-yZ-amv" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -613,8 +613,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vX0-f0-cLH"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="h8r-TT-Qfn"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vX0-f0-cLH"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-N1-6MQ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -630,8 +630,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vZZ-hW-Iqf"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="cMv-wF-PtB"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vZZ-hW-Iqf"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-Tz-nv4" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -647,8 +647,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="oaM-S8-yCU"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="wJB-3q-WPH"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="oaM-S8-yCU"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snr-8f-8Mh" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -664,8 +664,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="dB9-Ic-yiI"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="CX6-GE-3v2"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="dB9-Ic-yiI"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXz-RH-R2D" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -681,8 +681,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="ASa-A2-iJr"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="OMO-k2-RdW"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="ASa-A2-iJr"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-26-lec" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -698,8 +698,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="XSI-4D-QXp"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="yrR-d9-DWV"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="XSI-4D-QXp"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -719,7 +719,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="delButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="g0B-JE-TQ6"/>
+                                                                    <action selector="delButton:" destination="aqG-qS-ln0" eventType="touchDown" id="Xtu-0p-AcG"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -744,7 +744,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="switchNumButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="ThG-uV-Puk"/>
+                                                                    <action selector="switchNumButton:" destination="aqG-qS-ln0" eventType="touchDown" id="ZLg-99-AbE"/>
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="I9Y-Fd-XrC" userLabel="StackAngkaRow3dDetail">
@@ -763,8 +763,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="wfc-vW-AzB"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="HJi-cO-vtJ"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="wfc-vW-AzB"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-bM-70Y" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -780,8 +780,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="8f3-Oj-Wfa"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="fIV-4w-PKI"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="8f3-Oj-Wfa"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f33-hR-mmY" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -797,8 +797,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vcU-92-OLz"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="fpO-ze-RYe"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="vcU-92-OLz"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbD-4l-87I" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -814,8 +814,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="ln8-4X-bGE"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="Uy0-OE-QSC"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="ln8-4X-bGE"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7F5-lh-rjH" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -831,8 +831,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="insertButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="TTQ-sO-YSi"/>
                                                                             <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="YTA-cx-0Yz"/>
+                                                                            <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="TTQ-sO-YSi"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -852,7 +852,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="delButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="IcM-0j-Uxn"/>
+                                                                    <action selector="delButton:" destination="aqG-qS-ln0" eventType="touchDown" id="0JU-KV-p38"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -892,7 +892,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="changeButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="tRZ-Nh-zhI"/>
+                                                                    <action selector="changeButton:" destination="aqG-qS-ln0" eventType="touchDown" id="n7t-02-Ih3"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-Kr-dTQ" customClass="KeyboardButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -908,7 +908,8 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
-                                                                    <action selector="spaceButton:" destination="aqG-qS-ln0" eventType="touchUpInside" id="tBu-To-CKi"/>
+                                                                    <action selector="insertButtonTouchDown:" destination="aqG-qS-ln0" eventType="touchDown" id="uo1-HZ-gEw"/>
+                                                                    <action selector="insertButtonTouchUpInside:" destination="aqG-qS-ln0" eventType="touchUpInside" id="cc2-sB-LPN"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daB-SD-fDp" customClass="KeyboardSpecButton" customModule="SafeTypeKeyboard" customModuleProvider="target">
@@ -973,22 +974,27 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="BGKeyboard"/>
                                 <color key="tintColor" name="BGKeyboard"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="iDL-PX-Ap7" secondAttribute="trailing" constant="3" id="I07-Yf-1IC"/>
                                     <constraint firstItem="iDL-PX-Ap7" firstAttribute="leading" secondItem="thg-FB-9gX" secondAttribute="leading" constant="3" id="ipv-Rn-Ne3"/>
                                     <constraint firstAttribute="bottom" secondItem="iDL-PX-Ap7" secondAttribute="bottom" constant="8" id="pqv-4O-u9Q"/>
                                     <constraint firstItem="iDL-PX-Ap7" firstAttribute="top" secondItem="thg-FB-9gX" secondAttribute="top" constant="8" id="ze0-YB-JpM"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TLx-YP-q1d" appends="YES" id="Dd2-35-Brr"/>
+                                </connections>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="S6K-Pc-9u9"/>
+                        <viewLayoutGuide key="safeArea" id="kOR-Za-af3"/>
+                        <color key="backgroundColor" name="BGKeyboard"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="thg-FB-9gX" firstAttribute="trailing" secondItem="S6K-Pc-9u9" secondAttribute="trailing" id="1U1-ca-hxr"/>
-                            <constraint firstItem="thg-FB-9gX" firstAttribute="top" secondItem="S6K-Pc-9u9" secondAttribute="top" id="CD9-41-yMv"/>
-                            <constraint firstItem="thg-FB-9gX" firstAttribute="leading" secondItem="S6K-Pc-9u9" secondAttribute="leading" id="MrP-Zx-RCM"/>
-                            <constraint firstItem="thg-FB-9gX" firstAttribute="bottom" secondItem="S6K-Pc-9u9" secondAttribute="bottom" id="sNq-Vq-fTR"/>
+                            <constraint firstItem="thg-FB-9gX" firstAttribute="trailing" secondItem="kOR-Za-af3" secondAttribute="trailing" id="1U1-ca-hxr"/>
+                            <constraint firstItem="thg-FB-9gX" firstAttribute="top" secondItem="kOR-Za-af3" secondAttribute="top" id="CD9-41-yMv"/>
+                            <constraint firstItem="thg-FB-9gX" firstAttribute="leading" secondItem="kOR-Za-af3" secondAttribute="leading" id="MrP-Zx-RCM"/>
+                            <constraint firstItem="thg-FB-9gX" firstAttribute="bottom" secondItem="kOR-Za-af3" secondAttribute="bottom" id="sNq-Vq-fTR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1005,6 +1011,11 @@
                         <outlet property="charRow2Col7Button" destination="kEX-a0-e3O" id="l02-Ax-No6"/>
                         <outlet property="charRow2Col8Button" destination="h1M-Py-OgA" id="Mdp-Yh-Gbj"/>
                         <outlet property="charRow2Col9Button" destination="4HX-lO-E8o" id="TVP-J3-v0t"/>
+                        <outlet property="charRow3Col1Button" destination="iXq-Gd-KwR" id="hYN-2D-195"/>
+                        <outlet property="charRow3Col2Button" destination="Syc-bM-70Y" id="Thc-dP-uKE"/>
+                        <outlet property="charRow3Col3Button" destination="f33-hR-mmY" id="09z-1e-gkE"/>
+                        <outlet property="charRow3Col4Button" destination="tbD-4l-87I" id="bqK-c3-9aD"/>
+                        <outlet property="charRow3Col5Button" destination="7F5-lh-rjH" id="8mm-1H-vVN"/>
                         <outlet property="dButton" destination="3SQ-Th-KjE" id="vYK-Ef-bxx"/>
                         <outlet property="delButton" destination="Ofu-AM-Vpz" id="zhm-L8-6Ag"/>
                         <outlet property="eButton" destination="D0z-jR-pyP" id="wPv-Dm-gWm"/>
@@ -1019,6 +1030,7 @@
                         <outlet property="mainView" destination="6HO-Aa-CqU" id="IRq-Qc-b2f"/>
                         <outlet property="nButton" destination="oXz-RH-R2D" id="vCW-P9-AJu"/>
                         <outlet property="oButton" destination="DC7-qX-gdd" id="J8i-NK-sJW"/>
+                        <outlet property="outerView" destination="thg-FB-9gX" id="Ptw-5C-Qba"/>
                         <outlet property="pButton" destination="Wbm-qX-4cD" id="7Yo-bt-TbU"/>
                         <outlet property="qButton" destination="XRE-n6-QgU" id="mJG-z8-KhA"/>
                         <outlet property="rButton" destination="D0U-t2-oJ3" id="YQx-h7-gUp"/>
@@ -1042,6 +1054,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LO3-ZK-6A1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TLx-YP-q1d">
+                    <connections>
+                        <action selector="tapHandlerWithGesture:" destination="aqG-qS-ln0" id="89k-8l-zi0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-340" y="97.393364928909946"/>
         </scene>
