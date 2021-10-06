@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,7 @@
         <!--Create Pass View Controller-->
         <scene sceneID="boz-WK-3Uv">
             <objects>
-                <viewController storyboardIdentifier="CreatePassViewController" modalPresentationStyle="fullScreen" id="P3t-z2-MHU" customClass="CreatePassViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatePassViewController" modalPresentationStyle="fullScreen" id="P3t-z2-MHU" customClass="CreatePassViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMU-3T-iOy">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +220,7 @@
         <!--Verif Pass View Controller-->
         <scene sceneID="hbq-8C-529">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="jLw-gU-yi2" customClass="VerifPassViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="jLw-gU-yi2" customClass="VerifPassViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ToZ-4i-a0F">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -638,7 +638,7 @@
         <!--Riwayat-->
         <scene sceneID="y1d-4C-BYG">
             <objects>
-                <viewController storyboardIdentifier="RiwayatSemuaViewController" modalPresentationStyle="fullScreen" id="B7v-g8-F2p" customClass="RiwayatSemuaViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RiwayatSemuaViewController" modalPresentationStyle="fullScreen" id="B7v-g8-F2p" customClass="RiwayatSemuaViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y3G-ye-D2f">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -648,8 +648,8 @@
                                 <color key="backgroundColor" red="0.9452458024" green="0.96064811939999994" blue="0.96862941979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.99979725779999995" blue="0.99228465050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="117" id="6LK-cM-50w" customClass="RiwayatSemuaTableViewCell" customModule="Qwerty" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="117"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="117" id="6LK-cM-50w" customClass="RiwayatSemuaTableViewCell" customModule="SafeType" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6LK-cM-50w" id="D9p-fm-Y8k">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="117"/>
@@ -819,7 +819,7 @@
         <!--Riwayat Kata Kotor View Controller-->
         <scene sceneID="8cH-uk-2pZ">
             <objects>
-                <viewController storyboardIdentifier="RiwayatKataKotorViewController" id="kTt-Eu-IZg" customClass="RiwayatKataKotorViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RiwayatKataKotorViewController" id="kTt-Eu-IZg" customClass="RiwayatKataKotorViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qbE-Jl-G1G">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -829,8 +829,8 @@
                                 <color key="backgroundColor" red="0.9452458024" green="0.96064811939999994" blue="0.96862941979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.99979725779999995" blue="0.99228465050000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="riwayatKataKotorCell" rowHeight="117" id="3Ve-mS-2nY" customClass="RiwayatKataKotorTableViewCell" customModule="Qwerty" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="390" height="117"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="riwayatKataKotorCell" rowHeight="117" id="3Ve-mS-2nY" customClass="RiwayatKataKotorTableViewCell" customModule="SafeType" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ve-mS-2nY" id="oDx-u6-oSd">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="117"/>
@@ -956,7 +956,7 @@
         <!--Filter View Controller-->
         <scene sceneID="i2M-No-VtG">
             <objects>
-                <viewController storyboardIdentifier="FilterViewController" id="hEc-qH-5el" customClass="FilterViewController" customModule="Qwerty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FilterViewController" id="hEc-qH-5el" customClass="FilterViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YId-Z3-4bj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -987,8 +987,8 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filterCell" id="C6w-dH-PXX" customClass="FilterTableViewCell" customModule="Qwerty" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="79" width="390" height="44.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="filterCell" id="C6w-dH-PXX" customClass="FilterTableViewCell" customModule="SafeType" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75.333333969116211" width="390" height="44.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C6w-dH-PXX" id="zk0-5K-3VT">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="44.666667938232422"/>
