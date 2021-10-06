@@ -41,6 +41,7 @@
 		5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFF3261FFBB700ED8594 /* DateExtension.swift */; };
 		5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */; };
 		5B76A465261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
+		5B7A4B7D270D4C260081362C /* joWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7A4B7C270D4C260081362C /* joWorkspace.storyboard */; };
 		5B7D6CFE261CA5510086F45E /* SafeTypeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B7D6CF6261CA5510086F45E /* SafeTypeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */; };
 		5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D6D2F261CA7450086F45E /* keyboard.storyboard */; };
@@ -70,7 +71,6 @@
 		BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */; };
 		BF5BE0AF26F37C15001682AC /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BE0AE26F37C15001682AC /* SettingsTableViewCell.swift */; };
 		BF5BE0B126F38C3C001682AC /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BE0B026F38C3C001682AC /* SettingsItem.swift */; };
-		BF5BE0B526F8565F001682AC /* joWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5BE0B426F8565F001682AC /* joWorkspace.storyboard */; };
 		BF8E45A92622DBC60052351B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45A82622DBC60052351B /* FilterViewController.swift */; };
 		BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */; };
 		BF93838C2705778E00FE6243 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF93838B2705778E00FE6243 /* NavigationHelper.swift */; };
@@ -147,6 +147,7 @@
 		5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorRiwayat.swift; sourceTree = "<group>"; };
 		5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCustomPersistentContainer.swift; sourceTree = "<group>"; };
 		5B76A46E261E10D000D708DC /* KeyboardDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDataService.swift; sourceTree = "<group>"; };
+		5B7A4B7C270D4C260081362C /* joWorkspace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = joWorkspace.storyboard; sourceTree = "<group>"; };
 		5B7D6CF6261CA5510086F45E /* SafeTypeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafeTypeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		5B7D6D1D261CA6AF0086F45E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -180,7 +181,6 @@
 		BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorViewController.swift; sourceTree = "<group>"; };
 		BF5BE0AE26F37C15001682AC /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		BF5BE0B026F38C3C001682AC /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
-		BF5BE0B426F8565F001682AC /* joWorkspace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = joWorkspace.storyboard; path = ../../.Trash/joWorkspace.storyboard; sourceTree = "<group>"; };
 		BF8E45A82622DBC60052351B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		BF93838B2705778E00FE6243 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
@@ -366,7 +366,7 @@
 				BF2C7899261C567400F1FFCA /* Main.storyboard */,
 				5B3899F5262436560067926C /* jessiWorkspace.storyboard */,
 				BFD98C272625F65F00EAF875 /* djWorkspace.storyboard */,
-				BF5BE0B426F8565F001682AC /* joWorkspace.storyboard */,
+				5B7A4B7C270D4C260081362C /* joWorkspace.storyboard */,
 				27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */,
 				4E0C6DBE261D7FBD0054AE7D /* Controller */,
 				5B389A1326244A750067926C /* Cell Controller */,
@@ -534,7 +534,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5BE0B526F8565F001682AC /* joWorkspace.storyboard in Resources */,
+				5B7A4B7D270D4C260081362C /* joWorkspace.storyboard in Resources */,
 				BFD98C282625F65F00EAF875 /* djWorkspace.storyboard in Resources */,
 				BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */,
 				27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */,
