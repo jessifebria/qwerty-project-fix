@@ -34,11 +34,6 @@ class KataTerdeteksiViewController: UIViewController, UITableViewDelegate, UITab
         return cell
     }
 
-        // method to run when table view cell is tapped
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
-    }
-
         // this method handles row deletion
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 

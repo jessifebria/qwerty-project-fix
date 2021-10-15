@@ -63,6 +63,8 @@ extension SettingViewController: UITableViewDelegate {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "KataTerdeteksiViewController") as! KataTerdeteksiViewController
             self.navigationController?.pushViewController(vc, animated: true)
         case .Bantuan:
+            let vc = BantuanViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
             print("bantuan")
         }
     }
