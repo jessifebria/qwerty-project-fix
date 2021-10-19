@@ -47,14 +47,7 @@ class RiwayatSemuaTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-//        if selected {
-//            contentView.backgroundColor = .clear
-//            self.selectedBackgroundView?.backgroundColor = .clear
-//            view.backgroundColor = .systemGray4
-//        }
-        
-        
-        // Configure the view for the selected state
+
     }
 
 }

@@ -15,11 +15,11 @@ class boxCollectionViewCell: UICollectionViewCell {
     
     var riwayatHariIni: History? {
         didSet {
-            self.updateUI ()
+            self.updateUI()
         }
     }
     
-    func updateUI() {
+    private func updateUI() {
       
         if let riwayatHariIni = riwayatHariIni {
             platformLabel.text = riwayatHariIni.platform?.uppercased()
@@ -45,10 +45,6 @@ class boxCollectionViewCell: UICollectionViewCell {
             //colorView.backgroundColor = nil
         }
        
-    }
-    
-    override class func awakeFromNib() {
-        
     }
     
 }

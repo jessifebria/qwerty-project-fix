@@ -68,13 +68,16 @@
 		BF2C78AE261C567500F1FFCA /* SafeTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78AD261C567500F1FFCA /* SafeTypeTests.swift */; };
 		BF2C78B9261C567500F1FFCA /* SafeTypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78B8261C567500F1FFCA /* SafeTypeUITests.swift */; };
 		BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78EF261CD75C00F1FFCA /* Converter.swift */; };
+		BF2D773A271D447A00C197E8 /* BantuanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D7739271D447A00C197E8 /* BantuanTableViewCell.swift */; };
 		BF3D82FB2719529E00F38BCC /* BantuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D82FA2719529E00F38BCC /* BantuanViewController.swift */; };
 		BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */; };
+		BF54ABD72719C3E100610BE3 /* Bantuan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54ABD62719C3E100610BE3 /* Bantuan.swift */; };
 		BF5BE0AF26F37C15001682AC /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BE0AE26F37C15001682AC /* SettingsTableViewCell.swift */; };
 		BF5BE0B126F38C3C001682AC /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BE0B026F38C3C001682AC /* SettingsItem.swift */; };
 		BF8E45A92622DBC60052351B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45A82622DBC60052351B /* FilterViewController.swift */; };
 		BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */; };
 		BF93838C2705778E00FE6243 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF93838B2705778E00FE6243 /* NavigationHelper.swift */; };
+		BFAAFBFB271D3CF10078ED58 /* bantuanContent.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAAFBFA271D3CF10078ED58 /* bantuanContent.json */; };
 		BFD98C282625F65F00EAF875 /* djWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD98C272625F65F00EAF875 /* djWorkspace.storyboard */; };
 		BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -179,13 +182,16 @@
 		BF2C78B8261C567500F1FFCA /* SafeTypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeTypeUITests.swift; sourceTree = "<group>"; };
 		BF2C78BA261C567500F1FFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2C78EF261CD75C00F1FFCA /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		BF2D7739271D447A00C197E8 /* BantuanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuanTableViewCell.swift; sourceTree = "<group>"; };
 		BF3D82FA2719529E00F38BCC /* BantuanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuanViewController.swift; sourceTree = "<group>"; };
 		BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorViewController.swift; sourceTree = "<group>"; };
+		BF54ABD62719C3E100610BE3 /* Bantuan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bantuan.swift; sourceTree = "<group>"; };
 		BF5BE0AE26F37C15001682AC /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		BF5BE0B026F38C3C001682AC /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
 		BF8E45A82622DBC60052351B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		BF93838B2705778E00FE6243 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
+		BFAAFBFA271D3CF10078ED58 /* bantuanContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bantuanContent.json; sourceTree = "<group>"; };
 		BFD98C272625F65F00EAF875 /* djWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = djWorkspace.storyboard; path = ../djWorkspace.storyboard; sourceTree = "<group>"; };
 		BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -256,6 +262,7 @@
 				BF2B61BA26E22569004D8304 /* History+CoreDataProperties.swift */,
 				BF2C789C261C567400F1FFCA /* SafeType.xcdatamodeld */,
 				5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */,
+				BF54ABD62719C3E100610BE3 /* Bantuan.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +285,7 @@
 				BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */,
 				BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */,
 				5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */,
+				BF2D7739271D447A00C197E8 /* BantuanTableViewCell.swift */,
 			);
 			path = "Cell Controller";
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				5B3899D926242AC40067926C /* KataKotor.csv */,
+				BFAAFBFA271D3CF10078ED58 /* bantuanContent.json */,
 				4E1C62562623FDBF00D0CC55 /* tutorial.gif */,
 				4EDA3DF1261EDE5500368B1B /* SafeType.entitlements */,
 				BF2C7893261C567400F1FFCA /* AppDelegate.swift */,
@@ -538,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B7A4B7D270D4C260081362C /* joWorkspace.storyboard in Resources */,
+				BFAAFBFB271D3CF10078ED58 /* bantuanContent.json in Resources */,
 				BFD98C282625F65F00EAF875 /* djWorkspace.storyboard in Resources */,
 				BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */,
 				27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */,
@@ -593,6 +603,7 @@
 			files = (
 				5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */,
 				5B22F1C326268E6B0035BA00 /* Onboard1ViewController.swift in Sources */,
+				BF54ABD72719C3E100610BE3 /* Bantuan.swift in Sources */,
 				BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */,
 				BF2B61BE26E22569004D8304 /* KataKotor+CoreDataProperties.swift in Sources */,
 				BF2B61BC26E22569004D8304 /* Keyboard+CoreDataProperties.swift in Sources */,
@@ -623,6 +634,7 @@
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
 				5B389A0226243A3F0067926C /* MasukkanPassViewController.swift in Sources */,
 				5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */,
+				BF2D773A271D447A00C197E8 /* BantuanTableViewCell.swift in Sources */,
 				BF5BE0B126F38C3C001682AC /* SettingsItem.swift in Sources */,
 				4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */,
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
