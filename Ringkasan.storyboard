@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="5517" y="526"/>
         </scene>
-        <!--NavigationRiwayatViewController-->
+        <!--RiwayatSemuaViewController-->
         <scene sceneID="a9h-iR-Ht5">
             <objects>
-                <viewControllerPlaceholder storyboardName="Riwayat" referencedIdentifier="NavigationRiwayatViewController" id="bvJ-y7-cBz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Riwayat" referencedIdentifier="RiwayatSemuaViewController" id="bvJ-y7-cBz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ou0-PK-9M1"/>
                     <navigationItem key="navigationItem" id="2xO-N3-13H"/>
                 </viewControllerPlaceholder>
@@ -46,11 +46,11 @@
             <objects>
                 <viewController storyboardIdentifier="HomepageViewController" modalPresentationStyle="fullScreen" id="5pK-hp-VTK" customClass="HomepageViewController" customModule="SafeType" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vfe-40-d8I" userLabel="Main View">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="843"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGq-EW-Vgm">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="755"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="843"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfk-iY-0pC" userLabel="Bottom View">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="1755"/>
@@ -67,7 +67,7 @@
                                                 <color key="highlightedColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(daily count)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb0-An-WQ7">
-                                                <rect key="frame" x="20.000000000000014" y="114.33333333333334" width="254.33333333333337" height="54"/>
+                                                <rect key="frame" x="20.000000000000014" y="114.33333333333331" width="254.33333333333337" height="54"/>
                                                 <color key="tintColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
                                                 <color key="textColor" red="0.98824328179999998" green="0.99209469559999997" blue="0.99607950450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -93,7 +93,7 @@
                                                     <color key="titleShadowColor" red="0.99999064209999999" green="0.9999936223" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="Dbr-fV-WgW" kind="push" identifier="segueHomepageToSettings" id="fUI-Xz-Nhe"/>
+                                                    <segue destination="Dbr-fV-WgW" kind="show" identifier="segueHomepageToSettings" id="fUI-Xz-Nhe"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -120,7 +120,7 @@
                                         <rect key="frame" x="30" y="220" width="368" height="57"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tidak ada kata kotor hari ini" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQB-Zi-vkG" userLabel="No Data Label">
-                                                <rect key="frame" x="90" y="19.666666666666686" width="188" height="18"/>
+                                                <rect key="frame" x="90" y="19.666666666666657" width="188" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
@@ -280,7 +280,7 @@
                                         <rect key="frame" x="10" y="404.66666666666663" width="408" height="1129.666666666667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="izr-YP-MEo">
-                                                <rect key="frame" x="20" y="19.999999999999886" width="368" height="1089.6666666666665"/>
+                                                <rect key="frame" x="20" y="20" width="368" height="1089.6666666666667"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KATA PALING BANYAK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tiw-rN-OFy">
                                                         <rect key="frame" x="0.0" y="0.0" width="368" height="14.333333333333334"/>
@@ -289,7 +289,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fAV-1x-Mgc">
-                                                        <rect key="frame" x="0.0" y="34.333333333333371" width="368" height="1015.0000000000001"/>
+                                                        <rect key="frame" x="0.0" y="34.333333333333258" width="368" height="1015"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pd3-Xq-ZjU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="368" height="250"/>
@@ -486,7 +486,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4b-8Q-fK2">
-                                                        <rect key="frame" x="0.0" y="1069.3333333333335" width="368" height="20.333333333333258"/>
+                                                        <rect key="frame" x="0.0" y="1069.3333333333333" width="368" height="20.333333333333258"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumlah Keseluruhan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOG-IE-b80">
                                                                 <rect key="frame" x="0.0" y="0.0" width="308" height="20.333333333333332"/>
@@ -630,17 +630,16 @@
         <!--Ringkasan-->
         <scene sceneID="gST-7D-Y84">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H04-iy-NnV" sceneMemberID="viewController">
+                <navigationController id="H04-iy-NnV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Ringkasan" image="doc.text.fill" catalog="system" selectedImage="doc.text.fill" id="7hf-Ln-YAO">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="N2V-ln-sGk">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="N2V-ln-sGk">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.1450980392" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.96865731479999995" green="0.9725353122" blue="0.97254973649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
@@ -648,6 +647,9 @@
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Crd-kR-wXh">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.1450980392" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.1450980392" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </toolbar>
                     <connections>
                         <segue destination="5pK-hp-VTK" kind="relationship" relationship="rootViewController" id="k9x-WH-zsV"/>

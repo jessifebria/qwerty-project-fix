@@ -7,15 +7,123 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8CE76B89-9D6B-48A9-B092-2525AF282188"
+            uuid = "AB101E6E-F6A1-4C8C-8024-05E06D8F0AE6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SafeType/Controller/RiwayatKataKotorViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "RiwayatKataKotorViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AB101E6E-F6A1-4C8C-8024-05E06D8F0AE6 - 89d058af958d00b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SafeType.RiwayatKataKotorViewController.riwayatKataUnikData.getter : Swift.Array&lt;Swift.Optional&lt;SafeType.History&gt;&gt;"
+                  moduleName = "SafeType"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yafoniahutabarat/SafeType/SafeType/Controller/RiwayatKataKotorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "AB101E6E-F6A1-4C8C-8024-05E06D8F0AE6 - 6050b74527b30bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SafeType.RiwayatKataKotorViewController.riwayatKataUnikData.setter : Swift.Array&lt;Swift.Optional&lt;SafeType.History&gt;&gt;"
+                  moduleName = "SafeType"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yafoniahutabarat/SafeType/SafeType/Controller/RiwayatKataKotorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "AB101E6E-F6A1-4C8C-8024-05E06D8F0AE6 - af8416b9e854b767"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SafeType.RiwayatKataKotorViewController.riwayatKataUnikData.modify : Swift.Array&lt;Swift.Optional&lt;SafeType.History&gt;&gt;"
+                  moduleName = "SafeType"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yafoniahutabarat/SafeType/SafeType/Controller/RiwayatKataKotorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "AB101E6E-F6A1-4C8C-8024-05E06D8F0AE6 - 7bc8ad8aa3aff66c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SafeType.RiwayatKataKotorViewController.riwayatKataUnikData.modify : Swift.Array&lt;Swift.Optional&lt;SafeType.History&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SafeType"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yafoniahutabarat/SafeType/SafeType/Controller/RiwayatKataKotorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "AB101E6E-F6A1-4C8C-8024-05E06D8F0AE6 - 6bbe7dc12da2cc20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SafeType.RiwayatKataKotorViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SafeType.RiwayatKataKotorViewController"
+                  moduleName = "SafeType"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yafoniahutabarat/SafeType/SafeType/Controller/RiwayatKataKotorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "202">
+               </Location>
+               <Location
+                  uuid = "AB101E6E-F6A1-4C8C-8024-05E06D8F0AE6 - af29a0515a8a784e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SafeType.RiwayatKataKotorViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SafeType.RiwayatKataKotorViewController&gt;"
+                  moduleName = "SafeType"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yafoniahutabarat/SafeType/SafeType/Controller/RiwayatKataKotorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "159">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4A443DF-AE5A-468D-9013-36F2B54890B8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SafeType/Controller/RiwayatSemuaViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,16 +131,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E238356F-DD77-49D3-A965-79858F507CDF"
+            uuid = "CFECA210-AD6D-4CAF-A2BE-BE8E0CFA5507"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SafeType/Controller/HomepageViewController.swift"
+            filePath = "SafeType/Controller/RiwayatSemuaViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09D2FA6A-6474-4A26-9AD9-F3530686EDE2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SafeType/Controller/RiwayatSemuaViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

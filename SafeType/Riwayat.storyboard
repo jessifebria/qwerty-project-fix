@@ -123,7 +123,6 @@
                                             <outlet property="kataKotorLabel" destination="8Zn-4c-xEA" id="3Wu-hm-Wqx"/>
                                             <outlet property="timestampLabel" destination="twS-gM-i5u" id="iUT-CK-FAe"/>
                                             <outlet property="view" destination="Pvl-bU-1sq" id="HR5-eE-9NJ"/>
-                                            <segue destination="gow-N6-fX4" kind="unwind" unwindAction="goBack:" id="h1C-09-JTa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -174,10 +173,10 @@
                         <outlet property="segmentedControl" destination="REe-Q5-qmA" id="Dzf-AC-AtZ"/>
                         <outlet property="tableView" destination="p7s-3O-b8g" id="ubm-c2-UqM"/>
                         <segue destination="JWG-JU-FZC" kind="show" identifier="showRiwayatKataUnik" id="FJP-yL-VON"/>
+                        <segue destination="9ke-TJ-A0f" kind="show" identifier="showDetailSegue" id="PXA-LX-TcM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xiw-aw-jj2" sceneMemberID="firstResponder"/>
-                <exit id="gow-N6-fX4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1795.3846153846152" y="833.88625592417054"/>
         </scene>
@@ -311,11 +310,12 @@
                     <navigationItem key="navigationItem" id="S77-1E-PZm"/>
                     <connections>
                         <outlet property="tableView" destination="paY-L5-OPR" id="OiT-Lf-wcf"/>
+                        <segue destination="9ke-TJ-A0f" kind="show" identifier="showDetailSegueFromKataKotor" id="dEv-wy-mUp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgO-SB-FZe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200" y="1580"/>
+            <point key="canvasLocation" x="196" y="1623"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="suY-nx-QKi">
@@ -415,8 +415,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJ2-VL-Cg7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IK8-ui-cvY">
-                                <rect key="frame" x="20" y="74" width="374" height="13.5"/>
+                                <rect key="frame" x="20" y="118" width="374" height="13.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KALIMAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJh-J7-htx">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="13.5"/>
@@ -427,7 +431,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ddv-dQ-p0T">
-                                <rect key="frame" x="20" y="95.5" width="374" height="205"/>
+                                <rect key="frame" x="20" y="139.5" width="374" height="205"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wte-8m-oSU">
                                         <rect key="frame" x="18" y="18" width="338" height="43"/>
@@ -490,7 +494,7 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Pt-C9-rxk">
-                                <rect key="frame" x="20" y="330.5" width="374" height="13.5"/>
+                                <rect key="frame" x="20" y="374.5" width="374" height="13.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WAKTU DAN TEMPAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gew-U6-Fz9">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="13.5"/>
@@ -501,7 +505,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-Ru-hge">
-                                <rect key="frame" x="20" y="352" width="374" height="205"/>
+                                <rect key="frame" x="20" y="396" width="374" height="205"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-dC-Par">
                                         <rect key="frame" x="18" y="18" width="338" height="43"/>
@@ -565,7 +569,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xd8-Wd-H5p"/>
-                        <color key="backgroundColor" red="0.9452458024" green="0.96064811939999994" blue="0.96862941979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.37254901959999998" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="mdq-Ru-hge" firstAttribute="top" secondItem="8Pt-C9-rxk" secondAttribute="bottom" constant="8" id="74K-8G-TYs"/>
                             <constraint firstItem="xd8-Wd-H5p" firstAttribute="trailing" secondItem="8Pt-C9-rxk" secondAttribute="trailing" constant="20" id="DgB-EP-hgf"/>
@@ -573,12 +577,16 @@
                             <constraint firstItem="xd8-Wd-H5p" firstAttribute="trailing" secondItem="mdq-Ru-hge" secondAttribute="trailing" constant="20" id="Iqx-yE-cWp"/>
                             <constraint firstItem="8Pt-C9-rxk" firstAttribute="top" secondItem="Ddv-dQ-p0T" secondAttribute="bottom" constant="30" id="JMa-MB-a82"/>
                             <constraint firstItem="Ddv-dQ-p0T" firstAttribute="leading" secondItem="xd8-Wd-H5p" secondAttribute="leading" constant="20" id="KmH-lq-ABc"/>
+                            <constraint firstItem="xd8-Wd-H5p" firstAttribute="bottom" secondItem="uJ2-VL-Cg7" secondAttribute="bottom" id="UPx-NA-I3k"/>
                             <constraint firstItem="IK8-ui-cvY" firstAttribute="leading" secondItem="xd8-Wd-H5p" secondAttribute="leading" constant="20" id="W4h-uy-cN6"/>
                             <constraint firstItem="xd8-Wd-H5p" firstAttribute="trailing" secondItem="IK8-ui-cvY" secondAttribute="trailing" constant="20" id="aCx-X7-68O"/>
                             <constraint firstItem="8Pt-C9-rxk" firstAttribute="leading" secondItem="xd8-Wd-H5p" secondAttribute="leading" constant="20" id="aZS-80-ZZB"/>
                             <constraint firstItem="mdq-Ru-hge" firstAttribute="leading" secondItem="xd8-Wd-H5p" secondAttribute="leading" constant="20" id="d1S-oV-Ayb"/>
                             <constraint firstItem="IK8-ui-cvY" firstAttribute="top" secondItem="xd8-Wd-H5p" secondAttribute="top" constant="30" id="iqH-na-C3l"/>
+                            <constraint firstItem="uJ2-VL-Cg7" firstAttribute="top" secondItem="xd8-Wd-H5p" secondAttribute="top" id="kab-XI-4ba"/>
                             <constraint firstItem="Ddv-dQ-p0T" firstAttribute="top" secondItem="IK8-ui-cvY" secondAttribute="bottom" constant="8" id="uPP-ev-VEW"/>
+                            <constraint firstItem="xd8-Wd-H5p" firstAttribute="trailing" secondItem="uJ2-VL-Cg7" secondAttribute="trailing" id="va9-Td-o8U"/>
+                            <constraint firstItem="uJ2-VL-Cg7" firstAttribute="leading" secondItem="xd8-Wd-H5p" secondAttribute="leading" id="zIa-wA-ts3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail Riwayat" id="RFi-wD-EMn">
@@ -606,15 +614,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ntx-g1-rAr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2504" y="1562"/>
+            <point key="canvasLocation" x="1762" y="1623"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xc5-1w-sH7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljd-my-BwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="NavigationRiwayatViewController" id="7tp-0a-jA8" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="q3g-8q-4fr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -623,11 +633,13 @@
                         <segue destination="zfK-p2-FFe" kind="relationship" relationship="rootViewController" id="wBJ-Fa-bH5"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ljd-my-BwC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="867" y="834"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dEv-wy-mUp"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="clock.fill" catalog="system" width="128" height="121"/>
