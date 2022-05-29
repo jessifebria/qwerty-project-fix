@@ -48,7 +48,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         } else {
             guard let windowScene = (scene as? UIWindowScene) else { return }
 
-            let storyboard = UIStoryboard(name: "jessiWorkspace", bundle: nil)
+            let storyboard = UIStoryboard(name: "Password", bundle: nil)
             let initialViewController = storyboard.instantiateViewController(withIdentifier: "MasukkanPassViewController")
 
             window = CustomWindow(windowScene: windowScene)

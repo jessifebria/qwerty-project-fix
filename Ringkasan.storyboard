@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F1c-xx-4U8">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -13,37 +13,27 @@
         <!--detailViewController-->
         <scene sceneID="gJf-Rq-NYh">
             <objects>
-                <viewControllerPlaceholder storyboardName="joWorkspace" referencedIdentifier="detailViewController" id="Cj6-XF-azV" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Riwayat" referencedIdentifier="detailViewController" id="Cj6-XF-azV" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fXX-22-bQ4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEc-TK-OPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8259" y="107"/>
         </scene>
-        <!--RiwayatSemuaViewController-->
-        <scene sceneID="UlC-eH-2J9">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="RiwayatSemuaViewController" id="lat-Eo-j8j" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4MO-wT-7fW"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aWQ-kM-kgj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4618" y="500"/>
-        </scene>
-        <!--navigationControllerRiwayat-->
+        <!--NavigationRiwayatViewController-->
         <scene sceneID="ne9-XN-S4x">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="navigationControllerRiwayat" id="JOx-Fe-0zg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ysG-n4-B25"/>
+                <viewControllerPlaceholder storyboardName="Riwayat" referencedIdentifier="NavigationRiwayatViewController" id="JOx-Fe-0zg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Riwayat" id="ysG-n4-B25"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qg-d7-x3M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5517" y="526"/>
         </scene>
-        <!--RiwayatSemuaViewController-->
+        <!--NavigationRiwayatViewController-->
         <scene sceneID="a9h-iR-Ht5">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="RiwayatSemuaViewController" id="bvJ-y7-cBz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Riwayat" referencedIdentifier="NavigationRiwayatViewController" id="bvJ-y7-cBz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ou0-PK-9M1"/>
                     <navigationItem key="navigationItem" id="2xO-N3-13H"/>
                 </viewControllerPlaceholder>
@@ -630,19 +620,19 @@
         <!--SettingViewController-->
         <scene sceneID="a6J-bC-IAb">
             <objects>
-                <viewControllerPlaceholder storyboardName="joWorkspace" referencedIdentifier="SettingViewController" id="Dbr-fV-WgW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingViewController" id="Dbr-fV-WgW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="0ah-Qu-Gfw"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Q-HL-HtV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8241.538461538461" y="-119.43127962085308"/>
+            <point key="canvasLocation" x="8236" y="-128"/>
         </scene>
         <!--Ringkasan-->
         <scene sceneID="gST-7D-Y84">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H04-iy-NnV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Ringkasan" image="doc.text.fill" catalog="system" selectedImage="doc.text.fill" id="7hf-Ln-YAO">
-                        <color key="badgeColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="N2V-ln-sGk">
@@ -656,6 +646,9 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Crd-kR-wXh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="5pK-hp-VTK" kind="relationship" relationship="rootViewController" id="k9x-WH-zsV"/>
                     </connections>
@@ -672,7 +665,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="LaL-Hj-v11">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="selectedImageTintColor" red="0.14635548000000001" green="0.37100902200000002" blue="0.62747818229999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
