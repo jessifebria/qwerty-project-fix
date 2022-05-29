@@ -38,7 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
             guard let windowScene = (scene as? UIWindowScene) else { return }
 
-            let storyboard = UIStoryboard(name: "LinusWorkspace", bundle: nil)
+            let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
             let initialViewController = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
 
             window = CustomWindow(windowScene: windowScene)
