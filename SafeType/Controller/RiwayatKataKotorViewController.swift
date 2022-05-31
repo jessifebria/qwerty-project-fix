@@ -37,7 +37,7 @@ extension RiwayatKataKotorViewController: UITableViewDelegate {
             cell.view.backgroundColor = .lightGray
         }
         let data = riwayatKataUnikData[indexPath.row]
-        performSegue(withIdentifier: "showDetailSegueFromKataKotor", sender: data)
+        performSegue(withIdentifier: "showRiwayatSemuaFromKataKotor", sender: data)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

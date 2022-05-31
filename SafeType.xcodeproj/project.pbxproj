@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */; };
+		27F2E4A9262060C000E385FD /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F2E4A8262060C000E385FD /* Onboarding.storyboard */; };
 		27F2E4AF2620614100E385FD /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F2E4AE2620614100E385FD /* OnboardingViewController.swift */; };
 		4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */; };
 		4E1C62572623FDC000D0CC55 /* tutorial.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C62562623FDBF00D0CC55 /* tutorial.gif */; };
@@ -30,7 +30,7 @@
 		5B27D9E226E5B5E300D511F8 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B27D9E126E5B5E300D511F8 /* KeyboardButton.swift */; };
 		5B3899D326242A5C0067926C /* RiwayatSemuaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */; };
 		5B3899E726242D470067926C /* KataKotor.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899D926242AC40067926C /* KataKotor.csv */; };
-		5B3899F6262436560067926C /* jessiWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899F5262436560067926C /* jessiWorkspace.storyboard */; };
+		5B3899F6262436560067926C /* Password.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3899F5262436560067926C /* Password.storyboard */; };
 		5B3899FC262436820067926C /* KeyboardWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3899FB262436820067926C /* KeyboardWarningViewController.swift */; };
 		5B389A0226243A3F0067926C /* MasukkanPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B389A0126243A3F0067926C /* MasukkanPassViewController.swift */; };
 		5B6ADFD1261FFB3D00ED8594 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFD0261FFB3D00ED8594 /* HistoryService.swift */; };
@@ -41,7 +41,7 @@
 		5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFF3261FFBB700ED8594 /* DateExtension.swift */; };
 		5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */; };
 		5B76A465261E0CC000D708DC /* NSCustomPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */; };
-		5B7A4B7D270D4C260081362C /* joWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7A4B7C270D4C260081362C /* joWorkspace.storyboard */; };
+		5B7A4B7D270D4C260081362C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7A4B7C270D4C260081362C /* Settings.storyboard */; };
 		5B7D6CFE261CA5510086F45E /* SafeTypeKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B7D6CF6261CA5510086F45E /* SafeTypeKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B7D6D0C261CA60E0086F45E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */; };
 		5B7D6D30261CA7450086F45E /* keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7D6D2F261CA7450086F45E /* keyboard.storyboard */; };
@@ -68,13 +68,18 @@
 		BF2C78AE261C567500F1FFCA /* SafeTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78AD261C567500F1FFCA /* SafeTypeTests.swift */; };
 		BF2C78B9261C567500F1FFCA /* SafeTypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78B8261C567500F1FFCA /* SafeTypeUITests.swift */; };
 		BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2C78EF261CD75C00F1FFCA /* Converter.swift */; };
+		BF2D773A271D447A00C197E8 /* BantuanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2D7739271D447A00C197E8 /* BantuanTableViewCell.swift */; };
+		BF3D82FB2719529E00F38BCC /* BantuanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3D82FA2719529E00F38BCC /* BantuanViewController.swift */; };
+		BF45E9502843926100BA7BC3 /* Riwayat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF45E94F2843926100BA7BC3 /* Riwayat.storyboard */; };
 		BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */; };
+		BF54ABD72719C3E100610BE3 /* Bantuan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF54ABD62719C3E100610BE3 /* Bantuan.swift */; };
 		BF5BE0AF26F37C15001682AC /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BE0AE26F37C15001682AC /* SettingsTableViewCell.swift */; };
 		BF5BE0B126F38C3C001682AC /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BE0B026F38C3C001682AC /* SettingsItem.swift */; };
 		BF8E45A92622DBC60052351B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45A82622DBC60052351B /* FilterViewController.swift */; };
 		BF8E45AF2622DC8E0052351B /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */; };
 		BF93838C2705778E00FE6243 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF93838B2705778E00FE6243 /* NavigationHelper.swift */; };
-		BFD98C282625F65F00EAF875 /* djWorkspace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD98C272625F65F00EAF875 /* djWorkspace.storyboard */; };
+		BFAAFBFB271D3CF10078ED58 /* bantuanContent.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAAFBFA271D3CF10078ED58 /* bantuanContent.json */; };
+		BFD98C282625F65F00EAF875 /* Ringkasan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD98C272625F65F00EAF875 /* Ringkasan.storyboard */; };
 		BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,7 +122,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinusWorkspace.storyboard; sourceTree = "<group>"; };
+		27F2E4A8262060C000E385FD /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		27F2E4AE2620614100E385FD /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		4E0C6DD9261D898C0054AE7D /* CreatePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePassViewController.swift; sourceTree = "<group>"; };
 		4E1C62562623FDBF00D0CC55 /* tutorial.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tutorial.gif; sourceTree = "<group>"; };
@@ -134,7 +139,7 @@
 		5B27D9E126E5B5E300D511F8 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 		5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
 		5B3899D926242AC40067926C /* KataKotor.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = KataKotor.csv; sourceTree = "<group>"; };
-		5B3899F5262436560067926C /* jessiWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = jessiWorkspace.storyboard; sourceTree = "<group>"; };
+		5B3899F5262436560067926C /* Password.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Password.storyboard; sourceTree = "<group>"; };
 		5B3899FB262436820067926C /* KeyboardWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardWarningViewController.swift; sourceTree = "<group>"; };
 		5B389A0126243A3F0067926C /* MasukkanPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasukkanPassViewController.swift; sourceTree = "<group>"; };
 		5B6ADFC6261FFAD600ED8594 /* SafeTypeKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafeTypeKeyboard.entitlements; sourceTree = "<group>"; };
@@ -147,7 +152,7 @@
 		5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorRiwayat.swift; sourceTree = "<group>"; };
 		5B76A463261E0CC000D708DC /* NSCustomPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCustomPersistentContainer.swift; sourceTree = "<group>"; };
 		5B76A46E261E10D000D708DC /* KeyboardDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDataService.swift; sourceTree = "<group>"; };
-		5B7A4B7C270D4C260081362C /* joWorkspace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = joWorkspace.storyboard; sourceTree = "<group>"; };
+		5B7A4B7C270D4C260081362C /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		5B7D6CF6261CA5510086F45E /* SafeTypeKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafeTypeKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7D6D06261CA6060086F45E /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		5B7D6D1D261CA6AF0086F45E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,13 +183,18 @@
 		BF2C78B8261C567500F1FFCA /* SafeTypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeTypeUITests.swift; sourceTree = "<group>"; };
 		BF2C78BA261C567500F1FFCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2C78EF261CD75C00F1FFCA /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		BF2D7739271D447A00C197E8 /* BantuanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuanTableViewCell.swift; sourceTree = "<group>"; };
+		BF3D82FA2719529E00F38BCC /* BantuanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantuanViewController.swift; sourceTree = "<group>"; };
+		BF45E94F2843926100BA7BC3 /* Riwayat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Riwayat.storyboard; sourceTree = "<group>"; };
 		BF4D76B9262239C2003EEB56 /* RiwayatKataKotorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorViewController.swift; sourceTree = "<group>"; };
+		BF54ABD62719C3E100610BE3 /* Bantuan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bantuan.swift; sourceTree = "<group>"; };
 		BF5BE0AE26F37C15001682AC /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		BF5BE0B026F38C3C001682AC /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
 		BF8E45A82622DBC60052351B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		BF93838B2705778E00FE6243 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
-		BFD98C272625F65F00EAF875 /* djWorkspace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = djWorkspace.storyboard; path = ../djWorkspace.storyboard; sourceTree = "<group>"; };
+		BFAAFBFA271D3CF10078ED58 /* bantuanContent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bantuanContent.json; sourceTree = "<group>"; };
+		BFD98C272625F65F00EAF875 /* Ringkasan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Ringkasan.storyboard; path = ../Ringkasan.storyboard; sourceTree = "<group>"; };
 		BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatKataKotorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +248,7 @@
 				4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */,
 				5B3899FB262436820067926C /* KeyboardWarningViewController.swift */,
 				5B22F1C226268E6B0035BA00 /* Onboard1ViewController.swift */,
+				BF3D82FA2719529E00F38BCC /* BantuanViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +264,7 @@
 				BF2B61BA26E22569004D8304 /* History+CoreDataProperties.swift */,
 				BF2C789C261C567400F1FFCA /* SafeType.xcdatamodeld */,
 				5B6ADFFD261FFC3A00ED8594 /* KataKotorRiwayat.swift */,
+				BF54ABD62719C3E100610BE3 /* Bantuan.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -275,6 +287,7 @@
 				BF8E45AE2622DC8E0052351B /* FilterTableViewCell.swift */,
 				BFF84CCC2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift */,
 				5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */,
+				BF2D7739271D447A00C197E8 /* BantuanTableViewCell.swift */,
 			);
 			path = "Cell Controller";
 			sourceTree = "<group>";
@@ -359,15 +372,17 @@
 			isa = PBXGroup;
 			children = (
 				5B3899D926242AC40067926C /* KataKotor.csv */,
+				BFAAFBFA271D3CF10078ED58 /* bantuanContent.json */,
 				4E1C62562623FDBF00D0CC55 /* tutorial.gif */,
 				4EDA3DF1261EDE5500368B1B /* SafeType.entitlements */,
 				BF2C7893261C567400F1FFCA /* AppDelegate.swift */,
 				BF2C7895261C567400F1FFCA /* SceneDelegate.swift */,
 				BF2C7899261C567400F1FFCA /* Main.storyboard */,
-				5B3899F5262436560067926C /* jessiWorkspace.storyboard */,
-				BFD98C272625F65F00EAF875 /* djWorkspace.storyboard */,
-				5B7A4B7C270D4C260081362C /* joWorkspace.storyboard */,
-				27F2E4A8262060C000E385FD /* LinusWorkspace.storyboard */,
+				5B3899F5262436560067926C /* Password.storyboard */,
+				BFD98C272625F65F00EAF875 /* Ringkasan.storyboard */,
+				BF45E94F2843926100BA7BC3 /* Riwayat.storyboard */,
+				5B7A4B7C270D4C260081362C /* Settings.storyboard */,
+				27F2E4A8262060C000E385FD /* Onboarding.storyboard */,
 				4E0C6DBE261D7FBD0054AE7D /* Controller */,
 				5B389A1326244A750067926C /* Cell Controller */,
 				4E0C6DC3261D7FC60054AE7D /* Model */,
@@ -534,15 +549,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7A4B7D270D4C260081362C /* joWorkspace.storyboard in Resources */,
-				BFD98C282625F65F00EAF875 /* djWorkspace.storyboard in Resources */,
+				5B7A4B7D270D4C260081362C /* Settings.storyboard in Resources */,
+				BFAAFBFB271D3CF10078ED58 /* bantuanContent.json in Resources */,
+				BFD98C282625F65F00EAF875 /* Ringkasan.storyboard in Resources */,
 				BF2C78A3261C567500F1FFCA /* LaunchScreen.storyboard in Resources */,
-				27F2E4A9262060C000E385FD /* LinusWorkspace.storyboard in Resources */,
+				27F2E4A9262060C000E385FD /* Onboarding.storyboard in Resources */,
 				4E1C62572623FDC000D0CC55 /* tutorial.gif in Resources */,
-				5B3899F6262436560067926C /* jessiWorkspace.storyboard in Resources */,
+				5B3899F6262436560067926C /* Password.storyboard in Resources */,
 				BF2C78A0261C567500F1FFCA /* Assets.xcassets in Resources */,
 				BF2C789B261C567400F1FFCA /* Main.storyboard in Resources */,
 				5B3899E726242D470067926C /* KataKotor.csv in Resources */,
+				BF45E9502843926100BA7BC3 /* Riwayat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +607,7 @@
 			files = (
 				5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */,
 				5B22F1C326268E6B0035BA00 /* Onboard1ViewController.swift in Sources */,
+				BF54ABD72719C3E100610BE3 /* Bantuan.swift in Sources */,
 				BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */,
 				BF2B61BE26E22569004D8304 /* KataKotor+CoreDataProperties.swift in Sources */,
 				BF2B61BC26E22569004D8304 /* Keyboard+CoreDataProperties.swift in Sources */,
@@ -602,6 +620,7 @@
 				4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */,
 				BFF84CCD2622A6D9004F5EBB /* RiwayatKataKotorTableViewCell.swift in Sources */,
 				BF2C7898261C567400F1FFCA /* RiwayatSemuaViewController.swift in Sources */,
+				BF3D82FB2719529E00F38BCC /* BantuanViewController.swift in Sources */,
 				5B3899FC262436820067926C /* KeyboardWarningViewController.swift in Sources */,
 				4E4301A026209E6E00C288D4 /* DeleteAllViewController.swift in Sources */,
 				4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */,
@@ -619,6 +638,7 @@
 				BF2C7896261C567400F1FFCA /* SceneDelegate.swift in Sources */,
 				5B389A0226243A3F0067926C /* MasukkanPassViewController.swift in Sources */,
 				5B6ADFF4261FFBB700ED8594 /* DateExtension.swift in Sources */,
+				BF2D773A271D447A00C197E8 /* BantuanTableViewCell.swift in Sources */,
 				BF5BE0B126F38C3C001682AC /* SettingsItem.swift in Sources */,
 				4E43016E26205A9300C288D4 /* SettingViewController.swift in Sources */,
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
