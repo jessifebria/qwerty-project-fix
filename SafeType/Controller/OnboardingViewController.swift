@@ -31,13 +31,16 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate {
         self.view.layoutIfNeeded()
         //to call viewDidLayoutSubviews() and get dynamic width and height of scrollview
         
+        let tenPixelWidth = view.frame.width / 39
+        let tenPixelHeight = view.frame.height / 84.4
+        
         Onboardingstuffs.delegate = self
         
         Onboardingstuffs.isPagingEnabled = true
         Onboardingstuffs.showsHorizontalScrollIndicator = false
         Onboardingstuffs.showsVerticalScrollIndicator = false
 
-        //crete the slides and add them
+        //create the slides and add them
         var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
 
         for index in 0..<imgs.count {
@@ -48,19 +51,19 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate {
 
             //subviews
             let imageView = UIImageView.init(image: UIImage.init(named: imgs[index]))
-            imageView.frame = CGRect(x:0,y:0,width:640,height:800)
+            imageView.frame = CGRect(x:0,y:0,width:view.frame.width,height:view.frame.height)
             imageView.contentMode = .scaleAspectFit
-            imageView.center = CGPoint(x:scrollWidth/2,y: scrollHeight/2 - 50)
+            imageView.center = CGPoint(x:view.frame.width/2,y: view.frame.height/2 - tenPixelHeight*5)
             
             slide.addSubview(imageView)
             Onboardingstuffs.addSubview(slide)
             if index == 5{
                 gifView.loadGif(name: "tutorial")
-                gifView.frame = CGRect(x:42,y:170,width:330,height:230)
-                gifView.center = CGPoint(x:scrollWidth/2,y: 315)
+                gifView.frame = CGRect(x:tenPixelWidth*4,y:tenPixelHeight*17,width:tenPixelWidth*33,height:tenPixelHeight*23)
+                gifView.center = CGPoint(x:scrollWidth/2,y: tenPixelHeight*33.5)
                 slide.addSubview(gifView)
-                let settingButton = UIButton(frame: CGRect(x: 20, y: 20, width: 300, height: 40))
-                settingButton.center = CGPoint(x:scrollWidth/2,y: 680)
+                let settingButton = UIButton(frame: CGRect(x: tenPixelWidth*2, y: tenPixelHeight*2, width: tenPixelWidth*30, height: tenPixelHeight*4))
+                settingButton.center = CGPoint(x:scrollWidth/2,y: tenPixelHeight*68)
                 settingButton.setTitle("Go to Setting", for: .normal)
                 settingButton.layer.cornerRadius = 8.0
                 settingButton.backgroundColor = UIColor(red:0.14, green:0.38, blue:0.63, alpha:1.0)
@@ -69,8 +72,8 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate {
                 settingButton.addTarget(self, action: #selector(self.settingButton), for: .touchUpInside)
                 slide.addSubview(settingButton)
             }else if index == 6{
-                let passButton = UIButton(frame: CGRect(x: 20, y: 20, width: 300, height: 40))
-                passButton.center = CGPoint(x:scrollWidth/2,y: 680)
+                let passButton = UIButton(frame: CGRect(x: tenPixelWidth*2, y: tenPixelHeight*2, width: tenPixelWidth*30, height: tenPixelHeight*4))
+                passButton.center = CGPoint(x:scrollWidth/2,y: tenPixelHeight*68)
                 passButton.setTitle("Buat Password", for: .normal)
                 passButton.layer.cornerRadius = 8.0
                 passButton.backgroundColor = UIColor(red:0.14, green:0.38, blue:0.63, alpha:1.0)
@@ -108,7 +111,7 @@ class OnboardingViewController: UIViewController,UIScrollViewDelegate {
     }
     
     @objc func settingButton(sender : UIButton) {
-        UIApplication.shared.open(URL(string:"App-Prefs:root=General")!)
+        UIApplication.shared.open(URL(string:"App-Prefs:root=General/Keyboard")!)
     }
     @objc func passButton(sender : UIButton) {
         performSegue(withIdentifier: "goToSetPassword", sender: sender)

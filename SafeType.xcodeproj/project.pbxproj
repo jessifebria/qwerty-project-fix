@@ -16,9 +16,10 @@
 		4E43017426205AA300C288D4 /* KataTerdeteksiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */; };
 		4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */; };
 		4E4301A026209E6E00C288D4 /* DeleteAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */; };
+		4EABF06F284767C100C1E02B /* GifOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABF06E284767C100C1E02B /* GifOnboardingViewController.swift */; };
+		4EABF0712847C16A00C1E02B /* CreatePassOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EABF0702847C16A00C1E02B /* CreatePassOnboardingViewController.swift */; };
 		4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */; };
 		4EDA3DF7261EFCC000368B1B /* DetailKalimatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */; };
-		5B22F1C326268E6B0035BA00 /* Onboard1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22F1C226268E6B0035BA00 /* Onboard1ViewController.swift */; };
 		5B27D9D626E329AE00D511F8 /* SafeType.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF2C789C261C567400F1FFCA /* SafeType.xcdatamodeld */; };
 		5B27D9D826E329B800D511F8 /* Keyboard+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B61B526E22569004D8304 /* Keyboard+CoreDataClass.swift */; };
 		5B27D9D926E329BB00D511F8 /* Keyboard+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B61B626E22569004D8304 /* Keyboard+CoreDataProperties.swift */; };
@@ -131,10 +132,11 @@
 		4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataTerdeteksiViewController.swift; sourceTree = "<group>"; };
 		4E43018B2620675600C288D4 /* KataKotorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataKotorTableViewCell.swift; sourceTree = "<group>"; };
 		4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAllViewController.swift; sourceTree = "<group>"; };
+		4EABF06E284767C100C1E02B /* GifOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifOnboardingViewController.swift; sourceTree = "<group>"; };
+		4EABF0702847C16A00C1E02B /* CreatePassOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePassOnboardingViewController.swift; sourceTree = "<group>"; };
 		4EDA3DEB261ED14800368B1B /* VerifPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifPassViewController.swift; sourceTree = "<group>"; };
 		4EDA3DF1261EDE5500368B1B /* SafeType.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafeType.entitlements; sourceTree = "<group>"; };
 		4EDA3DF6261EFCC000368B1B /* DetailKalimatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKalimatViewController.swift; sourceTree = "<group>"; };
-		5B22F1C226268E6B0035BA00 /* Onboard1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard1ViewController.swift; sourceTree = "<group>"; };
 		5B27D9DF26E4E8D200D511F8 /* BundleIDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleIDService.swift; sourceTree = "<group>"; };
 		5B27D9E126E5B5E300D511F8 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 		5B3899CD26242A560067926C /* RiwayatSemuaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatSemuaTableViewCell.swift; sourceTree = "<group>"; };
@@ -247,8 +249,9 @@
 				4E43017326205AA300C288D4 /* KataTerdeteksiViewController.swift */,
 				4E43019F26209E6E00C288D4 /* DeleteAllViewController.swift */,
 				5B3899FB262436820067926C /* KeyboardWarningViewController.swift */,
-				5B22F1C226268E6B0035BA00 /* Onboard1ViewController.swift */,
 				BF3D82FA2719529E00F38BCC /* BantuanViewController.swift */,
+				4EABF06E284767C100C1E02B /* GifOnboardingViewController.swift */,
+				4EABF0702847C16A00C1E02B /* CreatePassOnboardingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -606,7 +609,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6ADFED261FFB7800ED8594 /* ContextService.swift in Sources */,
-				5B22F1C326268E6B0035BA00 /* Onboard1ViewController.swift in Sources */,
 				BF54ABD72719C3E100610BE3 /* Bantuan.swift in Sources */,
 				BF4D76BA262239C2003EEB56 /* RiwayatKataKotorViewController.swift in Sources */,
 				BF2B61BE26E22569004D8304 /* KataKotor+CoreDataProperties.swift in Sources */,
@@ -626,6 +628,7 @@
 				4E43018C2620675600C288D4 /* KataKotorTableViewCell.swift in Sources */,
 				BF5BE0AF26F37C15001682AC /* SettingsTableViewCell.swift in Sources */,
 				4E0C6DDA261D898C0054AE7D /* CreatePassViewController.swift in Sources */,
+				4EABF06F284767C100C1E02B /* GifOnboardingViewController.swift in Sources */,
 				BF2C78F0261CD75C00F1FFCA /* Converter.swift in Sources */,
 				4E32484A2622F0D50005BE85 /* gifLoad.swift in Sources */,
 				4EDA3DEC261ED14800368B1B /* VerifPassViewController.swift in Sources */,
@@ -644,6 +647,7 @@
 				5B6ADFE1261FFB5900ED8594 /* UserService.swift in Sources */,
 				5B6ADFFE261FFC3A00ED8594 /* KataKotorRiwayat.swift in Sources */,
 				BF2B61BF26E22569004D8304 /* History+CoreDataClass.swift in Sources */,
+				4EABF0712847C16A00C1E02B /* CreatePassOnboardingViewController.swift in Sources */,
 				BF93838C2705778E00FE6243 /* NavigationHelper.swift in Sources */,
 				BF2B61BD26E22569004D8304 /* KataKotor+CoreDataClass.swift in Sources */,
 				5BE40D0126E601EE0076527A /* NSCustomPersistentContainer.swift in Sources */,
